@@ -1,2 +1,2 @@
 # chow-frontend
-Food App
+Front End for chow project
