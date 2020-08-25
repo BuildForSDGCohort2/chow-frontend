@@ -1,4 +1,4 @@
-#   About
-Chow is Food Recipe and On-demand Food Delivery Application.
+##  About
+Chow is a Food Recipe and On-demand Food Delivery Application.
 
 
