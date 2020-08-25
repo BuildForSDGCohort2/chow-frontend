@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   display: flex;
   flex-direction: column;
@@ -11,11 +10,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
 main {
   flex: 1 0 auto;
 }
-
 .container {
   min-height: 100vh;
 }
