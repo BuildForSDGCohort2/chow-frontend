@@ -5,9 +5,11 @@ class Footer extends Component {
   render() {
       return(
           <div className="footer">
-              <small className="copyright">&copy;2020 <span className="chow">choW</span></small>
+              <small className="copyright">
+                  &copy;2020 <span className="chow">choW</span>
+              </small>
           </div>
-      )
+      );
   }
 }
 
