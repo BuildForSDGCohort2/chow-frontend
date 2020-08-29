@@ -76,4 +76,6 @@ img {
   justify-content: center;
   text-align: center;
   margin: 0;
+  width: 100%;
+  height: 56px;
 }
