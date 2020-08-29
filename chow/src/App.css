@@ -57,7 +57,10 @@ h1 {
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  
+}
+
+img {
+  width: 100%;
 }
 
 .hero p {
