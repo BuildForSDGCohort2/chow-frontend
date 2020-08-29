@@ -5,11 +5,13 @@ class Search extends Component {
     render() {
         return(
             <div className="search">
-                <input 
-                    type="text"
-                    placeholder="E.g Chicken"
-                />
-                <button>Search Recipes</button>
+                <form className="form">
+                    <input 
+                        type="text"
+                        placeholder="E.g Chicken"
+                    />
+                    <button className="btn">Search Recipes</button>
+                </form>
             </div>
         );
     }
