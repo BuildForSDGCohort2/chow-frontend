@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+
 
 class App extends Component {
   constructor(props) {
@@ -12,8 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <Hero />
-        <Footer />
+        <h1>choW</h1>
       </div>
     );
   }
