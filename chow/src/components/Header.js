@@ -8,7 +8,7 @@ class Header extends Component {
                     <a className="brand-logo" href="#">choW</a>
                 </nav>
             </div>
-        )
+        );
     }
 }
 
