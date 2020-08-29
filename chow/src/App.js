@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import Footer from "./components/Footer";
 
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <div className="container">
         <h1>choW</h1>
+        <Footer />
       </div>
     );
   }
