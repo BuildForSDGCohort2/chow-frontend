@@ -1,5 +1,5 @@
 import React ,{ Component } from 'react';
-import heroImg from '../'
+
 
 
 class Hero extends Component {
