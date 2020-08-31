@@ -1,19 +1,17 @@
-import React ,{ Component } from 'react';
+import React from 'react';
 import heroImg from '../images/heroImg.jpg';
 import Search from './Search';
 
 
-
-class Hero extends Component {
-    render() {
-        return(
-          <div className="hero">
-              <img src={heroImg} />
-              <p>Get great recipes anywhere,anytime ...</p>
-              <Search />
-          </div>
-        );
-    }
+const Hero = () => {
+    return(
+        <div className="hero">
+            <img src={heroImg} alt=""/>
+            <p>Get great recipes anywhere,anytime ...</p>
+            <Search />
+        </div>
+      );
 }
 
 export default Hero;
+
