@@ -107,7 +107,7 @@ input {
   padding: 0.5rem 1rem;
   width: 8.625rem;
   margin: 0.5rem;
-  font-weight: bold;
+  font-weight: 400;
   cursor: pointer;
   border-radius: 3.125rem;
 }
