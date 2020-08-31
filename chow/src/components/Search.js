@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 
+
 class Search extends Component {
     render() {
         return(
@@ -8,6 +9,7 @@ class Search extends Component {
                 <form className="form">
                     <input 
                         type="text"
+                        id="search"
                         placeholder="E.g Chicken"
                     />
                     <button className="btn">Search Recipes</button>

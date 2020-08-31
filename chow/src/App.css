@@ -90,8 +90,12 @@ input {
   max-width: 100%;
   margin: 0.5rem;
   border: 2px solid #f20e0e;
-  padding: 0.3rem 0.4rem;
+  padding: 1rem 2.5rem;
   height: 2.5rem;
+}
+
+#search {
+  background: url("./images/search.svg") no-repeat  left 10px center;
 }
 
 button {
