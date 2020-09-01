@@ -2,14 +2,16 @@ import React from "react";
 
 const Recipes = (props) => {
     return(
-        <div className="row">
+        <div className="row m-5">
                 {props.recipes.map((recipe) => {
                 return (
-                  <div key={recipe.id} className="col-md-4 recipes">
-                    <img src={recipe.image} alt={recipe.title} className="img-fluid"/>
-                    <div className="recipeTitle">
-                        <h3>{recipe.title}</h3>
-                        <p className="likes"><span className="like">Likes:</span> {recipe.likes}</p>
+                  <div key={recipe.id} className="card col-md-4">
+                    <img src={recipe.image} className="card-img-top" alt={recipe.title} />
+                    <div className="card-body">
+                      <h3 className="card-title recipeTitle">{recipe.title}</h3>
+                      <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p className="likes"><span className="like px-3">Likes:</span>{recipe.likes}</p>
+                      <a href="#" className="btn">View Recipe</a>
                     </div>
                   </div>
                 );
@@ -19,3 +21,5 @@ const Recipes = (props) => {
 };
 
 export default Recipes;
+
+
