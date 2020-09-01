@@ -8,6 +8,7 @@ const Recipes = (props) => {
             <div key={recipe.id}>
               <img src={recipe.image} alt={recipe.title} />
               <p>{recipe.title}</p>
+              <p>Likes: {recipe.likes}</p>
             </div>
           );
         })}
