@@ -7,7 +7,7 @@ import Search from "./components/Search";
 import Recipes from "./components/Recipes";
 
 
-const API_KEY="5b7f8740fa894e699119353666730f46";
+const API_KEY=process.env.API_KEY;
 
 
 class App extends Component {
