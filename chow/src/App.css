@@ -41,6 +41,7 @@ h1 {
 h3 {
   font-size: 1.5rem;
   font-weight: 200;
+  text-transform: capitalize;
 }
 
 .header {
@@ -111,8 +112,12 @@ input {
 
 .likes {
   font-weight: bold;
+}
+
+.like {
   color: #dc3f0a;
 }
+
 .btn {
   background-color: #f20e0e;
   border: none;
