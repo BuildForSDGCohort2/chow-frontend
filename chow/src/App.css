@@ -115,6 +115,12 @@ input {
   padding: 0.5rem;
   height: 500%;
 }
+
+.card {
+  width: 20rem;
+  margin: 2rem;
+}
+
 .likes {
   font-weight: bold;
 }
