@@ -24,7 +24,7 @@ class App extends Component {
     const data = await apiCall.json();
     //console.log(data[0].title);
     this.setState({ recipes: data });
-    console.log(this.state.recipes);
+    //console.log(this.state.recipes);
   }
 
   render() {
