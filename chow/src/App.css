@@ -109,6 +109,10 @@ input {
   background: url("./images/search.svg") no-repeat  left 10px center;
 }
 
+.likes {
+  font-weight: bold;
+  color: #dc3f0a;
+}
 .btn {
   background-color: #f20e0e;
   border: none;
