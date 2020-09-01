@@ -80,7 +80,7 @@ img {
   padding: 1.2rem;
   margin: 0;
 }
-
+/*Search**/
 .form {
   display: flex;
   flex-direction: column;
@@ -109,7 +109,12 @@ input {
 #search {
   background: url("./images/search.svg") no-repeat  left 10px center;
 }
-
+/*Recipes**/
+.recipes {
+  border: 1px solid #000;
+  padding: 0.5rem;
+  height: 500%;
+}
 .likes {
   font-weight: bold;
 }
@@ -135,7 +140,7 @@ input {
   background-color: #000;
   color: #fff;
 }
-
+/**Footer*/
 .footer {
   color: #000;
   display: flex;
