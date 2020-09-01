@@ -9,6 +9,7 @@ const Recipes = (props) => {
                     <img src={recipe.image} alt={recipe.title} className="img-fluid"/>
                     <div className="recipeTitle">
                         <h3>{recipe.title}</h3>
+                        <p>Likes: {recipe.likes}</p>
                     </div>
                   </div>
                 );
