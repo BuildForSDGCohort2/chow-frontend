@@ -17,8 +17,7 @@ main {
   flex: 1 0 auto;
 }
 
-.container {
-  min-height: 100vh;
+.container-fluid {
   width: 100%;
   padding: 0;
   margin: 0;
