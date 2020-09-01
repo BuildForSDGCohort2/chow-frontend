@@ -13,6 +13,6 @@ const Recipes = (props) => {
         })}
       </div>
     );
-}
+};
 
 export default Recipes;
