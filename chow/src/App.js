@@ -19,7 +19,7 @@ class App extends Component {
   getRecipe = async(e) => {
     const recipeName = e.target.recipeName.value;
     e.preventDefault();
-    const apiCall= await fetch(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${API_KEY}&ingredients=${recipeName}&number=5`);
+    const apiCall= await fetch(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${API_KEY}&ingredients=${recipeName}&number=10`);
     
     const data = await apiCall.json();
     //console.log(data[0].title);
@@ -29,7 +29,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container-fluid">
         <Header />
         <Hero />
         <Search getRecipe={this.getRecipe}/>
