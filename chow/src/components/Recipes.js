@@ -9,7 +9,7 @@ const Recipes = (props) => {
                     <img src={recipe.image} alt={recipe.title} className="img-fluid"/>
                     <div className="recipeTitle">
                         <h3>{recipe.title}</h3>
-                        <p className="likes">Likes: {recipe.likes}</p>
+                        <p className="likes"><span className="like">Likes:</span> {recipe.likes}</p>
                     </div>
                   </div>
                 );
