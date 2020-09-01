@@ -2,7 +2,7 @@ import React from "react";
 
 const Recipes = (props) => {
     return(
-        <div className="row m-5">
+        <div className="row ">
                 {props.recipes.map((recipe) => {
                 return (
                   <div key={recipe.id} className="card col-md-4">
