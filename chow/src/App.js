@@ -39,7 +39,12 @@ class App extends Component {
         <Hero />
         <Search getRecipe={this.getRecipe}/>
         { this.state.hits.map((hit) => {
-          return <p key={hit.recipe.uri}>{hit.recipe.label}</p>
+          return (
+            <div key={hit.recipe.uri}>
+              <img src={hit.recipe.image} alt={hit.recipe.label}/>
+              <p>{hit.recipe.label}</p>
+            </div>
+          )
         }) }
         <Footer />
       </div>
