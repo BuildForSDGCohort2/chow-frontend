@@ -3,13 +3,13 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import App from "../App";
 import Recipe from "./Recipe";
 
-const Router = () => {
+const Router = () => (
     <BrowserRouter>
         <Switch>
             <Route path="/" component={App} exact/>
             <Route path="/recipe/:uri" component={Recipe}/>
         </Switch>
-    </BrowserRouter>;
-};
+    </BrowserRouter>
+);
 
 export default Router;
