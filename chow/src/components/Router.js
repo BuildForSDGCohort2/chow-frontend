@@ -9,7 +9,7 @@ const Router = () => {
             <Route path="/" component={App} exact/>
             <Route path="/" component={Recipe}/>
         </Switch>
-    </BrowserRouter>
-}
+    </BrowserRouter>;
+};
 
 export default Router;
