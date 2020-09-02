@@ -10,7 +10,11 @@ const Recipes = props => {
               <img src={hit.recipe.image} alt={hit.recipe.label}/>
               <h3>{hit.recipe.label}</h3>
               <button className="view">
-               <Link to={{ pathname: `/recipe/${hit.recipe.uri}` }}>View Recipe</Link> 
+               <Link to={{ 
+                 pathname: `/recipe/${hit.recipe.label}`,
+                 state: {hit: hit.recipe.label} 
+                 }} >View Recipe
+               </Link> 
               </button>
               <p>Source: <a href={hit.recipe.url}>{hit.recipe.source}</a></p>
             </div>
