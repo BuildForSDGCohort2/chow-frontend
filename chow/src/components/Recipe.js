@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 const API_KEY="993e24597fd724779edf491d15001a79";
@@ -27,10 +28,17 @@ class Recipe extends React.Component {
         //console.log(this.props);
         const myRecipe = this.state.activeRecipe;
         return (
-            <div className="container">
-                <div className="active-recipe">
-                    <img className="active-img" src={myRecipe.image} alt={myRecipe.label} />
-                </div>
+            <div className="col-md-4">
+                { this.state.activeRecipe !== 0 &&
+                    <div className="active-recipe">
+                        <img className="active-img" src={myRecipe.image} alt={myRecipe.label} />
+                        <h3>{myRecipe.label}</h3>
+                        <p>Source: <a href={myRecipe.url}>{myRecipe.source}</a></p>
+                        <button className="view">
+                            <Link to="/">Go Home</Link>
+                        </button>
+                    </div> 
+                }
             </div>
         );
     }
