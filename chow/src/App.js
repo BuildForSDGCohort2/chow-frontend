@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Search from "./components/Search";
+import Recipes from "./components/Recipes";
 
 
 
@@ -38,14 +39,7 @@ class App extends Component {
         <Header />
         <Hero />
         <Search getRecipe={this.getRecipe}/>
-        { this.state.hits.map((hit) => {
-          return (
-            <div key={hit.recipe.uri}>
-              <img src={hit.recipe.image} alt={hit.recipe.label}/>
-              <p>{hit.recipe.label}</p>
-            </div>
-          )
-        }) }
+        <Recipes recipes={this.state.hits} />
         <Footer />
       </div>
     );
