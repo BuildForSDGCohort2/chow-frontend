@@ -120,14 +120,6 @@ input {
   width: 20rem;
 }
 
-.likes {
-  font-weight: bold;
-}
-
-.like {
-  color: #dc3f0a;
-}
-
 .btn {
   background-color: #f20e0e;
   border: none;
@@ -145,6 +137,24 @@ input {
   background-color: #000;
   color: #fff;
 }
+
+.view {
+  background-color: none;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  padding: 0.2rem 0.8rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+
+.view:hover {
+  background-color: #f26f07;
+  color: #fff;
+}
+
 /**Footer*/
 .footer {
   color: #000;
