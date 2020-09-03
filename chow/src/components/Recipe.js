@@ -5,6 +5,7 @@ import Footer from "./Footer";
 
 
 
+
 const API_KEY=process.env.REACT_APP_API_KEY;
 const API_ID=process.env.REACT_APP_API_ID;
 
@@ -12,10 +13,11 @@ const API_ID=process.env.REACT_APP_API_ID;
 class Recipe extends React.Component {
     state = {
         activeRecipe: [],
+        ingredient: []
     };
 
     componentDidMount = async () => {
-        const title = this.props.location.state.hits;
+        const title = this.props.location.state.hit;
         const req = await fetch(`https://api.edamam.com/search?q=${title}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=3`);
     //const apiCall= await fetch(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${API_KEY}&ingredients=${recipeName}&number=10`);
     
@@ -33,9 +35,11 @@ class Recipe extends React.Component {
         //console.log(this.props);
         const myRecipe = this.state.activeRecipe;
         const cal = Math.ceil(myRecipe.calories);
+        
+        
         return (
             <div className="container-fluid">
-                { this.state.activeRecipe !== 0 &&
+                { this.state.activeRecipe !== 0 && 
                     <div className="row">
                         <Header />
                         <div className="active-recipe col-md-6 p-3">
@@ -51,6 +55,7 @@ class Recipe extends React.Component {
                                 <Link to="/" className="home">Go Home</Link>
                             </button>
                         </div>
+                        
                         <Footer />
                     </div> 
                 }

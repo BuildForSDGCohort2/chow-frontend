@@ -118,9 +118,6 @@ input {
   height: 500%;
 }
 
-.card {
-  width: 20rem;
-}
 
 .btn {
   background-color: #f20e0e;
@@ -162,18 +159,28 @@ input {
   font-size: 14px;
   font-weight: bold;
 }
+
 .url:hover {
   text-decoration: none;
 }
+
 .home {
   color: #000;
 }
+
 .home:hover {
   text-decoration: none;
   color: #fff;
 }
+
 .cal {
   font-weight: bold;
+}
+
+.active-img {
+  border-radius: 0.626rem;
+  border: none;
+  outline: none;
 }
 /**Footer*/
 .footer {

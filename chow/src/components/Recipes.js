@@ -7,7 +7,7 @@ const Recipes = props => {
               { props.recipes.map((hit) => {
           return (
             <div key={hit.recipe.uri} className="col-md-4">
-              <img src={hit.recipe.image} alt={hit.recipe.label}/>
+              <img className="active-img" src={hit.recipe.image} alt={hit.recipe.label}/>
               <h3>{hit.recipe.label}</h3>
                <Link to={{ 
                  pathname: `/recipe/${hit.recipe.label}`,
