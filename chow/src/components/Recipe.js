@@ -42,7 +42,7 @@ class Recipe extends React.Component {
                              <h2>{myRecipe.label}</h2>
                             <p className="text-uppercase"><a className="url" href={myRecipe.url}>{myRecipe.source}</a></p>
                             <p>Serving: {myRecipe.yield}</p>
-                            <p className="cal">{cal}<span className="mx-1 ">Calories</span></p>
+                            <p className="cal">{cal}<span className="mx-1 font-weight-light">Calories</span></p>
                             <p>Total time: {myRecipe.totalTime} mins</p>
                             <h4>Ingredients:</h4>
                             <button className="view">
