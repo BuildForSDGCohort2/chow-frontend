@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "./Header";
+import Footer from "./Footer";
 
 
 const API_KEY="993e24597fd724779edf491d15001a79";
@@ -28,15 +30,16 @@ class Recipe extends React.Component {
         //console.log(this.props);
         const myRecipe = this.state.activeRecipe;
         return (
-            <div className="container">
+            <div className="container-fluid">
                 { this.state.activeRecipe !== 0 &&
                     <div className="row">
-                        <div className="active-recipe col-md-6">
+                        <Header />
+                        <div className="active-recipe col-md-6 p-3">
                             <img className="active-img" src={myRecipe.image} alt={myRecipe.label} />
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 pt-2">
                              <h2>{myRecipe.label}</h2>
-                            <p>Source: <a href={myRecipe.url}>{myRecipe.source}</a></p>
+                            <p className="text-uppercase"><a className="url" href={myRecipe.url}>{myRecipe.source}</a></p>
                             <p>Serving: {myRecipe.yield}</p>
                             <p>{myRecipe.calories}<span className="mx-1">Calories</span></p>
                             <p>Total time: {myRecipe.totalTime} mins</p>
@@ -45,6 +48,7 @@ class Recipe extends React.Component {
                                 <Link to="/">Go Home</Link>
                             </button>
                         </div>
+                        <Footer />
                     </div> 
                 }
             </div>

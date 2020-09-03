@@ -156,7 +156,15 @@ input {
   background-color: #f26f07;
   color: #fff;
 }
-
+/**Recipe*/
+.url {
+  color: #bababa;
+  font-size: 14px;
+  font-weight: bold;
+}
+.url:hover {
+  text-decoration: none;
+}
 /**Footer*/
 .footer {
   color: #000;
