@@ -28,15 +28,21 @@ class Recipe extends React.Component {
         //console.log(this.props);
         const myRecipe = this.state.activeRecipe;
         return (
-            <div className="col-md-4">
+            <div className="container">
                 { this.state.activeRecipe !== 0 &&
-                    <div className="active-recipe">
-                        <img className="active-img" src={myRecipe.image} alt={myRecipe.label} />
-                        <h3>{myRecipe.label}</h3>
-                        <p>Source: <a href={myRecipe.url}>{myRecipe.source}</a></p>
-                        <button className="view">
-                            <Link to="/">Go Home</Link>
-                        </button>
+                    <div className="row">
+                        <div className="active-recipe col-md-6">
+                            <img className="active-img" src={myRecipe.image} alt={myRecipe.label} />
+                        </div>
+                        <div className="col-md-6">
+                             <h2>{myRecipe.label}</h2>
+                            <p>Source: <a href={myRecipe.url}>{myRecipe.source}</a></p>
+                            <p>Serving: {myRecipe.yield}</p>
+                            <p>{myRecipe.calories}<span className="mx-1">calories</span></p>
+                            <button className="view">
+                                <Link to="/">Go Home</Link>
+                            </button>
+                        </div>
                     </div> 
                 }
             </div>
