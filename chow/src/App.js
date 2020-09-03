@@ -28,7 +28,7 @@ class App extends Component {
     const data = await apiCall.json();
     //console.log(data.hits[0].recipe);
     this.setState({ hits: data.hits });
-    console.log(this.state.hits); 
+    //console.log(this.state.hits); 
   };
 
   componentDidMount() {
