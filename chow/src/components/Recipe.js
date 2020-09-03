@@ -4,6 +4,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 
+
 const API_KEY=process.env.REACT_APP_API_KEY;
 const API_ID=process.env.REACT_APP_API_ID;
 
@@ -14,16 +15,18 @@ class Recipe extends React.Component {
     };
 
     componentDidMount = async () => {
-        const title = this.props.location.state.hit;
+        const title = this.props.location.state.hits;
         const req = await fetch(`https://api.edamam.com/search?q=${title}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=3`);
     //const apiCall= await fetch(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${API_KEY}&ingredients=${recipeName}&number=10`);
     
     const res = await req.json();
     //console.log(res.hits[0]);
     this.setState({
-        activeRecipe: res.hits[0].recipe
+        activeRecipe: res.hits[0].recipe,
+        ingredients: res.hits[0].recipe.ingredients[0]
     });
-    console.log(this.state.activeRecipe);
+    //console.log(this.state.activeRecipe);
+    console.log(this.state.ingredients);
     };
 
     render() {
@@ -44,7 +47,6 @@ class Recipe extends React.Component {
                             <p>Serving: {myRecipe.yield}</p>
                             <p className="cal">{cal}<span className="mx-1 font-weight-light">Calories</span></p>
                             <p>Total time: {myRecipe.totalTime} mins</p>
-                            <h4>Ingredients:</h4>
                             <button className="view">
                                 <Link to="/" className="home">Go Home</Link>
                             </button>
