@@ -45,7 +45,7 @@ class Recipe extends React.Component {
                             <p>Total time: {myRecipe.totalTime} mins</p>
                             <h4>Ingredients:</h4>
                             <button className="view">
-                                <Link to="/">Go Home</Link>
+                                <Link to="/" className="home">Go Home</Link>
                             </button>
                         </div>
                         <Footer />

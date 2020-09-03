@@ -13,7 +13,9 @@ const Recipes = props => {
                <Link to={{ 
                  pathname: `/recipe/${hit.recipe.label}`,
                  state: {hit: hit.recipe.label} 
-                 }} >View Recipe
+                 }}
+                 className="home" >
+                   View Recipe
                </Link> 
               </button>
               <p>Source: <a href={hit.recipe.url}>{hit.recipe.source}</a></p>

@@ -165,6 +165,13 @@ input {
 .url:hover {
   text-decoration: none;
 }
+.home {
+  color: #000;
+}
+.home:hover {
+  text-decoration: none;
+  color: #fff;
+}
 /**Footer*/
 .footer {
   color: #000;
