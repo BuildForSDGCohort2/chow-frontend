@@ -28,10 +28,20 @@ class App extends Component {
     const data = await apiCall.json();
     //console.log(data.hits[0].recipe);
     this.setState({ hits: data.hits });
-    console.log(this.state.hits);
-    
-    
+    console.log(this.state.hits); 
+  };
+
+  componentDidMount() {
+    const json = localStorage.getItem("hits");
+    const hits = JSON.parse(json);
+    this.setState({ hits });
   }
+  
+  componentDidUpdate() {
+    const hits = JSON.stringify(this.state.hits);
+    localStorage.setItem("hits", hits);
+  }
+  
 
   render() {
     return (
