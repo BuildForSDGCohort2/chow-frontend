@@ -172,6 +172,9 @@ input {
   text-decoration: none;
   color: #fff;
 }
+.cal {
+  font-weight: bold;
+}
 /**Footer*/
 .footer {
   color: #000;

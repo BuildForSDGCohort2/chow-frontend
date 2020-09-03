@@ -29,6 +29,7 @@ class Recipe extends React.Component {
     render() {
         //console.log(this.props);
         const myRecipe = this.state.activeRecipe;
+        const cal = Math.ceil(myRecipe.calories);
         return (
             <div className="container-fluid">
                 { this.state.activeRecipe !== 0 &&
@@ -41,7 +42,7 @@ class Recipe extends React.Component {
                              <h2>{myRecipe.label}</h2>
                             <p className="text-uppercase"><a className="url" href={myRecipe.url}>{myRecipe.source}</a></p>
                             <p>Serving: {myRecipe.yield}</p>
-                            <p>{myRecipe.calories}<span className="mx-1">Calories</span></p>
+                            <p className="cal">{cal}<span className="mx-1 ">Calories</span></p>
                             <p>Total time: {myRecipe.totalTime} mins</p>
                             <h4>Ingredients:</h4>
                             <button className="view">
