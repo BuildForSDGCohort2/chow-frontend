@@ -46,6 +46,7 @@ h3 {
   margin: 0;
 }
 
+/**Header*/
 .header {
   display: flex;
   align-items: center;
@@ -56,14 +57,21 @@ h3 {
   height: 56px;
 }
 
-.brand-logo {
-  color: #fff;
+.navbar-brand {
+  color: #fff !important;
   text-decoration: none;
-  padding: 1rem;
-  font-size: 36px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("./images/menu.svg");
+}
+/**Hero*/
 .hero {
   display: flex;
   flex-direction: column;
