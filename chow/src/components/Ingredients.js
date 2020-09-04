@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Ingredients = props => {
+const Ingredients = (props) => {
     return (
         <div className="row">
         {props.ingredients.map((ingredient, index) => {
@@ -10,9 +10,9 @@ const Ingredients = props => {
                     <li>{ingredient}</li>
                 </ol>
             )
-        })}
+        })};
     </div>
-    )
+    );
 }
 
 export default Ingredients;
