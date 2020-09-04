@@ -3,11 +3,15 @@ import React from "react";
 
 const Ingredients = props => {
     return (
-        <ol>
-            {props.ingredients.map((ingredient) => {
-                <li>{ingredient.text}</li>
-            })}
-        </ol>
+        <div className="row">
+        {props.ingredients.map((ingredient, index) => {
+            return (
+                <ol key={index}>
+                    <li>{ingredient}</li>
+                </ol>
+            )
+        })}
+    </div>
     )
 }
 

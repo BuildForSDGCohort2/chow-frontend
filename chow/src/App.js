@@ -9,7 +9,8 @@ import Recipes from "./components/Recipes";
 
 
 
-//const API_KEY="5b7f8740fa894e699119353666730f46";
+
+
 const API_KEY=process.env.REACT_APP_API_KEY;
 const API_ID=process.env.REACT_APP_API_ID;
 
@@ -23,11 +24,11 @@ class App extends Component {
   getRecipe = async(e) => {
     const recipeName = e.target.recipeName.value;
     e.preventDefault();
-    const apiCall = await fetch(`https://api.edamam.com/search?q=${recipeName}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=3`);
-    //const apiCall= await fetch(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${API_KEY}&ingredients=${recipeName}&number=10`);
+    const apiCall = await fetch(`https://api.edamam.com/search?q=${recipeName}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=10`);
+   
     
     const data = await apiCall.json();
-    //console.log(data.hits[0].recipe);
+    console.log(data.hits[0].recipe.ingredients);
     this.setState({ hits: data.hits });
     //console.log(this.state.hits); 
   };
