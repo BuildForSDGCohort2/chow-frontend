@@ -18,7 +18,7 @@ const API_ID=process.env.REACT_APP_API_ID;
 class App extends Component {
 
   state = {
-    hits: [],
+    hits: []
   }
 
   getRecipe = async(e) => {
