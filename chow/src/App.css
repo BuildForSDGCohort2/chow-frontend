@@ -119,6 +119,10 @@ input {
 #search {
   background: url("./images/search.svg") no-repeat  left 10px center;
 }
+
+.results {
+  text-align: center;
+}
 /*Recipes**/
 .recipes {
   border: 1px solid #000;
