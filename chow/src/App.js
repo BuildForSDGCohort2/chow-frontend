@@ -24,11 +24,11 @@ class App extends Component {
   getRecipe = async(e) => {
     const recipeName = e.target.recipeName.value;
     e.preventDefault();
-    const apiCall = await fetch(`https://api.edamam.com/search?q=${recipeName}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=10`);
+    const apiCall = await fetch(`https://api.edamam.com/search?q=${recipeName}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=100`);
    
     
     const data = await apiCall.json();
-    console.log(data.hits[0].recipe.ingredients);
+    //console.log(data.hits[0].recipe.ingredients);
     this.setState({ hits: data.hits });
     //console.log(this.state.hits); 
   };
