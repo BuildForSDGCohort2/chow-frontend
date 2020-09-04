@@ -9,10 +9,10 @@ const Ingredients = (props) => {
                 <ol key={index}>
                     <li>{ingredient}</li>
                 </ol>
-            )
+            );
         })};
     </div>
     );
-}
+};
 
 export default Ingredients;
