@@ -28,7 +28,7 @@ class Recipe extends React.Component {
         ingredients: res.hits[0].recipe.ingredients[0]
     });
     //console.log(this.state.activeRecipe);
-    console.log(this.state.ingredients);
+    //console.log(this.state.ingredients);
     };
 
     render() {
