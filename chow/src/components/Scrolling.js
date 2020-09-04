@@ -15,6 +15,6 @@ class Scroll extends Component {
           </div>
       );
   }
-};
+}
 
 export default Scroll;
