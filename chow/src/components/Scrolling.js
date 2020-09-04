@@ -11,7 +11,7 @@ class Scroll extends Component {
   render() {
       return (
           <div className="container">
-              <p>Scroll Component</p>
+              <h3>Scroll</h3>
           </div>
       );
   }
