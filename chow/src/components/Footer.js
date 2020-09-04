@@ -9,6 +9,6 @@ const Footer = () => {
         </small>
     </div>
     );
-}
+};
 
 export default Footer;

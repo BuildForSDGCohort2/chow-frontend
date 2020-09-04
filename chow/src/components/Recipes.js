@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 
-const Recipes = props => {
+const Recipes = (props) => {
     return(
         <div className="row mt-5">
           <div className="col-sm-12 results m-2">
