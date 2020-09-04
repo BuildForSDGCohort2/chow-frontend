@@ -18,18 +18,23 @@ const API_ID=process.env.REACT_APP_API_ID;
 class App extends Component {
 
   state = {
-    hits: []
+    hits: [],
+    loading: false
   }
 
   getRecipe = async(e) => {
     const recipeName = e.target.recipeName.value;
     e.preventDefault();
+    this.setState({ loading: true });
     const apiCall = await fetch(`https://api.edamam.com/search?q=${recipeName}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=100`);
    
     
     const data = await apiCall.json();
     //console.log(data.hits[0].recipe.ingredients);
-    this.setState({ hits: data.hits });
+    this.setState({ 
+      hits: data.hits,
+      loading: false 
+    });
     //console.log(this.state.hits); 
   };
 

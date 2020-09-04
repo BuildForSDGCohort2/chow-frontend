@@ -6,9 +6,6 @@ import { Link } from "react-router-dom";
 const Recipes = (props) => {
     return(
         <div className="row mt-5">
-          <div className="col-sm-12 results m-2">
-            <h5>Results </h5>
-          </div>
               { props.recipes.map((hit, index) => {
           return (
             <div key={index} className="col-md-4">
