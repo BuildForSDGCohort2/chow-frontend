@@ -14,7 +14,7 @@ class Scroll extends Component {
               <p>Scroll Component</p>
           </div>
       );
-  };
+  }
 };
 
 export default Scroll;
