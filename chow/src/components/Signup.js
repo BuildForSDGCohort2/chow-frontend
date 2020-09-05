@@ -1,16 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
+import Heading from "./Heading";
 
 
 const SignUp = () => {
     return(
         <div className="row text-center">
-            <div className="col-sm-12">
-                <h1 className="heading">
-                    <Link to="/" className="heading">choW</Link>
-                </h1>
-            </div>
+            <Heading />
             <div className="col-sm-12">
                 <ul className="connect">
                     <li>
@@ -23,11 +20,11 @@ const SignUp = () => {
                             <span>Connect with Google</span>
                         </button>
                     </li>
-                    <li>
+                    <Link to="/email-signup">
                         <button className="email m-2" title="Connect with Email">
                             <span>Connect with Email</span>
                         </button>
-                    </li>
+                    </Link>
                 </ul>
             </div>
             <div className="col-sm-12">
