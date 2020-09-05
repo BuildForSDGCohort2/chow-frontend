@@ -226,6 +226,40 @@ input {
   outline: none;
 }
 
+/** SignUp */
+.connect {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.facebook ,.google, .email {
+  min-width: 16rem;
+  outline: none;
+  border: none;
+  padding: 0.625rem;
+  border-radius: 50px;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+.facebook {
+  color: #fff;
+  background-color: #3b5998 !important;
+  background: url("./images/facebook.svg") no-repeat  left 10px center;
+}
+
+.google {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0.125em 0.25em rgba(0,0,0,0.12), 0 0 2px 0 rgba(0,0,0,0.27) inset;
+}
+
+.email {
+  background-color: #f26f07 !important;
+  color: #fff;
+  background: url("./images/mail.svg") no-repeat left 1rem center;
+}
 /** Footer */
 .footer {
   color: #000;
