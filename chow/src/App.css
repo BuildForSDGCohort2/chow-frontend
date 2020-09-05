@@ -227,6 +227,15 @@ input {
 }
 
 /** SignUp */
+.heading {
+  color: #f20e0e;
+  text-decoration: none;
+}
+.heading:hover {
+  color: #000;
+  text-decoration: none;
+}
+
 .connect {
   list-style: none;
   padding: 0;

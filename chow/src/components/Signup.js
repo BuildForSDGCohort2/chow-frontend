@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Footer from "./Footer";
 
 
@@ -6,7 +7,9 @@ const SignUp = () => {
     return(
         <div className="row text-center">
             <div className="col-sm-12">
-                <h1 className="heading">choW</h1>
+                <h1 className="heading">
+                    <Link to="/" className="heading">choW</Link>
+                </h1>
             </div>
             <div className="col-sm-12">
                 <ul className="connect">
