@@ -4,6 +4,7 @@ import App from "../App";
 import Recipe from "./Recipe";
 import SignUp from "./Signup";
 import EmailSignUp from "./EmailSignUp";
+import SignIn from "./SignIn";
 
 const Router = () => (
     <BrowserRouter>
@@ -12,6 +13,7 @@ const Router = () => (
             <Route path="/recipe/:uri" component={Recipe}/>
             <Route path="/signup" component={SignUp}/>
             <Route path="/email-signup" component={EmailSignUp}/>
+            <Route path="/signin" component={SignIn} />
         </Switch>
     </BrowserRouter>
 );

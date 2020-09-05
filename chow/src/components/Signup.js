@@ -26,6 +26,9 @@ const SignUp = () => {
                         </button>
                     </Link>
                 </ul>
+                <Link to="/">
+                    <p>Go Back</p>
+                </Link>
             </div>
             <div className="col-sm-12">
                 <small className="text center">By connecting, you agree to our Terms of Use and Privacy Notice</small>

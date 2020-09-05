@@ -29,6 +29,9 @@ const EmailSignUp = () => {
                     <Link to="/signin">
                         <p className="signin">Sign in</p>
                     </Link>
+                    <Link to="/signup">
+                        <p>Go Back</p>
+                    </Link>
                 </form>
             </div>
             <Footer />
