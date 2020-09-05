@@ -273,6 +273,19 @@ input {
   color: #fff;
   background: url("./images/mail.svg") no-repeat left 1rem center;
 }
+
+.username {
+  background: url("./images/user\ \(2\).svg") no-repeat left 1rem center;
+}
+
+.email2 {
+  background: url("./images/mail2.svg") no-repeat left 1rem center;
+}
+
+.pswd {
+  background: url("./images/lock.svg") no-repeat left 1rem center;
+}
+
 /** Footer */
 .footer {
   color: #000;
