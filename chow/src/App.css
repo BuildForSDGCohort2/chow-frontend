@@ -246,15 +246,15 @@ input {
 .facebook {
   color: #fff;
   background-color: #3b5998 !important;
-  background: url("./images/facebook.svg") no-repeat  left 10px center;
+  background: url("./images/facebook-3.svg") no-repeat  left 10px center;
 }
 
 .google {
   background-color: #fff;
   color: #000;
   box-shadow: 0 0.125em 0.25em rgba(0,0,0,0.12), 0 0 2px 0 rgba(0,0,0,0.27) inset;
+  background: url("./images/google-icon.svg") no-repeat left 10px center;
 }
-
 .googleImg {
   width: 1.6rem;
 }
