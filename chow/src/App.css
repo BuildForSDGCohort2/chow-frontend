@@ -229,8 +229,8 @@ input {
 /** SignUp */
 .connect {
   list-style: none;
-  align-items: center;
-  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 .facebook ,.google, .email {
