@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactLoading from "react-loading";
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -19,13 +20,13 @@ class App extends Component {
 
   state = {
     hits: [],
-    loading: false
+    isLoading: true
   }
 
   getRecipe = async(e) => {
     const recipeName = e.target.recipeName.value;
     e.preventDefault();
-    this.setState({ loading: true });
+    this.setState({ isLoading: true });
     const apiCall = await fetch(`https://api.edamam.com/search?q=${recipeName}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=100`);
    
     
@@ -33,7 +34,7 @@ class App extends Component {
     //console.log(data.hits[0].recipe.ingredients);
     this.setState({ 
       hits: data.hits,
-      loading: false 
+      isLoading: false
     });
     //console.log(this.state.hits); 
   };
@@ -41,7 +42,10 @@ class App extends Component {
   componentDidMount() {
     const json = localStorage.getItem("hits");
     const hits = JSON.parse(json);
-    this.setState({ hits });
+    this.setState({ 
+      hits,
+      isLoading: false 
+    });
   }
   
   componentDidUpdate() {
@@ -53,10 +57,16 @@ class App extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <Header />
-        <Hero />
-        <Search getRecipe={this.getRecipe}/>
-        <Recipes recipes={this.state.hits} />
+         <Header />
+         <Hero />
+         <Search getRecipe={this.getRecipe}/>
+        {this.state.isLoading ? (
+          <div>
+            <ReactLoading type={"spokes"} color={"#f20e0e"}  className="spinner" />
+          </div>
+        ) : (
+          <Recipes recipes={this.state.hits} />
+        )}
         <Footer />
       </div>
     );
