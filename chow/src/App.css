@@ -287,12 +287,12 @@ input {
 }
 
 /** Signin */
-.signin {
+.sign-in {
   color: #000;
   text-decoration: none;
 }
 
-.signin:hover {
+.sign-in:hover {
   color: #3b5998;
 }
 

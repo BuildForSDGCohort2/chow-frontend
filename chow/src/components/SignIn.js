@@ -19,7 +19,7 @@ const SignIn = () => {
                     </div>
                     <button className="btn btn-primary">Sign In</button>
                     <Link to="/email-signup">
-                        <p className="signin">Sign Up</p>
+                        <p className="sign-in">Sign Up</p>
                     </Link>
                     <Link to="/email-signup">
                         <p>Go Back</p>

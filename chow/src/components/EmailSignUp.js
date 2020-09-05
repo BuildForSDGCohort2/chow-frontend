@@ -27,7 +27,7 @@ const EmailSignUp = () => {
                     </div>
                     <button className="btn btn-primary">Register</button>
                     <Link to="/signin">
-                        <p className="signin">Sign in</p>
+                        <p className="sign-in">Sign in</p>
                     </Link>
                     <Link to="/signup">
                         <p>Go Back</p>
