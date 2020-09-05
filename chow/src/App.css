@@ -255,6 +255,10 @@ input {
   box-shadow: 0 0.125em 0.25em rgba(0,0,0,0.12), 0 0 2px 0 rgba(0,0,0,0.27) inset;
 }
 
+.googleImg {
+  width: 1.6rem;
+}
+
 .email {
   background-color: #f26f07 !important;
   color: #fff;

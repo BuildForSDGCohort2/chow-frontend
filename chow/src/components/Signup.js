@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
+import googleImg from "../images/google.png";
 
 const SignUp = () => {
     return(
