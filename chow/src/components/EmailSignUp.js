@@ -19,11 +19,11 @@ const EmailSignUp = () => {
                     </div>
                     <div>
                        <label htmlFor="password1"></label>
-                       <input type="password" name="password1" className="pswd pl-5" placeholder="" /> 
+                       <input type="password" name="password1" className="pswd pl-5" placeholder="password (min 8)" /> 
                     </div>
                     <div>
                        <label htmlFor="password2"></label>
-                       <input type="password" name="password2" className="pswd pl-5" placeholder="" /> 
+                       <input type="password" name="password2" className="pswd pl-5" placeholder="confirm password" /> 
                     </div>
                     <button className="btn btn-primary">Register</button>
                     <Link to="/signin">
