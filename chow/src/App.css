@@ -286,6 +286,16 @@ input {
   background: url("./images/lock.svg") no-repeat left 1rem center;
 }
 
+/** Signin */
+.signin {
+  color: #000;
+  text-decoration: none;
+}
+
+.signin:hover {
+  color: #3b5998;
+}
+
 /** Footer */
 .footer {
   color: #000;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Heading from "./Heading";
 
@@ -25,11 +26,14 @@ const EmailSignUp = () => {
                        <input type="password" name="password2" className="pswd pl-5" placeholder="" /> 
                     </div>
                     <button className="btn btn-primary">Register</button>
+                    <Link to="/signin">
+                        <p className="signin">Sign in</p>
+                    </Link>
                 </form>
             </div>
             <Footer />
         </div>
-    )
-}
+    );
+};
 
 export default EmailSignUp;
