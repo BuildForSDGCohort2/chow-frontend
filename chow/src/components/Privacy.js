@@ -3,7 +3,7 @@ import React from "react";
 const Privacy = () => {
   return (
     <div className="row">
-        <div className="col-sm-12">
+        <div className="col-sm-12 privacy">
           <h1>Privacy Policy for choW</h1>
   
           <p>At choW, accessible from https://chow-kuic.netlify.app, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by choW and how we use it.</p>
