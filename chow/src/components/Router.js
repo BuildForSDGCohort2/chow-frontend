@@ -17,7 +17,7 @@ const Router = () => (
             <Route path="/signup" component={SignUp}/>
             <Route path="/email-signup" component={EmailSignUp}/>
             <Route path="/signin" component={SignIn} />
-            <Rout path="/privacy" component={Privacy} />
+            <Route path="/privacy" component={Privacy} />
         </Switch>
     </BrowserRouter>
 );
