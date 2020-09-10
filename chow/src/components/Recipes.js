@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const Recipes = (props) => {
     return(
-        <div className="row mt-5">
-              { props.recipes.map((hit, index) => {
+        <div className="row">
+              { (props.recipes || []).map((hit, index) => {
           return (
             <div key={index} className="col-md-4">
               <img className="active-img" src={hit.recipe.image} alt={hit.recipe.label}/>
