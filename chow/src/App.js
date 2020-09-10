@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactLoading from "react-loading";
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -8,38 +9,64 @@ import Recipes from "./components/Recipes";
 
 
 
-//const API_KEY="5b7f8740fa894e699119353666730f46";
-const API_KEY="993e24597fd724779edf491d15001a79";
-const API_ID="47862355";
+
+
+
+const API_KEY=process.env.REACT_APP_API_KEY;
+const API_ID=process.env.REACT_APP_API_ID;
 
 
 class App extends Component {
 
   state = {
     hits: [],
+    isLoading: true
   }
 
   getRecipe = async(e) => {
     const recipeName = e.target.recipeName.value;
     e.preventDefault();
-    const apiCall = await fetch(`https://api.edamam.com/search?q=${recipeName}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=3`);
-    //const apiCall= await fetch(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${API_KEY}&ingredients=${recipeName}&number=10`);
+    this.setState({ isLoading: true });
+    const apiCall = await fetch(`https://api.edamam.com/search?q=${recipeName}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=10`);
+   
     
     const data = await apiCall.json();
-    //console.log(data.hits[0].recipe);
-    this.setState({ hits: data.hits });
-    console.log(this.state.hits);
-    
-    
+    //console.log(data.hits[0].recipe.ingredients);
+    this.setState({ 
+      hits: data.hits,
+      isLoading: false
+    });
+    //console.log(this.state.hits); 
+  };
+
+  componentDidMount() {
+    const json = localStorage.getItem("hits");
+    const hits = JSON.parse(json);
+    this.setState({ 
+      hits,
+      isLoading: false 
+    });
   }
+  
+  componentDidUpdate() {
+    const hits = JSON.stringify(this.state.hits);
+    localStorage.setItem("hits", hits);
+  }
+  
 
   render() {
     return (
       <div className="container-fluid">
-        <Header />
-        <Hero />
-        <Search getRecipe={this.getRecipe}/>
-        <Recipes recipes={this.state.hits} />
+         <Header />
+         <Hero />
+         <Search getRecipe={this.getRecipe}/>
+        {this.state.isLoading ? (
+          <div>
+            <ReactLoading type={"spokes"} color={"#f20e0e"}  className="spinner" />
+          </div>
+        ) : (
+          <Recipes recipes={this.state.hits} />
+        )}
         <Footer />
       </div>
     );
