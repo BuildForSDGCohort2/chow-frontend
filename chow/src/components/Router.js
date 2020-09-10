@@ -6,6 +6,7 @@ import Terms from "./Terms";
 import SignUp from "./Signup";
 import EmailSignUp from "./EmailSignUp";
 import SignIn from "./SignIn";
+import Privacy from "./Privacy";
 
 const Router = () => (
     <BrowserRouter>
@@ -16,6 +17,7 @@ const Router = () => (
             <Route path="/signup" component={SignUp}/>
             <Route path="/email-signup" component={EmailSignUp}/>
             <Route path="/signin" component={SignIn} />
+            <Rout path="/privacy" component={Privacy} />
         </Switch>
     </BrowserRouter>
 );
