@@ -6,6 +6,7 @@ import Footer from "./Footer";
 
 
 
+
 const API_KEY=process.env.REACT_APP_API_KEY;
 const API_ID=process.env.REACT_APP_API_ID;
 
@@ -14,7 +15,7 @@ class Recipe extends React.Component {
     state = {
         activeRecipe: [],
         ingredients: [],
-        totalNutrients: [],
+        totalNutrients: {},
     };
 
     componentDidMount = async () => {
@@ -30,7 +31,7 @@ class Recipe extends React.Component {
         totalNutrients: res.hits[0].recipe.totalNutrients,
     });
     //console.log(this.state.activeRecipe);
-    //console.log(this.state.ingredients);
+    // console.log(this.state.totalNutrients);
     };
 
     render() {
@@ -39,7 +40,7 @@ class Recipe extends React.Component {
         const cal = Math.ceil(myRecipe.calories);
         const ingredients = this.state.ingredients;
         const totalNutrients = this.state.totalNutrients;
-        
+        const nutrientArr = Object.entries(totalNutrients);
         return (
             <div className="container-fluid">
                 { this.state.activeRecipe !== 0 && 
@@ -57,18 +58,34 @@ class Recipe extends React.Component {
                            
                         </div>
                         <div className="col-sm-12 text-center">
-                            <p><b>Ingredients</b>
-                              {ingredients.map(ingredient => <div>
+                            <div><b>Ingredients</b>
+                              {ingredients.map((ingredient,index) => 
+                              <div key={index}>
                                   {ingredient.text}
                                   <p>aprox wght: {Math.ceil(ingredient.weight)} g</p>
                                   <img className="ingredient"  src={ingredient.image} alt="" />
                               </div>)}
-                            </p>
+                            </div>
                         </div>
                         <div className="col-sm-12 text-center">
-                            <p><b>Total Nutrients</b>
-                            
-                            </p>    
+                            <div><b>Total Nutrients</b>
+                              {nutrientArr.map((nutrient, index) => {
+                                  return (
+                                    <div key={index}>
+                                      {nutrient.map((x, index) => {
+                                         return (
+                                             <div key={index}>
+                                                 <p>{x.label}</p>
+                                                 {x.quantity}
+                                                 {x.unit}
+                                             </div>
+                                         )
+                                      })}
+                                  </div>
+                                  )
+                                  
+                              })}
+                            </div>    
                         </div>
                         <button className="view">
                             <Link to="/" className="home">Go Home</Link>

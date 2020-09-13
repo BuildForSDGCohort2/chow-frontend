@@ -230,6 +230,19 @@ input {
   width: 50%;
 }
 
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+}
+
 /** SignUp */
 .heading {
   color: #f20e0e;
