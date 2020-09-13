@@ -67,18 +67,18 @@ class Recipe extends React.Component {
                               </div>)}
                             </div>
                         </div>
-                        <div className="col-sm-12 text-center">
+                        <div className="row text-center">
                             <div><b>Total Nutrients</b>
                               {nutrientArr.map((nutrient, index) => {
                                   return (
                                     <div key={index}>
                                       {nutrient.map((x, index) => {
                                          return (
-                                             <div key={index}>
-                                                 <p>{x.label}</p>
-                                                 {x.quantity}
-                                                 {x.unit}
-                                             </div>
+                                            <div key={index} className="nutrient col-sm-4">
+                                                <p>{x.label}</p>
+                                                <p>{x.quantity}</p>
+                                                <p>{x.unit}</p>
+                                            </div>
                                          )
                                       })}
                                   </div>

@@ -196,6 +196,15 @@ input {
   color: #fff;
 }
 
+.dietLabel {
+  font-size: 0.8rem;font-weight: bold;
+  background-color: #5991913b;
+  width: 14%;
+  padding: 0.2rem;
+  border-radius: 3.125rem;
+  text-align: center;
+}
+
 /** Recipe */
 .url {
   color: #bababa;
@@ -230,17 +239,8 @@ input {
   width: 50%;
 }
 
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-li {
-  display: flex;
+.nutrient {
+  background-color: lightblue;
 }
 
 /** SignUp */
