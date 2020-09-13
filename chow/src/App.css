@@ -226,6 +226,10 @@ input {
   outline: none;
 }
 
+.ingredient {
+  width: 50%;
+}
+
 /** SignUp */
 .heading {
   color: #f20e0e;

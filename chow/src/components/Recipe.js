@@ -13,7 +13,8 @@ const API_ID=process.env.REACT_APP_API_ID;
 class Recipe extends React.Component {
     state = {
         activeRecipe: [],
-        ingredient: []
+        ingredients: [],
+        totalNutrients: [],
     };
 
     componentDidMount = async () => {
@@ -25,7 +26,8 @@ class Recipe extends React.Component {
     //console.log(res.hits[0]);
     this.setState({
         activeRecipe: res.hits[0].recipe,
-        ingredients: res.hits[0].recipe.ingredients[0]
+        ingredients: res.hits[0].recipe.ingredients,
+        totalNutrients: res.hits[0].recipe.totalNutrients,
     });
     //console.log(this.state.activeRecipe);
     //console.log(this.state.ingredients);
@@ -35,7 +37,8 @@ class Recipe extends React.Component {
         //console.log(this.props);
         const myRecipe = this.state.activeRecipe;
         const cal = Math.ceil(myRecipe.calories);
-        
+        const ingredients = this.state.ingredients;
+        const totalNutrients = this.state.totalNutrients;
         
         return (
             <div className="container-fluid">
@@ -51,11 +54,25 @@ class Recipe extends React.Component {
                             <p>Serving: {myRecipe.yield}</p>
                             <p className="cal">{cal}<span className="mx-1 font-weight-light">Calories</span></p>
                             <p>Total time: {myRecipe.totalTime} mins</p>
-                            <button className="view">
-                                <Link to="/" className="home">Go Home</Link>
-                            </button>
+                           
                         </div>
-                        
+                        <div className="col-sm-12 text-center">
+                            <p><b>Ingredients</b>
+                              {ingredients.map(ingredient => <div>
+                                  {ingredient.text}
+                                  <p>aprox wght: {Math.ceil(ingredient.weight)} g</p>
+                                  <img className="ingredient"  src={ingredient.image} alt="" />
+                              </div>)}
+                            </p>
+                        </div>
+                        <div className="col-sm-12 text-center">
+                            <p><b>Total Nutrients</b>
+                            
+                            </p>    
+                        </div>
+                        <button className="view">
+                            <Link to="/" className="home">Go Home</Link>
+                        </button>
                         <Footer />
                     </div> 
                 }
