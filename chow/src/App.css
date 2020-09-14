@@ -342,14 +342,14 @@ input {
   margin: 0 auto;
 }
 
-.tc p {
+.tc p, .privacy p {
   text-align: justify;
 }
 
-.tc ul {
+.tc ul, .privacy ul {
   text-align: justify;
 }
 
-.tc h3 {
+.tc h3, .privacy h3 {
   color: #3b5998;
 }
