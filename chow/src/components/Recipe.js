@@ -51,8 +51,8 @@ class Recipe extends React.Component {
                         </div>
                         <div className="col-md-6 pt-2 ingredients">
                              <h2>{myRecipe.label}</h2>
-                            <p className="text-uppercase"><a className="url" href={myRecipe.url}>{myRecipe.source}</a></p>
-                            <p>Serving: {myRecipe.yield}</p>
+                            <p className="text-capitalize"><a className="url" href={myRecipe.url}>Read Directions</a></p>
+                            <p>Servings: {myRecipe.yield}</p>
                             <p className="cal">{cal}<span className="mx-1 font-weight-light">Calories</span></p>
                             <p>Total time: {myRecipe.totalTime} mins</p>
                             <button className="view">
@@ -63,7 +63,6 @@ class Recipe extends React.Component {
                               {ingredients.map((ingredient,index) => 
                               <div key={index}>
                                   {ingredient.text}
-                                  <p>aprox wght: {Math.ceil(ingredient.weight)} g</p>
                               </div>)}
                             </div>
                             <hr/>
