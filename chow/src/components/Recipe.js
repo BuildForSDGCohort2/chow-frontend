@@ -52,9 +52,20 @@ class Recipe extends React.Component {
                         <div className="col-md-6 pt-2 ingredients">
                              <h2>{myRecipe.label}</h2>
                             <p>Servings: {myRecipe.yield}</p>
-                            <p>Total time: {myRecipe.totalTime} mins</p>
-                            <p><b>{ingredients.length}</b> Ingredients</p>
-                            <p className="cal">{cal}<span className="mx-1 font-weight-light">Calories</span></p>
+                            <ul>
+                                <li className="list">
+                                    <p><b>{ingredients.length}</b> Ingredients</p>
+                                </li>
+                                <li className="list">
+                                    <p>Total time: {myRecipe.totalTime} mins</p>
+                                </li>
+                                <li className="list">
+                                    <p className="cal">{cal}<span className="mx-1 font-weight-light">Calories</span></p>
+                                </li>
+                            </ul>
+                            
+                            
+                           
                             <button className="view">
                                 <Link to="/" className="home">Go Home</Link>
                             </button>
