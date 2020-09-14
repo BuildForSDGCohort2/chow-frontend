@@ -20,7 +20,7 @@ class Recipe extends React.Component {
 
     componentDidMount = async () => {
         const title = this.props.location.state.hit;
-        const req = await fetch(`https://api.edamam.com/search?q=${title}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=3`);
+        const req = await fetch(`https://api.edamam.com/search?q=${title}&app_id=${API_ID}&app_key=${API_KEY}`);
     //const apiCall= await fetch(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${API_KEY}&ingredients=${recipeName}&number=10`);
     
     const res = await req.json();
@@ -51,20 +51,22 @@ class Recipe extends React.Component {
                         </div>
                         <div className="col-md-6 pt-2 ingredients">
                              <h2>{myRecipe.label}</h2>
-                            <p className="text-capitalize"><a className="url" href={myRecipe.url}>Read Directions</a></p>
                             <p>Servings: {myRecipe.yield}</p>
-                            <p className="cal">{cal}<span className="mx-1 font-weight-light">Calories</span></p>
                             <p>Total time: {myRecipe.totalTime} mins</p>
+                            <p><b>{ingredients.length}</b> Ingredients</p>
+                            <p className="cal">{cal}<span className="mx-1 font-weight-light">Calories</span></p>
                             <button className="view">
                                 <Link to="/" className="home">Go Home</Link>
                             </button>
                             <div>
-                                <p><b>Ingredients</b></p><hr/>
+                                <p><b>Ingredients:</b></p>
+                                <hr/>
                               {ingredients.map((ingredient,index) => 
                               <div key={index}>
                                   {ingredient.text}
                               </div>)}
                             </div>
+                            <p className="text-capitalize my-3"><a className="url" href={myRecipe.url} target="_blank" rel="noopener noreferrer">Read Directions</a></p>
                             <hr/>
                         </div>
                         

@@ -207,13 +207,18 @@ input {
 
 /** Recipe */
 .url {
-  color: #bababa;
+  color: #000;
   font-size: 14px;
   font-weight: bold;
+  background-color: #f26f077a;
+  padding: 0.5rem 0.9rem;
+  border-radius: 3.125rem;
 }
 
 .url:hover {
   text-decoration: none;
+  color: #fff;
+  background-color: #000;
 }
 
 .home {
