@@ -21,7 +21,6 @@ class Recipe extends React.Component {
     componentDidMount = async () => {
         const title = this.props.location.state.hit;
         const req = await fetch(`https://api.edamam.com/search?q=${title}&app_id=${API_ID}&app_key=${API_KEY}`);
-    //const apiCall= await fetch(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${API_KEY}&ingredients=${recipeName}&number=10`);
     
     const res = await req.json();
     //console.log(res.hits[0]);
@@ -53,19 +52,16 @@ class Recipe extends React.Component {
                              <h2>{myRecipe.label}</h2>
                             <p>Servings: {myRecipe.yield}</p>
                             <ul>
-                                <li className="list">
-                                    <p><b>{ingredients.length}</b> Ingredients</p>
+                                <li className="list a">
+                                    <p><b className="x">{ingredients.length}</b> Ingredients</p>
                                 </li>
-                                <li className="list">
-                                    <p>Total time: {myRecipe.totalTime} mins</p>
+                                <li className="list b">
+                                    <p><b className="x">{myRecipe.totalTime ? myRecipe.totalTime : "No time"}</b> Minutes</p>
                                 </li>
-                                <li className="list">
-                                    <p className="cal">{cal}<span className="mx-1 font-weight-light">Calories</span></p>
+                                <li className="list c">
+                                    <p><b className="x">{cal}</b><span className="mx-1 font-weight-light">Cal / Serv</span></p>
                                 </li>
                             </ul>
-                            
-                            
-                           
                             <button className="view">
                                 <Link to="/" className="home">Go Home</Link>
                             </button>
@@ -80,30 +76,27 @@ class Recipe extends React.Component {
                             <p className="text-capitalize my-3"><a className="url" href={myRecipe.url} target="_blank" rel="noopener noreferrer">Read Directions</a></p>
                             <hr/>
                         </div>
-                        
-                        <div className="text-center">
-                            <div className="">
-                                <div>
-                                    <b>Nutrition</b>
-                                </div>
-                              {nutrientArr.map((nutrient, index) => {
-                                  return (
-                                    <div key={index}>
-                                      {nutrient.map((x, index) => {
-                                         return (
-                                            <div key={index}>
-                                                <p>{x.label}</p>
-                                                <p>{x.quantity} {x.unit}</p>
-                                            </div>
-                                         )
-                                      })}
-                                  </div>
-                                  )
-                                  
-                              })}
-                            </div>    
-                        </div>
-                       
+                        <div className=" col-sm-6 text-justify m-3">
+                            <div>
+                                <b>Nutrition</b>
+                            </div>
+                          {nutrientArr.map((nutrient, index) => {
+                              return (
+                                <div key={index}>
+                                  {nutrient.map((x, index) => {
+                                      const qty = parseInt((x.quantity), 10)
+                                     return (
+                                        <div key={index} className="nutrient">
+                                            <p>{x.label}</p>
+                                            <p>{qty} {x.unit}</p>
+                                        </div>
+                                     )
+                                  })}
+                              </div>
+                              )
+                              
+                          })}
+                        </div>    
                         <Footer />
                     </div> 
                 }
