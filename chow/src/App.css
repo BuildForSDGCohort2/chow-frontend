@@ -199,7 +199,7 @@ input {
 .dietLabel {
   font-size: 0.8rem;font-weight: bold;
   background-color: #5991913b;
-  width: 14%;
+  width: 20%;
   padding: 0.2rem;
   border-radius: 3.125rem;
   text-align: center;
@@ -241,6 +241,10 @@ input {
 
 .nutrient {
   background-color: lightblue;
+  height: 100px;
+  padding: 0 2rem;
+  margin: 0 2rem;
+  
 }
 
 /** SignUp */
@@ -324,10 +328,28 @@ input {
   width: 100%;
   height: 56px;
 }
+
 .terms {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: small;
+}
+
+.col-sm-10 {
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.tc p {
+  text-align: justify;
+}
+
+.tc ul {
+  text-align: justify;
+}
+
+.tc h3 {
+  color: #3b5998;
 }

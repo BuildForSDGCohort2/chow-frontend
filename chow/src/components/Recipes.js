@@ -21,7 +21,10 @@ const Recipes = (props) => {
                    <button className="view">View Recipe</button>
                </Link> 
               <p>Source: <a href={hit.recipe.url}>{hit.recipe.source}</a></p>
+              <div>
+              <p>Recipe tags:</p>
               <p className="dietLabel">{hit.recipe.dietLabels}</p>
+              </div>
             </div>
           );
         }) }

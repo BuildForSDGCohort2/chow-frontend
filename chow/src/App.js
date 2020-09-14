@@ -27,7 +27,7 @@ class App extends Component {
     const recipeName = e.target.recipeName.value;
     e.preventDefault();
     this.setState({ isLoading: true });
-    const apiCall = await fetch(`https://api.edamam.com/search?q=${recipeName}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=1&time=1%2B`);
+    const apiCall = await fetch(`https://api.edamam.com/search?q=${recipeName}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=10&time=1%2B`);
    
     
     const data = await apiCall.json();
@@ -36,7 +36,7 @@ class App extends Component {
       hits: data.hits,
       isLoading: false
     });
-    //console.log(this.state.hits); 
+    // console.log(this.state.hits); 
   };
 
   componentDidMount() {

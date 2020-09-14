@@ -49,35 +49,39 @@ class Recipe extends React.Component {
                         <div className="active-recipe col-md-6 p-3">
                             <img className="active-img" src={myRecipe.image} alt={myRecipe.label} />
                         </div>
-                        <div className="col-md-6 pt-2">
+                        <div className="col-md-6 pt-2 ingredients">
                              <h2>{myRecipe.label}</h2>
                             <p className="text-uppercase"><a className="url" href={myRecipe.url}>{myRecipe.source}</a></p>
                             <p>Serving: {myRecipe.yield}</p>
                             <p className="cal">{cal}<span className="mx-1 font-weight-light">Calories</span></p>
                             <p>Total time: {myRecipe.totalTime} mins</p>
-                           
-                        </div>
-                        <div className="col-sm-12 text-center">
-                            <div><b>Ingredients</b>
+                            <button className="view">
+                                <Link to="/" className="home">Go Home</Link>
+                            </button>
+                            <div>
+                                <p><b>Ingredients</b></p><hr/>
                               {ingredients.map((ingredient,index) => 
                               <div key={index}>
                                   {ingredient.text}
                                   <p>aprox wght: {Math.ceil(ingredient.weight)} g</p>
-                                  <img className="ingredient"  src={ingredient.image} alt="" />
                               </div>)}
                             </div>
+                            <hr/>
                         </div>
-                        <div className="row text-center">
-                            <div><b>Total Nutrients</b>
+                        
+                        <div className="text-center">
+                            <div className="">
+                                <div>
+                                    <b>Nutrition</b>
+                                </div>
                               {nutrientArr.map((nutrient, index) => {
                                   return (
                                     <div key={index}>
                                       {nutrient.map((x, index) => {
                                          return (
-                                            <div key={index} className="nutrient col-sm-4">
+                                            <div key={index}>
                                                 <p>{x.label}</p>
-                                                <p>{x.quantity}</p>
-                                                <p>{x.unit}</p>
+                                                <p>{x.quantity} {x.unit}</p>
                                             </div>
                                          )
                                       })}
@@ -87,9 +91,7 @@ class Recipe extends React.Component {
                               })}
                             </div>    
                         </div>
-                        <button className="view">
-                            <Link to="/" className="home">Go Home</Link>
-                        </button>
+                       
                         <Footer />
                     </div> 
                 }
