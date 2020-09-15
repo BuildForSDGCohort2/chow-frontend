@@ -263,7 +263,7 @@ input {
 }
 
 .health {
-  background-color: #3b599861;
+  background-color: #3b59983b;
   padding: 0.1rem 1.5rem;
   border-radius: 3.125rem;
   font-weight: bold;
@@ -274,6 +274,7 @@ input {
   padding: 0.1rem 1.5rem;
   border-radius: 3.125rem;
   font-weight: bold;
+  color: #fff;
 }
 .ingredients ul {
   list-style: none;
