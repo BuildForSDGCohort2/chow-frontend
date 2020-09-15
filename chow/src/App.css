@@ -258,6 +258,10 @@ input {
   border-radius: 2rem;
 }
 
+.nut {
+  color: #3b5998;
+}
+
 .ingredients ul {
   list-style: none;
   display: flex;

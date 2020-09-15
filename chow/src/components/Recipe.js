@@ -90,7 +90,8 @@ class Recipe extends React.Component {
                             {nutrients.map((elem, index) => {
                                 return (
                                     <div key={index}>
-                                        <p>{elem.label}</p>
+                                        <p><b className="nut">{elem.label}</b></p>
+                                        <span>{elem.quantity} {elem.unit}</span>
                                     </div>
                                 )
                             })}
