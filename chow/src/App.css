@@ -262,6 +262,19 @@ input {
   color: #3b5998;
 }
 
+.health {
+  background-color: #3b599861;
+  padding: 0.1rem 1.5rem;
+  border-radius: 3.125rem;
+  font-weight: bold;
+}
+
+.cautions {
+  background-color: #f20e0e;
+  padding: 0.1rem 1.5rem;
+  border-radius: 3.125rem;
+  font-weight: bold;
+}
 .ingredients ul {
   list-style: none;
   display: flex;

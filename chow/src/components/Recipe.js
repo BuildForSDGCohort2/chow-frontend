@@ -16,12 +16,14 @@ class Recipe extends React.Component {
         activeRecipe: [],
         ingredients: [],
         totalNutrients: {},
-        totalDaily: {}
+        totalDaily: {},
+        healthLabels: [],
+        cautions: []
     };
 
     componentDidMount = async () => {
       const title = this.props.location.state.hit;
-      const req = await fetch(`https://cors-anywhere.herokuapp.com/https://api.edamam.com/search?q=${title}&app_id=${API_ID}&app_key=${API_KEY}`);
+      const req = await fetch(`https://api.edamam.com/search?q=${title}&app_id=${API_ID}&app_key=${API_KEY}`);
   
       const res = await req.json();
       const json = localStorage.getItem("activeRecipe");
@@ -31,7 +33,9 @@ class Recipe extends React.Component {
           activeRecipe: res.hits[0].recipe,
           ingredients: res.hits[0].recipe.ingredients,
           totalNutrients: res.hits[0].recipe.totalNutrients,
-          totalDaily: res.hits[0].recipe.totalDaily
+          totalDaily: res.hits[0].recipe.totalDaily,
+          healthLabels: res.hits[0].recipe.healthLabels,
+          cautions: res.hits[0].recipe.cautions
       });
     };
 
@@ -45,7 +49,7 @@ class Recipe extends React.Component {
         //console.log(this.props);
         const myRecipe = this.state.activeRecipe;
         const cal = parseInt(myRecipe.calories).toString();
-        const calServ = cal / (myRecipe.yield);
+        const calServ = (cal / (myRecipe.yield)).toString();
         const ingredients = this.state.ingredients;
         const totalNutrients = this.state.totalNutrients;
         const totalDaily = this.state.totalDaily;
@@ -53,9 +57,12 @@ class Recipe extends React.Component {
         const dailyArr = Object.entries(totalDaily);
         const dailys = dailyArr.flat();
         const nutrients = nutrientArr.flat();
+        const healthLabels = this.state.healthLabels;
+        const cautions = this.state.cautions;
         // console.log(nutrients);
         // console.log(nutrientArr)
-        console.log(dailys);
+        // console.log(dailys);
+        console.log(cautions);
         return (
             <div className="container-fluid">
                 { this.state.activeRecipe !== 0 && 
@@ -90,6 +97,22 @@ class Recipe extends React.Component {
                               </div>)}
                             </div>
                             <p className="text-capitalize my-3"><a className="url" href={myRecipe.url} target="_blank" rel="noopener noreferrer">Read Directions</a></p>
+                            <div className="row m-3">
+                                <p className="health">Health</p>
+                                {healthLabels.map((elem, index) => 
+                                        <ul key={index}>
+                                            <li>{elem}</li>
+                                        </ul>
+                                    )}
+                            </div>
+                            <div className="row m-3">
+                                <p className="cautions">Caution:</p>
+                                {cautions.map((elem, index) => 
+                                    <ul key={index}>
+                                        <li>{elem}</li>
+                                    </ul>
+                                    )}
+                            </div>
                             <hr/>
                         </div>
                         <div className="col-sm-6 col-md-4 text-justify m-3">
@@ -113,7 +136,8 @@ class Recipe extends React.Component {
                                     </div>
                                 )
                             })}
-                        </div>   
+                            <h4>Health</h4>
+                        </div>  
                         <Footer />
                     </div> 
                 }
