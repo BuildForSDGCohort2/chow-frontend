@@ -20,7 +20,7 @@ class Recipe extends React.Component {
 
     componentDidMount = async () => {
       const title = this.props.location.state.hit;
-      const req = await fetch(`https://api.edamam.com/search?q=${title}&app_id=${API_ID}&app_key=${API_KEY}`);
+      const req = await fetch(`https://cors-anywhere.herokuapp.com/https://api.edamam.com/search?q=${title}&app_id=${API_ID}&app_key=${API_KEY}`);
   
       const res = await req.json();
       const json = localStorage.getItem("activeRecipe");
@@ -47,7 +47,7 @@ class Recipe extends React.Component {
         const totalNutrients = this.state.totalNutrients;
         const nutrientArr = Object.entries(totalNutrients);
         const nutrients = nutrientArr.flat();
-        console.log(nutrients);
+        // console.log(nutrients);
         // console.log(nutrientArr)
         return (
             <div className="container-fluid">
@@ -68,7 +68,7 @@ class Recipe extends React.Component {
                                     <p><b className="x">{myRecipe.totalTime ? myRecipe.totalTime : "No time"}</b> Minutes</p>
                                 </li>
                                 <li className="list c">
-                                    <p><b className="x">{cal}</b> Cal / Serv</p>
+                                    <p><b className="x">{cal}</b> Cal per Serv</p>
                                 </li>
                             </ul>
                             <button className="view">
@@ -87,7 +87,13 @@ class Recipe extends React.Component {
                         </div>
                         <div className=" col-sm-6 col-md-4 text-justify m-3">
                             <p>Nutrition</p>
-                            
+                            {nutrients.map((elem, index) => {
+                                return (
+                                    <div key={index}>
+                                        <p>{elem.label}</p>
+                                    </div>
+                                )
+                            })}
                         </div>    
                         <Footer />
                     </div> 
