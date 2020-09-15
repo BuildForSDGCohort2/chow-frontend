@@ -19,27 +19,36 @@ class Recipe extends React.Component {
     };
 
     componentDidMount = async () => {
-        const title = this.props.location.state.hit;
-        const req = await fetch(`https://api.edamam.com/search?q=${title}&app_id=${API_ID}&app_key=${API_KEY}`);
-    
-    const res = await req.json();
-    //console.log(res.hits[0]);
-    this.setState({
-        activeRecipe: res.hits[0].recipe,
-        ingredients: res.hits[0].recipe.ingredients,
-        totalNutrients: res.hits[0].recipe.totalNutrients,
-    });
-    //console.log(this.state.activeRecipe);
-    // console.log(this.state.totalNutrients);
+      const title = this.props.location.state.hit;
+      const req = await fetch(`https://api.edamam.com/search?q=${title}&app_id=${API_ID}&app_key=${API_KEY}`);
+  
+      const res = await req.json();
+      const json = localStorage.getItem("activeRecipe");
+      const active = JSON.parse(json);
+      this.setState({
+          active,
+          activeRecipe: res.hits[0].recipe,
+          ingredients: res.hits[0].recipe.ingredients,
+          totalNutrients: res.hits[0].recipe.totalNutrients,
+      });
     };
+
+    componentDidUpdate() {
+        const activeRecipe = JSON.stringify(this.state.activeRecipe);
+        localStorage.setItem("activeRecipe", activeRecipe);
+    }
+
 
     render() {
         //console.log(this.props);
         const myRecipe = this.state.activeRecipe;
-        const cal = Math.ceil(myRecipe.calories);
+        const cal = parseInt(myRecipe.calories).toString();
         const ingredients = this.state.ingredients;
         const totalNutrients = this.state.totalNutrients;
         const nutrientArr = Object.entries(totalNutrients);
+        const nutrients = nutrientArr.flat();
+        console.log(nutrients);
+        // console.log(nutrientArr)
         return (
             <div className="container-fluid">
                 { this.state.activeRecipe !== 0 && 
@@ -50,7 +59,7 @@ class Recipe extends React.Component {
                         </div>
                         <div className="col-md-6 pt-2 ingredients">
                              <h2>{myRecipe.label}</h2>
-                            <p>Servings: {myRecipe.yield}</p>
+                            <div>Servings: {myRecipe.yield}</div>
                             <ul>
                                 <li className="list a">
                                     <p><b className="x">{ingredients.length}</b> Ingredients</p>
@@ -59,7 +68,7 @@ class Recipe extends React.Component {
                                     <p><b className="x">{myRecipe.totalTime ? myRecipe.totalTime : "No time"}</b> Minutes</p>
                                 </li>
                                 <li className="list c">
-                                    <p><b className="x">{cal}</b><span className="mx-1 font-weight-light">Cal / Serv</span></p>
+                                    <p><b className="x">{cal}</b> Cal / Serv</p>
                                 </li>
                             </ul>
                             <button className="view">
@@ -76,26 +85,9 @@ class Recipe extends React.Component {
                             <p className="text-capitalize my-3"><a className="url" href={myRecipe.url} target="_blank" rel="noopener noreferrer">Read Directions</a></p>
                             <hr/>
                         </div>
-                        <div className=" col-sm-6 text-justify m-3">
-                            <div>
-                                <b>Nutrition</b>
-                            </div>
-                          {nutrientArr.map((nutrient, index) => {
-                              return (
-                                <div key={index}>
-                                  {nutrient.map((x, index) => {
-                                      const qty = parseInt((x.quantity), 10)
-                                     return (
-                                        <div key={index} className="nutrient">
-                                            <p>{x.label}</p>
-                                            <p>{qty} {x.unit}</p>
-                                        </div>
-                                     )
-                                  })}
-                              </div>
-                              )
-                              
-                          })}
+                        <div className=" col-sm-6 col-md-4 text-justify m-3">
+                            <p>Nutrition</p>
+                            
                         </div>    
                         <Footer />
                     </div> 

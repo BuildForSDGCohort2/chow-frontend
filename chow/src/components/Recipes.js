@@ -23,13 +23,13 @@ const Recipes = (props) => {
               <p>Source: <a href={hit.recipe.url}>{hit.recipe.source}</a></p>
               <div>
               <p>Recipe tags:</p>
-              <p>{hit.recipe.dietLabels.map((label, index) => {
+              <div>{hit.recipe.dietLabels.map((label, index) => {
                 return (
                   <ul key={index} className="diet">
                     <li className="dietLabel">{label}</li>
                   </ul>
                 )
-              })}</p>
+              })}</div>
               
               </div>
             </div>

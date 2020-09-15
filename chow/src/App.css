@@ -253,8 +253,9 @@ input {
 .nutrient {
   background-color: lightblue;
   height: auto;
-  padding: 0 1rem;
+  padding: 0 2.5rem;
   margin: 1rem 2rem;
+  border-radius: 2rem;
 }
 
 .ingredients ul {
