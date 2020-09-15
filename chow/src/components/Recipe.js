@@ -16,6 +16,7 @@ class Recipe extends React.Component {
         activeRecipe: [],
         ingredients: [],
         totalNutrients: {},
+        totalDaily: {}
     };
 
     componentDidMount = async () => {
@@ -30,12 +31,13 @@ class Recipe extends React.Component {
           activeRecipe: res.hits[0].recipe,
           ingredients: res.hits[0].recipe.ingredients,
           totalNutrients: res.hits[0].recipe.totalNutrients,
+          totalDaily: res.hits[0].recipe.totalDaily
       });
     };
 
     componentDidUpdate() {
-        const activeRecipe = JSON.stringify(this.state.activeRecipe);
-        localStorage.setItem("activeRecipe", activeRecipe);
+        const active = JSON.stringify(this.state.active);
+        localStorage.setItem("active", active);
     }
 
 
@@ -43,12 +45,17 @@ class Recipe extends React.Component {
         //console.log(this.props);
         const myRecipe = this.state.activeRecipe;
         const cal = parseInt(myRecipe.calories).toString();
+        const calServ = cal / (myRecipe.yield);
         const ingredients = this.state.ingredients;
         const totalNutrients = this.state.totalNutrients;
+        const totalDaily = this.state.totalDaily;
         const nutrientArr = Object.entries(totalNutrients);
+        const dailyArr = Object.entries(totalDaily);
+        const dailys = dailyArr.flat();
         const nutrients = nutrientArr.flat();
         // console.log(nutrients);
         // console.log(nutrientArr)
+        console.log(dailys);
         return (
             <div className="container-fluid">
                 { this.state.activeRecipe !== 0 && 
@@ -68,7 +75,7 @@ class Recipe extends React.Component {
                                     <p><b className="x">{myRecipe.totalTime ? myRecipe.totalTime : "No time"}</b> Minutes</p>
                                 </li>
                                 <li className="list c">
-                                    <p><b className="x">{cal}</b> Cal per Serv</p>
+                                    <p><b className="x">{calServ}</b> Cal per Serv</p>
                                 </li>
                             </ul>
                             <button className="view">
@@ -85,8 +92,8 @@ class Recipe extends React.Component {
                             <p className="text-capitalize my-3"><a className="url" href={myRecipe.url} target="_blank" rel="noopener noreferrer">Read Directions</a></p>
                             <hr/>
                         </div>
-                        <div className=" col-sm-6 col-md-4 text-justify m-3">
-                            <p>Nutrition</p>
+                        <div className="col-sm-6 col-md-4 text-justify m-3">
+                            <h3>Nutrition</h3><hr/>
                             {nutrients.map((elem, index) => {
                                 return (
                                     <div key={index}>
@@ -95,7 +102,18 @@ class Recipe extends React.Component {
                                     </div>
                                 )
                             })}
-                        </div>    
+                        </div> 
+                        <div className="col-sm-6 col-md-4 text-justify m-3">
+                            <h3>Daily recommended %</h3><hr/>
+                            {dailys.map((elem, index) => {
+                                return (
+                                    <div key={index}>
+                                        <p><b className="nut">{elem.label}</b></p>
+                                        <span>{elem.quantity} {elem.unit}</span>
+                                    </div>
+                                )
+                            })}
+                        </div>   
                         <Footer />
                     </div> 
                 }
