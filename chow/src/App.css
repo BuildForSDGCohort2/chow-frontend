@@ -276,6 +276,15 @@ input {
   font-weight: bold;
   color: #fff;
 }
+
+.tags {
+  background-color: #3a9691;
+  padding: 0.1rem 1.5rem;
+  border-radius: 3.125rem;
+  font-weight: bold;
+  color: #fff;
+}
+
 .ingredients ul {
   list-style: none;
   display: flex;

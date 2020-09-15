@@ -23,15 +23,6 @@ const Recipes = (props) => {
                </Link> 
               <p>Source: <a href={hit.recipe.url}>{hit.recipe.source}</a></p>
               <div>
-              <p>Recipe tags:</p>
-              <div>{tags.map((label, index) => {
-                return (
-                  <ul key={index} className="diet">
-                    <li className="dietLabel">{label}</li>
-                  </ul>
-                )
-              })}</div>
-              
               </div>
             </div>
           );

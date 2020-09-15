@@ -18,7 +18,8 @@ class Recipe extends React.Component {
         totalNutrients: {},
         totalDaily: {},
         healthLabels: [],
-        cautions: []
+        cautions: [],
+        dietLabels: []
     };
 
     componentDidMount = async () => {
@@ -35,7 +36,8 @@ class Recipe extends React.Component {
           totalNutrients: res.hits[0].recipe.totalNutrients,
           totalDaily: res.hits[0].recipe.totalDaily,
           healthLabels: res.hits[0].recipe.healthLabels,
-          cautions: res.hits[0].recipe.cautions
+          cautions: res.hits[0].recipe.cautions,
+          dietLabels: res.hits[0].recipe.dietLabels,
       });
     };
 
@@ -59,10 +61,11 @@ class Recipe extends React.Component {
         const nutrients = nutrientArr.flat();
         const healthLabels = this.state.healthLabels;
         const cautions = this.state.cautions;
+        const dietLabels = this.state.dietLabels;
         // console.log(nutrients);
         // console.log(nutrientArr)
         // console.log(dailys);
-        console.log(cautions);
+        // console.log(cautions);
         return (
             <div className="container-fluid">
                 { this.state.activeRecipe !== 0 && 
@@ -98,6 +101,14 @@ class Recipe extends React.Component {
                             </div>
                             <p className="text-capitalize my-3"><a className="url" href={myRecipe.url} target="_blank" rel="noopener noreferrer">Read Directions</a></p>
                             <hr/>
+                            <div className="row m-3">
+                                <p className="tags">Recipe Tags</p>
+                                {dietLabels.map((elem, index) => 
+                                        <ul key={index}>
+                                            <li>{elem}</li>
+                                        </ul>
+                                    )}
+                            </div>
                             <div className="row m-3">
                                 <p className="health">Health</p>
                                 {healthLabels.map((elem, index) => 
