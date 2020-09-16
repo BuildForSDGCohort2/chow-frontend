@@ -101,7 +101,7 @@ class Recipe extends React.Component {
                             </div>
                             <p className="text-capitalize my-3"><a className="url" href={myRecipe.url} target="_blank" rel="noopener noreferrer">Read Directions</a></p>
                             <hr/>
-                            <div className="row m-3">
+                            <div className="row m-1">
                                 <p className="tags">Recipe Tags</p>
                                 {dietLabels.map((elem, index) => 
                                         <ul key={index}>
@@ -109,7 +109,7 @@ class Recipe extends React.Component {
                                         </ul>
                                     )}
                             </div>
-                            <div className="row m-3">
+                            <div className="row m-1">
                                 <p className="health">Health</p>
                                     {healthLabels.map((elem, index) => 
                                         <ul key={index}>
@@ -117,7 +117,7 @@ class Recipe extends React.Component {
                                         </ul>
                                     )}
                             </div>
-                            <div className="row m-3">
+                            <div className="row m-1">
                                 <p className="cautions">Caution</p>
                                 {cautions.map((elem, index) => 
                                     <ul key={index}>

@@ -272,9 +272,11 @@ input {
 }
 
 .health-item, .tags-item, .cautions-item {
+  background-color: #d3d3d34d;
   border-radius: 3.125rem;
   font-size: 0.9rem;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .cautions {
