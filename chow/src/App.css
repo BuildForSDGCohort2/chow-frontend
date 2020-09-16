@@ -276,7 +276,7 @@ input {
   border-radius: 3.125rem;
   font-size: 0.9rem;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .cautions {
