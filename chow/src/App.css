@@ -12,6 +12,7 @@
   min-height: 100vh;
   margin: 0 auto;
   padding: 0;
+  line-height: 1.5;
 }
 
 main {
@@ -263,26 +264,33 @@ input {
 }
 
 .health {
-  background-color: #3b59983b;
+  border: 2px solid #3b5998;
   padding: 0.1rem 1.5rem;
   border-radius: 3.125rem;
   font-weight: bold;
+  color: #3b5998;
+}
+
+.health-item, .tags-item, .cautions-item {
+  border-radius: 3.125rem;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .cautions {
-  background-color: #f20e0e;
+  border: 2px solid #f20e0e;
   padding: 0.1rem 1.5rem;
   border-radius: 3.125rem;
   font-weight: bold;
-  color: #fff;
+  color: #f20e0e;
 }
 
 .tags {
-  background-color: #3a9691;
+  border: 2px solid #3a9691;
   padding: 0.1rem 1.5rem;
   border-radius: 3.125rem;
   font-weight: bold;
-  color: #fff;
+  color: #3a9691;
 }
 
 .ingredients ul {

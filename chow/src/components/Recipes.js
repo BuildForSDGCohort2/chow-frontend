@@ -7,7 +7,6 @@ const Recipes = (props) => {
     return(
         <div className="row">
               { (props.recipes || []).map((hit, index) => {
-                const tags = hit.recipe.dietLabels.flat();
           return (
             <div key={index} className="col-md-4">
               <img className="active-img" src={hit.recipe.image} alt={hit.recipe.label}/>

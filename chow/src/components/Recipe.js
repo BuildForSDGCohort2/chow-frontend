@@ -105,15 +105,15 @@ class Recipe extends React.Component {
                                 <p className="tags">Recipe Tags</p>
                                 {dietLabels.map((elem, index) => 
                                         <ul key={index}>
-                                            <li>{elem}</li>
+                                            <li className="tags-item m-1 py-1 px-3">{elem}</li>
                                         </ul>
                                     )}
                             </div>
                             <div className="row m-3">
                                 <p className="health">Health</p>
-                                {healthLabels.map((elem, index) => 
+                                    {healthLabels.map((elem, index) => 
                                         <ul key={index}>
-                                            <li>{elem}</li>
+                                            <li className="health-item m-1 py-1 px-3">{elem}</li>
                                         </ul>
                                     )}
                             </div>
@@ -121,7 +121,7 @@ class Recipe extends React.Component {
                                 <p className="cautions">Caution</p>
                                 {cautions.map((elem, index) => 
                                     <ul key={index}>
-                                        <li>{elem}</li>
+                                        <li className="cautions-item m-1 py-1 px-3">{elem}</li>
                                     </ul>
                                     )}
                             </div>
@@ -148,7 +148,6 @@ class Recipe extends React.Component {
                                     </div>
                                 )
                             })}
-                            <h4>Health</h4>
                         </div>  
                         <Footer />
                     </div> 
