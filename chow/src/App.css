@@ -287,6 +287,13 @@ input {
   color: #f20e0e;
 }
 
+.tg, .he, .ca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .tags {
   border: 2px solid #3a9691;
   padding: 0.1rem 1.5rem;

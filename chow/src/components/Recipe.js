@@ -104,7 +104,7 @@ class Recipe extends React.Component {
                             <div className="row m-1">
                                 <p className="tags">Recipe Tags</p>
                                 {dietLabels.map((elem, index) => 
-                                        <ul key={index}>
+                                        <ul key={index} className="tg">
                                             <li className="tags-item m-1 py-1 px-3">{elem}</li>
                                         </ul>
                                     )}
@@ -112,7 +112,7 @@ class Recipe extends React.Component {
                             <div className="row m-1">
                                 <p className="health">Health</p>
                                     {healthLabels.map((elem, index) => 
-                                        <ul key={index}>
+                                        <ul key={index} className="he">
                                             <li className="health-item m-1 py-1 px-3">{elem}</li>
                                         </ul>
                                     )}
@@ -120,7 +120,7 @@ class Recipe extends React.Component {
                             <div className="row m-1">
                                 <p className="cautions">Caution</p>
                                 {cautions.map((elem, index) => 
-                                    <ul key={index}>
+                                    <ul key={index} className="ca">
                                         <li className="cautions-item m-1 py-1 px-3">{elem}</li>
                                     </ul>
                                     )}
