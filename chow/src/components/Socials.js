@@ -14,11 +14,14 @@ const Socials = (props) => {
           url="/"
           quote={props.myRecipe.label}
           hashtag="#food"
-          className={classes.socials}
+          className="socials"
         >
-          <FacebookIcon size={36} />
+          <FacebookIcon 
+            size={36}
+            round={true}
+            />
         </FacebookShareButton>
     );
-}
+};
 
 export default Socials;
