@@ -10,6 +10,7 @@ import {
 
 const Socials = (props) => {
     return (
+      <div>
         <FacebookShareButton
           url="/"
           quote={props.myRecipe.label}
@@ -21,6 +22,26 @@ const Socials = (props) => {
             round={true}
             />
         </FacebookShareButton>
+        <TwitterShareButton
+          title={props.myRecipe.label}
+          via="/"
+          hashtags="#food, #chow"
+        >
+            <TwitterIcon 
+              size={36}
+              round={true}
+            />
+        </TwitterShareButton>
+        <PinterestShareButton
+          media={props.myRecipe.image}
+          description={props.myRecipe.label}
+        >
+            <PinterestIcon
+              size={36}
+              round={true}
+            />
+        </PinterestShareButton>
+      </div>
     );
 };
 
