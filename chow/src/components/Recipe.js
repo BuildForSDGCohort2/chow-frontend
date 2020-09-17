@@ -115,7 +115,7 @@ class Recipe extends React.Component {
                                 hashtag="#food"
                                 className="mx-3"
                               >
-                                <img src={FacebookIcon} alt="" />
+                                <img src={FacebookIcon} alt="" className="facebook" />
                               </FacebookShareButton>
                               <TwitterShareButton
                                 url="https://localhost:3000/"
@@ -124,7 +124,7 @@ class Recipe extends React.Component {
                                 hashtags={["food",`${myRecipe.label}`]}
                                 className="mx-3"
                               >
-                                  <img src={TwitterIcon} alt="" />
+                                  <img src={TwitterIcon} alt="" className="twitter" />
                               </TwitterShareButton>
                               <PinterestShareButton
                                 url="https://localhost:3000/"
@@ -132,7 +132,7 @@ class Recipe extends React.Component {
                                 description={myRecipe.label}
                                 className="mx-3"
                               >
-                                  <img src={PinterestIcon} alt="" />
+                                  <img src={PinterestIcon} alt="" className="pinterest" />
                               </PinterestShareButton>
                             </div>
                             <hr/>
