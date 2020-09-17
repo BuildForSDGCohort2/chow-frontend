@@ -296,6 +296,11 @@ input {
   color: #fff;
 }
 
+.cautions-item:hover {
+  background-color: #f20e0e;
+  color: #fff;
+}
+
 .cautions {
   border: 2px solid #f20e0e;
   padding: 0.1rem 1.5rem;
