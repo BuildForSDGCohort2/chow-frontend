@@ -1,7 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { 
+    FacebookShareButton,
+    TwitterShareButton,
+    PinterestShareButton,
+  } from "react-share";
 import Header from "./Header";
 import Footer from "./Footer";
+import TwitterIcon from "../images/iconmonstr-twitter-1.svg";
+import FacebookIcon from "../images/iconmonstr-facebook-4.svg";
+import PinterestIcon from "../images/iconmonstr-pinterest-1.svg";
 
 
 
@@ -100,6 +108,33 @@ class Recipe extends React.Component {
                               </div>)}
                             </div>
                             <p className="text-capitalize my-3"><a className="url" href={myRecipe.url} target="_blank" rel="noopener noreferrer">Read Directions</a></p>
+                            <div className="socials">
+                              <FacebookShareButton
+                                url="https://localhost:3000/"
+                                quote={myRecipe.label}
+                                hashtag="#food"
+                                className="mx-3"
+                              >
+                                <img src={FacebookIcon} alt="" />
+                              </FacebookShareButton>
+                              <TwitterShareButton
+                                url="https://localhost:3000/"
+                                title={myRecipe.label}
+                                via={`https://twitter.com/intent?text=${myRecipe.label}`}
+                                hashtags={["food",`${myRecipe.label}`]}
+                                className="mx-3"
+                              >
+                                  <img src={TwitterIcon} alt="" />
+                              </TwitterShareButton>
+                              <PinterestShareButton
+                                url="https://localhost:3000/"
+                                media={myRecipe.image}
+                                description={myRecipe.label}
+                                className="mx-3"
+                              >
+                                  <img src={PinterestIcon} alt="" />
+                              </PinterestShareButton>
+                            </div>
                             <hr/>
                             <div className="row m-1">
                                 <p className="tags">Recipe Tags</p>

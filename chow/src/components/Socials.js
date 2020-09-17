@@ -9,6 +9,7 @@ import {
 } from "react-share";
 
 const Socials = (props) => {
+    {props}
     return (
       <div>
         <FacebookShareButton
