@@ -141,6 +141,7 @@ input {
   padding: 1rem 2.5rem;
   height: 2.5rem;
   border-radius: 3.125rem;
+  z-index: 1;
 }
 
 #search {
@@ -269,6 +270,12 @@ input {
   border-radius: 3.125rem;
   font-weight: bold;
   color: #3b5998;
+  cursor: pointer;
+}
+
+.health:hover {
+  background-color: #3b5998;
+  color: #fff;
 }
 
 .health-item, .tags-item, .cautions-item {
@@ -279,12 +286,28 @@ input {
   font-weight: 400;
 }
 
+.health-item:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.tags-item:hover {
+  background-color: #3a9691;
+  color: #fff;
+}
+
 .cautions {
   border: 2px solid #f20e0e;
   padding: 0.1rem 1.5rem;
   border-radius: 3.125rem;
   font-weight: bold;
   color: #f20e0e;
+  cursor: pointer;
+}
+
+.cautions:hover {
+  background-color: #f20e0e;
+  color: #fff;
 }
 
 .tg, .he, .ca {
@@ -300,6 +323,12 @@ input {
   border-radius: 3.125rem;
   font-weight: bold;
   color: #3a9691;
+  cursor: pointer;
+}
+
+.tags:hover {
+  background-color: #3a9691;
+  color: #fff;
 }
 
 .ingredients ul {
