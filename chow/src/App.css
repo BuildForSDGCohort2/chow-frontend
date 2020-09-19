@@ -336,10 +336,11 @@ input {
   color: #fff;
 }
 
-.ingredients ul {
+.ingredients{
   list-style: none;
   display: flex;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .list {
@@ -356,15 +357,18 @@ input {
 }
 
 @media screen and (max-width: 400px) {
-  .ingredients ul {
-    margin: 0 auto;
-    display: block;
-  }
   .list {
     margin: 0 auto;
   }
 }
 
+/** Socials */
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
 /** SignUp */
 .heading {

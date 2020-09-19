@@ -2,14 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { 
     FacebookShareButton,
+    FacebookIcon,
     TwitterShareButton,
+    TwitterIcon,
     PinterestShareButton,
+    PinterestIcon
   } from "react-share";
 import Header from "./Header";
 import Footer from "./Footer";
-import TwitterIcon from "../images/iconmonstr-twitter-1.svg";
-import FacebookIcon from "../images/iconmonstr-facebook-4.svg";
-import PinterestIcon from "../images/iconmonstr-pinterest-1.svg";
+
 
 
 
@@ -82,20 +83,21 @@ class Recipe extends React.Component {
                         <div className="active-recipe col-md-6 p-3">
                             <img className="active-img" src={myRecipe.image} alt={myRecipe.label} />
                         </div>
-                        <div className="col-md-6 pt-2 ingredients">
+                        <div className="col-md-6 pt-2">
                              <h2>{myRecipe.label}</h2>
                             <div>Servings: {myRecipe.yield}</div>
-                            <ul>
-                                <li className="list a">
-                                    <p><b className="x">{ingredients.length}</b> Ingredients</p>
-                                </li>
-                                <li className="list b">
-                                    <p><b className="x">{myRecipe.totalTime ? myRecipe.totalTime : "No time"}</b> Minutes</p>
-                                </li>
-                                <li className="list c">
-                                    <p><b className="x">{calServ}</b> Cal per Serv</p>
-                                </li>
-                            </ul>
+                            <div className="ingredients">
+                              <div className="m-1 a list">
+                                  <span><b className="x">{ingredients.length}</b> Ingredients</span>
+                              </div>
+                              <div className="m-1 b list">
+                                  <span><b className="x">{myRecipe.totalTime ? myRecipe.totalTime : "Time Unavailable"}</b> Mins</span>
+                              </div>
+                              <div className="m-1 c list">
+                                  <span><b className="x">{calServ}</b></span> 
+                                  <span> Cal per Serv</span>
+                              </div>
+                            </div>
                             <button className="view">
                                 <Link to="/" className="home">Go Home</Link>
                             </button>
@@ -110,29 +112,43 @@ class Recipe extends React.Component {
                             <p className="text-capitalize my-3"><a className="url" href={myRecipe.url} target="_blank" rel="noopener noreferrer">Read Directions</a></p>
                             <div className="socials">
                               <FacebookShareButton
-                                url=""
+                                url={window.location.href}
                                 quote={myRecipe.label}
-                                hashtag="#food"
+                                hashtag={myRecipe.label}
                                 className="mx-3"
+                                title="Share on Facebook"
                               >
-                                  <img src={FacebookIcon} alt="" />
+                                <FacebookIcon 
+                                    size={32}
+                                    round
+                                />
+                                <p>Share on facebook</p>
                               </FacebookShareButton>
                               <TwitterShareButton
-                                url=""
+                                url={window.location.href}
                                 title={myRecipe.label}
                                 via={`https://twitter.com/intent?text=${myRecipe.label}`}
                                 hashtags={["food",`${myRecipe.label}`]}
                                 className="mx-3"
                               >
-                                  <img src={TwitterIcon} alt="" className="twitter" />
+                                <TwitterIcon 
+                                  size={32}
+                                  round
+                                />
+                                <p>Share on twitter</p>
                               </TwitterShareButton>
                               <PinterestShareButton
-                                url="https://localhost:3000/"
+                                url={window.location.href}
                                 media={myRecipe.image}
                                 description={myRecipe.label}
                                 className="mx-3"
+                                title="Share on Pinterest"
                               >
-                                  <img src={PinterestIcon} alt="" className="pinterest" />
+                                <PinterestIcon 
+                                  size={32}
+                                  round
+                                />
+                                <p>Pin this recipe</p>
                               </PinterestShareButton>
                             </div>
                             <hr/>
