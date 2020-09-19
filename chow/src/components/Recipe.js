@@ -60,7 +60,7 @@ class Recipe extends React.Component {
         //console.log(this.props);
         const myRecipe = this.state.activeRecipe;
         const cal = parseInt(myRecipe.calories).toString();
-        const calServ = (cal / (myRecipe.yield)).toString();
+        const calServ = (Math.round(cal / (myRecipe.yield))).toString();
         const ingredients = this.state.ingredients;
         const totalNutrients = this.state.totalNutrients;
         const totalDaily = this.state.totalDaily;
@@ -91,16 +91,13 @@ class Recipe extends React.Component {
                                   <span><b className="x">{ingredients.length}</b> Ingredients</span>
                               </div>
                               <div className="m-1 b list">
-                                  <span><b className="x">{myRecipe.totalTime ? myRecipe.totalTime : "Time Unavailable"}</b> Mins</span>
+                                  <span><b className="x">{myRecipe.totalTime ? myRecipe.totalTime : "--"}</b> Mins</span>
                               </div>
                               <div className="m-1 c list">
-                                  <span><b className="x">{calServ}</b></span> 
-                                  <span> Cal per Serv</span>
+                                  <span><b className="x">{calServ}</b> Cal per Serv</span>
                               </div>
                             </div>
-                            <button className="view">
-                                <Link to="/" className="home">Go Home</Link>
-                            </button>
+                                <Link to="/" className="home view">Go Home</Link>
                             <div>
                                 <p><b>Ingredients:</b></p>
                                 <hr/>
@@ -152,7 +149,7 @@ class Recipe extends React.Component {
                               </PinterestShareButton>
                             </div>
                             <hr/>
-                            <div className="row m-1">
+                            <div className="row m-1 t">
                                 <p className="tags">Recipe Tags</p>
                                 {dietLabels.map((elem, index) => 
                                         <ul key={index} className="tg">
@@ -160,7 +157,7 @@ class Recipe extends React.Component {
                                         </ul>
                                     )}
                             </div>
-                            <div className="row m-1">
+                            <div className="row m-1 h">
                                 <p className="health">Health</p>
                                     {healthLabels.map((elem, index) => 
                                         <ul key={index} className="he">
@@ -168,7 +165,7 @@ class Recipe extends React.Component {
                                         </ul>
                                     )}
                             </div>
-                            <div className="row m-1">
+                            <div className="row m-1 c">
                                 <p className="cautions">Caution</p>
                                 {cautions.map((elem, index) => 
                                     <ul key={index} className="ca">

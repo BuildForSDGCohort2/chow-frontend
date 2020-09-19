@@ -231,6 +231,7 @@ input {
 
 .home {
   color: #000;
+  background-color: #bbc5c53b;
 }
 
 .home:hover {
@@ -272,6 +273,12 @@ input {
   color: #3b5998;
   cursor: pointer;
 }
+
+.h, .c, .t{
+  display: flex;
+  align-items: center;
+}
+
 
 .health:hover {
   background-color: #3b5998;
@@ -317,6 +324,7 @@ input {
 
 .tg, .he, .ca {
   display: flex;
+  list-style: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
