@@ -110,15 +110,15 @@ class Recipe extends React.Component {
                             <p className="text-capitalize my-3"><a className="url" href={myRecipe.url} target="_blank" rel="noopener noreferrer">Read Directions</a></p>
                             <div className="socials">
                               <FacebookShareButton
-                                url="https://localhost:3000/"
+                                url=""
                                 quote={myRecipe.label}
                                 hashtag="#food"
                                 className="mx-3"
                               >
-                                <img src={FacebookIcon} alt="" className="facebook" />
+                                  <img src={FacebookIcon} alt="" />
                               </FacebookShareButton>
                               <TwitterShareButton
-                                url="https://localhost:3000/"
+                                url=""
                                 title={myRecipe.label}
                                 via={`https://twitter.com/intent?text=${myRecipe.label}`}
                                 hashtags={["food",`${myRecipe.label}`]}
