@@ -10,7 +10,7 @@ const EmailSignUp = () => {
       });
 
     const onSubmit = (data) => {
-      console.log("Data submitted", data);
+      console.log("Form submitted", JSON.stringify(data));
     }
 
     return(
@@ -24,7 +24,7 @@ const EmailSignUp = () => {
                          type="text"
                          name="username"
                          className="username pl-5"
-                         placeholder="Username"
+                         placeholder="username"
                          ref={register({
                            required: "Username field is required",
                            maxLength: {
@@ -50,7 +50,7 @@ const EmailSignUp = () => {
                          type="email"
                          name="email"
                          className="email2 pl-5"
-                         placeholder="Email"
+                         placeholder="email"
                          ref={register({
                            required: "Email field is required",
                            pattern: {
@@ -68,7 +68,7 @@ const EmailSignUp = () => {
                          type="password"
                          name="password1"
                          className="pswd pl-5"
-                         placeholder="Password (min 8)"
+                         placeholder="password (min 8)"
                          ref={register({
                            required: "Password field is required",
                            minLength: {
@@ -86,7 +86,7 @@ const EmailSignUp = () => {
                          type="password"
                          name="password2"
                          className="pswd pl-5"
-                         placeholder="Confirm password"
+                         placeholder="confirm password"
                          ref={register({
                            required: "Confirm Password field is required",
                            validate: value => value === getValues().password1 || "Passwords donot match"
