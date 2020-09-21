@@ -6,9 +6,9 @@ import Heading from "./Heading";
 
 const EmailSignUp = () => {
     const { register, handleSubmit, errors, getValues, formState} = useForm({
-      mode: "onBlur",
+      mode: "onChange",
       });
-
+      
     const onSubmit = (data) => {
       console.log("Form submitted", JSON.stringify(data));
     }
@@ -96,7 +96,7 @@ const EmailSignUp = () => {
                        { errors.password2 && <p className="errors" >{errors.password2.message}</p> }
                     </div>
                     <button
-                      className="btn btn-primary"
+                      className="btn btn-primary signBtn"
                       type="submit"
                       disabled={formState.isSubmitting}>
                         Register

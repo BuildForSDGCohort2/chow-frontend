@@ -142,10 +142,13 @@ input {
   height: 2.5rem;
   border-radius: 3.125rem;
   z-index: 1;
+  color: #000;
+  font-weight: 500;
 }
 
 #search {
   background: url("./images/search.svg") no-repeat  left 10px center;
+  border: 2px solid #f20e0e;
 }
 
 .results {
@@ -440,7 +443,11 @@ input {
 
 .errors {
   color: #f20e0e;
-  margin: 0;
+  margin: 0 auto;
+}
+
+.signBtn {
+  background-color: #3b5998;
 }
 
 /** Signin */

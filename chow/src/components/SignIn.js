@@ -5,7 +5,7 @@ import Heading from "./Heading";
 import Footer from "./Footer";
 
 const SignIn = () => {
-    const { register, handleSubmit, errors } = useForm({
+    const { register, handleSubmit, errors, formState } = useForm({
         mode: "onBlur"
     });
 
@@ -54,7 +54,12 @@ const SignIn = () => {
                          />
                        { errors.password1 && <p className="errors" >{errors.password1.message}</p> } 
                     </div>
-                    <button className="btn btn-primary" type="submit">Sign In</button>
+                    <button
+                      className="btn btn-primary signBtn"
+                      type="submit"
+                      disabled={formState.isSubmitting}>
+                          Sign In
+                    </button>
                     <Link to="/email-signup">
                         <p className="sign-in">Sign Up</p>
                     </Link>
