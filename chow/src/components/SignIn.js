@@ -5,7 +5,7 @@ import Heading from "./Heading";
 import Footer from "./Footer";
 
 const SignIn = () => {
-    const { register, handleSubmit, errors, formState } = useForm({
+    const { register, handleSubmit, errors, formState: { isDirty, isSubmitting } } = useForm({
         mode: "onBlur"
     });
 
@@ -57,7 +57,7 @@ const SignIn = () => {
                     <button
                       className="btn btn-primary signBtn"
                       type="submit"
-                      disabled={formState.isSubmitting}>
+                      disabled={!isDirty || isSubmitting}>
                           Sign In
                     </button>
                     <Link to="/email-signup">

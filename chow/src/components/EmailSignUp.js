@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import Heading from "./Heading";
 
 const EmailSignUp = () => {
-    const { register, handleSubmit, errors, getValues, formState} = useForm({
+    const { register, handleSubmit, errors, getValues, formState : { isDirty, isSubmitting }} = useForm({
       mode: "onChange",
       });
       
@@ -98,7 +98,7 @@ const EmailSignUp = () => {
                     <button
                       className="btn btn-primary signBtn"
                       type="submit"
-                      disabled={formState.isSubmitting}>
+                      disabled={ !isDirty || isSubmitting }>
                         Register
                     </button>
                     <Link to="/signin">
