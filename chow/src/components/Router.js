@@ -7,6 +7,7 @@ import SignUp from "./Signup";
 import EmailSignUp from "./EmailSignUp";
 import SignIn from "./SignIn";
 import Privacy from "./Privacy";
+import Dashboard from "./Dashboard";
 
 const Router = () => (
     <BrowserRouter>
@@ -18,6 +19,7 @@ const Router = () => (
             <Route path="/email-signup" component={EmailSignUp}/>
             <Route path="/signin" component={SignIn} />
             <Route path="/privacy" component={Privacy} />
+            <Route path="/dashboard" component={Dashboard} />
         </Switch>
     </BrowserRouter>
 );
