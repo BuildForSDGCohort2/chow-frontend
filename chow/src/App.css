@@ -137,7 +137,7 @@ input {
   width: 20rem;
   max-width: 100%;
   margin: 0.5rem;
-  border: 2px solid #f20e0e;
+  border: 2px solid #3b5998;
   padding: 1rem 2.5rem;
   height: 2.5rem;
   border-radius: 3.125rem;
@@ -436,6 +436,11 @@ input {
 
 .pswd {
   background: url("./images/lock.svg") no-repeat left 1rem center;
+}
+
+.errors {
+  color: #f20e0e;
+  margin: 0;
 }
 
 /** Signin */
