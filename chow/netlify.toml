@@ -1,7 +1,7 @@
 [build]
-  command="tarn build"
-  publish="path-to-react-app/build"
-  base="path-to-react-app"
+  command="yarn build"
+  publish="https://github.com/BuildForSDGCohort2/chow-frontend/tree/develop/chow/build"
+  base="https://github.com/BuildForSDGCohort2/chow-frontend/tree/develop/chow"
 [[redirects]]
   from = "/*"
   to = "/index.html"
