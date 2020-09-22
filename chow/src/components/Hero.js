@@ -1,14 +1,12 @@
 import React from 'react';
-import heroImg from '../images/heroImg.jpg';
-
 
 
 const Hero = () => {
     return(
-        <div className="hero">
-            <img src={heroImg} alt=""/>
-            <p>Get great recipes anywhere,anytime ...</p>
-            
+        <div className="hero row">
+            <div className="col-lg-6 col-md-6 col-sm-12">
+                <p>Get great recipes <br/>anywhere,anytime ...</p>
+            </div>
         </div>
       );
 };

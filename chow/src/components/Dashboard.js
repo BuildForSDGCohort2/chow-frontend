@@ -28,7 +28,7 @@ const Dashboard = () => {
               </div>
               <div className="col-lg-3 col-md-4 col-sm-12 order m-4">
                 <h3>Order Food</h3>
-                <button className="btn btn-priamary mealBtn">Place Order</button>
+                <button className="btn btn-priamary mealBtn mt-4">Place Order</button>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-12 myRecipes m-4">
                 <h3>My Recipes</h3>
