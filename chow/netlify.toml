@@ -1,5 +1,5 @@
 [build]
-  command="yarn build"
+  command="npm run build"
   publish="https://github.com/BuildForSDGCohort2/chow-frontend/tree/develop/chow/build"
   base="https://github.com/BuildForSDGCohort2/chow-frontend/tree/develop/chow"
 [[redirects]]
