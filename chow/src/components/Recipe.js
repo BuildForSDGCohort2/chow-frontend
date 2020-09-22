@@ -103,6 +103,7 @@ class Recipe extends React.Component {
                                 <hr/>
                               {ingredients.map((ingredient,index) => 
                               <div key={index}>
+                              
                                   {ingredient.text}
                               </div>)}
                             </div>
@@ -124,7 +125,7 @@ class Recipe extends React.Component {
                               <TwitterShareButton
                                 url={window.location.href}
                                 title={myRecipe.label}
-                                via={`https://twitter.com/intent?text=${myRecipe.label}`}
+                                via="chow"
                                 hashtags={["food",`${myRecipe.label}`]}
                                 className="mx-3"
                               >

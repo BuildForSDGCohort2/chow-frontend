@@ -503,3 +503,57 @@ input {
 .tc h3, .privacy h3 {
   color: #3b5998;
 }
+
+/** Dashboard */
+.dashboard {
+  min-height: 100vh;
+}
+.planner, .order, .myRecipes {
+  height: 10rem;
+  width: 15rem;
+  color: #3b5998;
+  border-radius: 1rem;
+  background: linear-gradient(145deg, #fff, #e6e6e6);
+  box-shadow:  13px 13px 26px #a3a3a3, 
+             -13px -13px 26px #fff;
+}
+
+.meal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mealBtn {
+  background-color: #000;
+  opacity: 0.9;
+}
+
+.mealBtn:hover {
+  background-color: #3b5998;
+}
+
+.order {
+  color: #3b5998;
+  font-weight: bold;
+  background: url("./images/anna-pelzer-IGfIGP5ONV0-unsplash-removebg-preview.png") no-repeat right 4rem top 4rem;
+  background-size: 100%;
+}
+
+.myRecipes {
+  background: url("./images/lukas-blazek-f-TWhXOrLiU-unsplash-removebg-preview.png") no-repeat right 0.2rem;
+  background-size: 100%;
+}
+
+.userSearch {
+  width: 30rem;
+  border: none;
+  background: url("./images/search.svg") no-repeat  left 10px center;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12), 0 0 1px rgba(0,0,0,0.05) inset;
+  z-index: 1;
+  margin: 0 auto;
+}
+.meal {
+  min-height: 50vh;
+}
