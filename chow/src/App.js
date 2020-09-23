@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
 import Search from "./components/Search";
 import Recipes from "./components/Recipes";
+import Hero from "./components/Hero";
 
 
 
@@ -59,7 +59,7 @@ class App extends Component {
     return (
       <div className="container-fluid">
          <Header />
-         <Hero />
+         <Hero /> 
          <Search getRecipe={this.getRecipe}/>
         {this.state.isLoading ? (
           <div>
