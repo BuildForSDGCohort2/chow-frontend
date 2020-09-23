@@ -7,8 +7,8 @@ import Heading from "./Heading";
 const SignUp = () => {
     return(
         <div className="row text-center">
+            <div className="col-sm-12 signUp">
             <Heading />
-            <div className="col-sm-12">
                 <ul className="connect">
                     <li>
                         <button className="facebook m-2" title="Connect with Facebook">
@@ -29,9 +29,9 @@ const SignUp = () => {
                 <Link to="/">
                     <p>Go Back</p>
                 </Link>
-            </div>
-            <div className="col-sm-12">
-                <small className="text center">By connecting, you agree to our Terms of Use and Privacy Notice</small>
+                <div className="col-sm-12">
+                  <small className="text center">By connecting, you agree to our Terms of Use and Privacy Notice</small>
+                </div>
             </div>
             <Footer />
         </div>

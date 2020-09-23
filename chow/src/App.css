@@ -105,7 +105,7 @@ h3 {
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  background: url("./images/brooke-lark-08bOYnH_r_E-unsplash-removebg.png") no-repeat left 4rem;
+  background: url("./images/brooke-lark-08bOYnH_r_E-unsplash-removebg\(1\).png") no-repeat left 4rem;
   background-size: 100%;
 }
 
@@ -413,6 +413,14 @@ input {
 }
 
 /** SignUp */
+.signUp {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .heading {
   color: #f20e0e;
   text-decoration: none;

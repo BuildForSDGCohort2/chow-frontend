@@ -15,8 +15,8 @@ const EmailSignUp = () => {
 
     return(
         <div className="row text-center">
-            <Heading />
-            <div className="col-sm-12">
+            <div className="col-sm-12 signUp">
+                <Heading />
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div>
                        <label htmlFor="username"></label>
