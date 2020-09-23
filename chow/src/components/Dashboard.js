@@ -7,7 +7,7 @@ const Dashboard = () => {
       <div className="container-fluid text-center dashboard">
           <Header />
           <div className="row">
-              <div className="col-sm-12 my-5 text-center">
+              <div className="col-sm-12 mb-5 text-center dash">
                 <form>
                   <input
                     name="recipeName"

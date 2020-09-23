@@ -431,10 +431,13 @@ input {
 /** SignUp */
 .signUp {
   min-height: 100vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
+  background: url("./images/lukas-blazek-f-TWhXOrLiU-unsplash-removebg-preview.png") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .heading {
@@ -565,6 +568,16 @@ input {
 .dashboard {
   min-height: 100vh;
 }
+.dash {
+  background: url("./images/taylor-kiser-EvoIiaIVRzU-unsplash\(1\).jpg") no-repeat left;
+  min-height: 50vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .planner, .order, .myRecipes {
   height: 10rem;
   width: 15rem;
@@ -610,6 +623,7 @@ input {
   box-shadow: 0 4px 10px rgba(0,0,0,0.12), 0 0 1px rgba(0,0,0,0.05) inset;
   z-index: 1;
   margin: 0 auto;
+  background-color: #fff;
 }
 .meal {
   min-height: 50vh;
