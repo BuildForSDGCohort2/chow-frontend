@@ -12,11 +12,9 @@ const Header = () => {
                <Nav className="ml-auto">
                  
                      <Link to="/" className="homePg mx-5 active">Home</Link>
-                 
-                 
+
                      <Link to="/signup" className="mealPlanner mx-2 px-3 py-1">Meal Planner</Link>
-                 
-                 
+
                      <Link to="/signup" className="orderFood mx-2 px-4 py-1">Order Food</Link>
                  
                </Nav>

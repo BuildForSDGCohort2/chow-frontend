@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-  color: #000;
+  color: #fff;
 }
 
 h3 {
@@ -112,9 +112,10 @@ h3 {
   align-items: flex-end;
   justify-content: center;
   width: 100%;
-  min-height: 100vh;
-  background: url("./images/brooke-lark-08bOYnH_r_E-unsplash-removebg\(1\).png") no-repeat left 4rem;
-  background-size: 100%;
+  min-height: 50vh;
+  background: url("./images/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg") no-repeat left;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .hero p {
