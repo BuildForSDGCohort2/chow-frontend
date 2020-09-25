@@ -38,6 +38,6 @@ const Dashboard = () => {
           <Footer />
       </div>
   );
-}
+};
 
 export default Dashboard;
