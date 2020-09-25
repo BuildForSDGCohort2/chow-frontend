@@ -56,7 +56,7 @@ const SignUp = () => {
                         onFailure={onFailure}
                         cookiePolicy={ "single_host_origin" }
                         isSignedIn={true}
-                        redirectUri="https://localhost:3000/dashboard/"
+                        redirectUri="/dashboard"
                         render={
                             renderProps => (
                                 <button  onClick={renderProps.onClick} className="google m-2">Connect with Google</button>
