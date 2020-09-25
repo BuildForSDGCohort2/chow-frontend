@@ -16,6 +16,7 @@ const EmailSignUp = () => {
       e.preventDefault();
       const headers = {
         'Content-Type' : 'application/json',
+        'x-auth-token' : 'jwtToken'
       }
       console.log("Form submitted", data);
       await axios
