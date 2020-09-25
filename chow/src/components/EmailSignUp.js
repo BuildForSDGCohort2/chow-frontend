@@ -12,16 +12,16 @@ const EmailSignUp = () => {
       });
       
     
-    const onSubmit = async(data, e) => {
+    const onSubmit = async(getValues, e) => {
       e.preventDefault();
       const headers = {
         'Access-Control-Allow-Origin': '*',
         'Content-Type' : 'application/json',
         'x-auth-token' : 'jwtToken'
       }
-      console.log("Form submitted", data);
+      console.log("Form submitted", getValues);
       await axios
-      .post("https://chow-kuic.herokuapp.com/api/v1/user/signup", data, headers)
+      .post("https://chow-kuic.herokuapp.com/api/v1/user/signup", getValues, headers)
       .then((res) => {
         console.log(res.data);
       })
