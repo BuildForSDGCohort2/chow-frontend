@@ -1,16 +1,32 @@
 import React from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Footer from "./Footer";
 import Heading from "./Heading";
 
 const EmailSignUp = () => {
+  
     const { register, handleSubmit, errors, getValues, formState : { isDirty, isSubmitting }} = useForm({
       mode: "onChange",
       });
       
-    const onSubmit = (data) => {
-      console.log("Form submitted", JSON.stringify(data));
+    
+    const onSubmit = async(data, e) => {
+      e.preventDefault();
+      const headers = {
+        'Content-Type' : 'application/json',
+        'x-auth-token' : 'jwtToken'
+      }
+      console.log("Form submitted", data);
+      await axios
+      .post("https://chow-kuic.herokuapp.com/api/v1/user/signup", data, headers)
+      .then(res => {
+        console.log(res.data)
+      })
+      .catch(error => {
+        console.log(error)
+      })
     }
 
     return(
