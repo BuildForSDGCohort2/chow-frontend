@@ -2,32 +2,40 @@ import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import swal from "sweetalert";
 import Footer from "./Footer";
 import Heading from "./Heading";
 
-const EmailSignUp = () => {
+const EmailSignUp = (props) => {
   
     const { register, handleSubmit, errors, getValues, formState : { isDirty, isSubmitting }} = useForm({
       mode: "onChange",
       });
-      
     
     const onSubmit = async(data, e) => {
       e.preventDefault();
       const headers = {
-        'Access-Control-Allow-Headers':	'Origin, X-Requested-With, Content-Type, Accept',
-        'Access-Control-Allow-Origin': '*',
         'Content-Type' : 'application/json',
         'x-auth-token' : 'jwtToken'
       }
       console.log("Form submitted", data);
       await axios
-      .post("https://chow-kuic.herokuapp.com/api/v1/user/signup", data, headers)
+        .post("http://localhost:4000/api/v1/user/signup", data, headers)
+      //.post("https://chow-kuic.herokuapp.com/api/v1/user/signup", data, headers)
       .then((res) => {
+        console.log(res);
         console.log(res.data);
+        if(res.data.status === true ){
+          swal("Success!", res.data.message, "success")
+          window.location = "/dashboard"
+          console.log(res.data.message)
+        } else {
+          swal("Error!", res.data.message, "error")
+          console.log("Error");
+        }
       })
       .catch((error) => {
-        alert(error);
+        //alert(error);
         console.log(error);
       });
     }

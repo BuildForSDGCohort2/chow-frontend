@@ -433,6 +433,16 @@ input {
   background-size: cover;
 }
 
+@media only screen and (max-width: 400px) {
+  .signUp {
+    background: none;
+  }
+  form {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
 .heading {
   color: #f20e0e;
   text-decoration: none;

@@ -32,7 +32,7 @@ const SignUp = () => {
                     <li>
                     <FacebookLogin 
                       appId="240858893885753"
-                      autoLoad={true}
+                      autoLoad={false}
                       cookie={true}
                       version="8.0"
                       status={true}
