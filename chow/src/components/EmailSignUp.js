@@ -16,7 +16,6 @@ const EmailSignUp = () => {
       e.preventDefault();
       const headers = {
         'Content-Type' : 'application/json',
-        'x-auth-token' : 'jwtToken'
       }
       console.log("Form submitted", data);
       await axios
@@ -25,6 +24,7 @@ const EmailSignUp = () => {
         console.log(res.data)
       })
       .catch(error => {
+        alert(error)
         console.log(error)
       })
     }
@@ -82,7 +82,7 @@ const EmailSignUp = () => {
                        <label htmlFor="password1"></label>
                        <input
                          type="password"
-                         name="password1"
+                         name="password"
                          className="pswd pl-5"
                          placeholder="password (min 8)"
                          ref={register({
@@ -94,22 +94,22 @@ const EmailSignUp = () => {
                          })}
                          style={{ borderColor: errors.password1 && "red" }}
                          />
-                       { errors.password1 && <p className="errors" >{errors.password1.message}</p> }
+                       { errors.password && <p className="errors" >{errors.password.message}</p> }
                     </div>
                     <div>
                        <label htmlFor="password2"></label>
                        <input
                          type="password"
-                         name="password2"
+                         name="confirm_password"
                          className="pswd pl-5"
                          placeholder="confirm password"
                          ref={register({
                            required: "Confirm Password field is required",
-                           validate: value => value === getValues().password1 || "Passwords donot match"
+                           validate: value => value === getValues().password || "Passwords donot match"
                           })}
-                         style={{ borderColor: errors.password2 && "red" }}
+                         style={{ borderColor: errors.confirm_password && "red" }}
                          />
-                       { errors.password2 && <p className="errors" >{errors.password2.message}</p> }
+                       { errors.confirm_password && <p className="errors" >{errors.confirm_password.message}</p> }
                     </div>
                     <button
                       className="btn btn-primary signBtn"
