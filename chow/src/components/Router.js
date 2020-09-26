@@ -9,9 +9,13 @@ import SignIn from "./SignIn";
 import Privacy from "./Privacy";
 import Dashboard from "./Dashboard";
 import Order from "./Order";
+import AuthProvider from "../providers/AuthProvider";
 
 const Router = () => (
     <BrowserRouter>
+        <AuthProvider>
+            <App />
+        </AuthProvider>
         <Switch>
             <Route path="/" component={App} exact/>
             <Route path="/recipe/:uri" component={Recipe}/>

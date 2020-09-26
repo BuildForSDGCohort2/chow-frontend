@@ -42,11 +42,11 @@ class App extends Component {
 
   componentDidMount() {
     const json = localStorage.getItem("hits");
-    const hits = JSON.parse(json);
-    this.setState({ 
+    const hits = JSON.parse(json)
+    this.setState({
       hits,
-      isLoading: false 
-    });
+      isLoading: false
+    })
   }
   
   componentDidUpdate() {

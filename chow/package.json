@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
+    "dotenv": "^8.2.0",
     "firebase": "^7.21.1",
     "infinite-react-carousel": "^1.2.11",
     "pure-react-carousel": "^1.27.3",
