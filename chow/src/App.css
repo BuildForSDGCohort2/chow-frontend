@@ -458,7 +458,7 @@ input {
   margin: 0;
 }
 
-.facebook ,.google, .email {
+.facebook ,.google, .email, .twitter {
   min-width: 16rem;
   outline: none;
   border: none;
@@ -480,6 +480,7 @@ input {
   box-shadow: 0 0.125em 0.25em rgba(0,0,0,0.12), 0 0 2px 0 rgba(0,0,0,0.27) inset;
   background: url("./images/google-icon.svg") no-repeat left 10px center;
 }
+
 .googleImg {
   width: 1.6rem;
 }

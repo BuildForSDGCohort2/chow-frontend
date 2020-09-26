@@ -24,6 +24,7 @@
     "react-scripts": "3.4.3",
     "react-share": "^4.2.1",
     "react-slick": "^0.27.11",
+    "react-twitter-login": "^1.1.2",
     "sweetalert": "^2.1.2"
   },
   "scripts": {
