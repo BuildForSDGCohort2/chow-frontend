@@ -8,6 +8,7 @@ import EmailSignUp from "./EmailSignUp";
 import SignIn from "./SignIn";
 import Privacy from "./Privacy";
 import Dashboard from "./Dashboard";
+import Order from "./Order";
 
 const Router = () => (
     <BrowserRouter>
@@ -20,6 +21,7 @@ const Router = () => (
             <Route path="/signin" component={SignIn} />
             <Route path="/privacy" component={Privacy} />
             <Route path="/dashboard" component={Dashboard} />
+            <Route path="/order" component={Order} />
         </Switch>
     </BrowserRouter>
 );

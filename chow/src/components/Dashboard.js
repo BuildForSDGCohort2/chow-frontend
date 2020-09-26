@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -28,7 +29,9 @@ const Dashboard = () => {
               </div>
               <div className="col-lg-3 col-md-4 col-sm-12 order m-4">
                 <h3>Order Food</h3>
-                <button className="btn btn-priamary mealBtn mt-4">Place Order</button>
+                <Link to="/order" className=" btn mealBtn mt-4">
+                    Place Order
+                </Link>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-12 myRecipes m-4">
                 <h3>My Recipes</h3>

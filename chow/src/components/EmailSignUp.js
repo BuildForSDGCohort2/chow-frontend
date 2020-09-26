@@ -20,8 +20,8 @@ const EmailSignUp = (props) => {
       }
       console.log("Form submitted", data);
       await axios
-        .post("http://localhost:4000/api/v1/user/signup", data, headers)
-      //.post("https://chow-kuic.herokuapp.com/api/v1/user/signup", data, headers)
+        //.post("http://localhost:4000/api/v1/user/signup", data, headers)
+      .post("https://chow-kuic.herokuapp.com/api/v1/user/signup", data, headers)
       .then((res) => {
         console.log(res);
         console.log(res.data);
