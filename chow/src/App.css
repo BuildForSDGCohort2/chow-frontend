@@ -636,3 +636,11 @@ input {
 .order h2 {
   color: #000;
 }
+
+.myOrder {
+  min-height: 100vh;
+}
+
+.searchFood {
+  background-color: #000;
+}
