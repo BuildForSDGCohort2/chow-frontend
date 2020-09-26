@@ -458,7 +458,7 @@ input {
   margin: 0;
 }
 
-.facebook ,.google, .email, .twitter {
+.facebook ,.google, .email, .twitter{
   min-width: 16rem;
   outline: none;
   border: none;
@@ -483,6 +483,11 @@ input {
 
 .googleImg {
   width: 1.6rem;
+}
+
+.twitter {
+  background-color: #1DA1F2;
+  color: #fff;
 }
 
 .email {

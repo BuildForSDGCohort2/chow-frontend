@@ -72,7 +72,10 @@ const SignUp = () => {
                     <li>
                         <TwitterLogin 
                           authCallback={authHandler}
-                          
+                          buttonTheme="dark"
+                          children={
+                              <button className="twitter m-2">Connect with Twitter</button>
+                          }
                         />
                     </li>
                     {/** <Link to="/email-signup">
