@@ -11,6 +11,8 @@ const SignUp = () => {
     const [login, setLogin] = useState(false);
     const [data, setData] = useState({});
     const [picture, setPicture] = useState(" ");
+    const [imageUrl, setImageUrl] = useState(" ");
+    const [profileObj, setProfileObj] = useState({});
 
     /**Facebook */
     const responseFacebook = (response) => {
@@ -30,11 +32,19 @@ const SignUp = () => {
     /**Google */
     const onSuccess = (response) => {
         console.log("[Login Success] currentuser", response.profileObj);
+        setProfileObj(response);
+        setImageUrl(response.profileObj.imageUrl);
+        if (response.accessToken) {
+            setLogin(true);
+        } else {
+            setLogin(false);
+        }
     };
     const onFailure = (response) => {
         console.log("[Login failed] response:", response);
     };
 
+    /**Twitter */
     const authHandler = (err, data) => {
         console.log(err, data);
     };
@@ -73,20 +83,30 @@ const SignUp = () => {
                     }
                     </li>
                     <li>
+                        {!login &&
                       <GoogleLogin 
                         clientId="619240812460-jbjbp3rditc3e3kp54fgqb3l2nrnd2u3.apps.googleusercontent.com"
                         buttonText="Connect with Google"
                         onSuccess={onSuccess}
                         onFailure={onFailure}
                         cookiePolicy={ "single_host_origin" }
-                        isSignedIn={true}
+                        isSignedIn={false}
                         redirectUri="https://localhost:3000/dashbaord"
                         render={
                             renderProps => (
                                 <button  onClick={renderProps.onClick} className="google m-2">Connect with Google</button>
                             )
                         }
-                      />
+                      />}
+                      {login && 
+                        <div>
+                          <div className="pix">
+                            <img  src={imageUrl} className="img-fluid picture" alt={data.name} />
+                          </div>
+                          <h3>{profileObj.name}</h3>
+                          <p>{profileObj.email}</p>
+                        </div>
+                      }
                     </li>
                     <li>
                         <TwitterLogin 
