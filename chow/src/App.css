@@ -488,6 +488,7 @@ input {
 .twitter {
   background-color: #1DA1F2;
   color: #fff;
+  background: #1DA1F2 url("./images/twitter1.svg") no-repeat left 1rem center;
 }
 
 .email {

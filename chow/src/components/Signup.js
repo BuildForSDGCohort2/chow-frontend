@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
 import { GoogleLogin } from "react-google-login/";
@@ -73,6 +73,7 @@ const SignUp = () => {
                         <TwitterLogin 
                           authCallback={authHandler}
                           buttonTheme="dark"
+                          
                           children={
                               <button className="twitter m-2">Connect with Twitter</button>
                           }
