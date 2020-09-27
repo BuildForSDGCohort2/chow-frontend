@@ -11,6 +11,7 @@ const SignUp = () => {
     const [login, setLogin] = useState(false);
     const [data, setData] = useState({});
     const [picture, setPicture] = useState(" ");
+    const [loginGoogle, setLoginGoogle] = useState(false);
     const [imageUrl, setImageUrl] = useState(" ");
     const [profileObj, setProfileObj] = useState({});
 
@@ -32,12 +33,12 @@ const SignUp = () => {
     /**Google */
     const onSuccess = (response) => {
         console.log("[Login Success] currentuser", response.profileObj);
-        setProfileObj(response);
+        setProfileObj(response.profileObj);
         setImageUrl(response.profileObj.imageUrl);
         if (response.accessToken) {
-            setLogin(true);
+            setLoginGoogle(true);
         } else {
-            setLogin(false);
+            setLoginGoogle(false);
         }
     };
     const onFailure = (response) => {
@@ -83,14 +84,14 @@ const SignUp = () => {
                     }
                     </li>
                     <li>
-                        {!login &&
+                        {!loginGoogle &&
                       <GoogleLogin 
                         clientId="619240812460-jbjbp3rditc3e3kp54fgqb3l2nrnd2u3.apps.googleusercontent.com"
                         buttonText="Connect with Google"
                         onSuccess={onSuccess}
                         onFailure={onFailure}
                         cookiePolicy={ "single_host_origin" }
-                        isSignedIn={false}
+                        isSignedIn={true}
                         redirectUri="https://localhost:3000/dashbaord"
                         render={
                             renderProps => (
@@ -98,8 +99,8 @@ const SignUp = () => {
                             )
                         }
                       />}
-                      {login && 
-                        <div>
+                      {loginGoogle && 
+                        <div className="loginGoogle m-3">
                           <div className="pix">
                             <img  src={imageUrl} className="img-fluid picture" alt={data.name} />
                           </div>
