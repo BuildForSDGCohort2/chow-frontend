@@ -466,6 +466,10 @@ input {
   border-radius: 50px;
   font-weight: 900;
   font-size: 0.9rem;
+  opacity: 0.95;
+} 
+.facebook:hover, .twitter:hover {
+  opacity: 1;
 }
 
 .facebook {
