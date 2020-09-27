@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
 import { GoogleLogin } from "react-google-login/";
@@ -8,19 +8,29 @@ import Heading from "./Heading";
 
 
 const SignUp = () => {
+    const [login, setLogin] = useState(false);
+    const [data, setData] = useState({});
+    const [picture, setPicture] = useState(" ");
 
+    /**Facebook */
     const responseFacebook = (response) => {
         console.log(response);
+        setData(response);
+        setPicture(response.picture.data.url);
+        if (response.accessToken) {
+            setLogin(true);
+        } else {
+            setLogin(false);
+        }
     }
-
     const componentClicked = () => {
         console.log( "Clicked!" );
     };
 
+    /**Google */
     const onSuccess = (response) => {
         console.log("[Login Success] currentuser", response.profileObj);
     };
-
     const onFailure = (response) => {
         console.log("[Login failed] response:", response);
     };
@@ -35,14 +45,14 @@ const SignUp = () => {
             <Heading />
                 <ul className="connect">
                     <li>
+                        {!login &&
                     <FacebookLogin 
                       appId="240858893885753"
-                      autoLoad={false}
                       cookie={true}
                       version="8.0"
                       status={true}
                       scope="public_profile,email"
-                      redirectUri="/dashboard"
+                      redirectUri="https://localhost:3000/dashboard"
                       fields="name,email,picture"
                       onClick={componentClicked}
                       callback={responseFacebook}
@@ -51,7 +61,16 @@ const SignUp = () => {
                                <button onClick={renderProps.onClick} className="facebook m-2" title="Connect with Facebook">Connect with Facebook</button>
                            )
                       }
-                    />
+                    />}
+                    { login && 
+                      <div>
+                          <div className="pix">
+                            <img  src={picture} className="img-fluid picture" alt={data.name} />
+                          </div>
+                        <h3>{data.name}</h3>
+                        <p>{data.email}</p>
+                      </div>
+                    }
                     </li>
                     <li>
                       <GoogleLogin 
@@ -61,7 +80,7 @@ const SignUp = () => {
                         onFailure={onFailure}
                         cookiePolicy={ "single_host_origin" }
                         isSignedIn={true}
-                        redirectUri="/dashboard"
+                        redirectUri="https://localhost:3000/dashbaord"
                         render={
                             renderProps => (
                                 <button  onClick={renderProps.onClick} className="google m-2">Connect with Google</button>
@@ -73,17 +92,19 @@ const SignUp = () => {
                         <TwitterLogin 
                           authCallback={authHandler}
                           buttonTheme="dark"
-                          
+                          consumerkey="PyHxgJuyORZqhDiuKAne8LcxT"
+                          consumerSecret="RBqOgWJfflgk2GLGmKtHFnHituqvf3vROPfAqzOPpfKficIrI9"
+                          redirectUri="/dashboard"
                           children={
-                              <button className="twitter m-2">Connect with Twitter</button>
+                              <button  className="twitter m-2">Connect with Twitter</button>
                           }
                         />
                     </li>
-                    {/** <Link to="/email-signup">
+                    <Link to="/email-signup">
                       <button className="email m-2" title="Connect with Email">
                           <span>Connect with Email</span>
                       </button>
-                    </Link>*/}
+                    </Link>
                 </ul>
                 <Link to="/" className="my-5">
                     <p>Go Back</p>

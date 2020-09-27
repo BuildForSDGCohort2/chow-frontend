@@ -478,6 +478,12 @@ input {
   background: url("./images/facebook-3.svg") no-repeat  left 10px center;
 }
 
+.picture{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50px;
+}
+
 .google {
   background-color: #fff;
   color: #000;

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const Dashboard = () => {
-  return (
+class Dashboard extends Component {
+  render() {
+    return (
       <div className="container-fluid text-center dashboard">
           <Header />
           <div className="row">
@@ -41,6 +42,7 @@ const Dashboard = () => {
           <Footer />
       </div>
   );
+  }
 };
 
 export default Dashboard;
