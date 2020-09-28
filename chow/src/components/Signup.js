@@ -36,11 +36,14 @@ const SignUp = () => {
 
     /**Google */
     const onSuccess = (response) => {
+        console.log(response);
         console.log("[Login Success] currentuser", response.profileObj);
         setProfileObj(response.profileObj);
         setImageUrl(response.profileObj.imageUrl);
         if (response.accessToken) {
             setLoginGoogle(true);
+            sessionStorage.setItem("userData", JSON.stringify(response));
+            history.push("/dashboard")
         } else {
             setLoginGoogle(false);
         }
@@ -82,7 +85,7 @@ const SignUp = () => {
                           <div className="pix">
                             <img  src={picture} className="img-fluid picture" alt={data.name} />
                           </div>
-                        <h3>{data.name}</h3>
+                        <h3>Welcome {data.name}</h3>
                         <p>{data.email}</p>
                       </div>
                     }
