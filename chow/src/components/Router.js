@@ -10,7 +10,6 @@ import Privacy from "./Privacy";
 import Dashboard from "./Dashboard";
 import Order from "./Order";
 
-
 const Router = () => (
     <BrowserRouter>
         <Switch>

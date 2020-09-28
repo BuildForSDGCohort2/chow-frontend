@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
 import { GoogleLogin } from "react-google-login/";
 import TwitterLogin from "react-twitter-login";
@@ -7,7 +7,10 @@ import Footer from "./Footer";
 import Heading from "./Heading";
 
 
+
+
 const SignUp = () => {
+    const history = useHistory();
     const [login, setLogin] = useState(false);
     const [data, setData] = useState({});
     const [picture, setPicture] = useState(" ");
@@ -22,6 +25,7 @@ const SignUp = () => {
         setPicture(response.picture.data.url);
         if (response.accessToken) {
             setLogin(true);
+            history.push("/dashboar")
         } else {
             setLogin(false);
         }
@@ -74,7 +78,7 @@ const SignUp = () => {
                       }
                     />}
                     { login && 
-                      <div>
+                      <div className="facebookLogin m-3">
                           <div className="pix">
                             <img  src={picture} className="img-fluid picture" alt={data.name} />
                           </div>
@@ -104,7 +108,7 @@ const SignUp = () => {
                           <div className="pix">
                             <img  src={imageUrl} className="img-fluid picture" alt={data.name} />
                           </div>
-                          <h3>{profileObj.name}</h3>
+                          <h3>Welcome {profileObj.givenName}</h3>
                           <p>{profileObj.email}</p>
                         </div>
                       }
