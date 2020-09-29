@@ -132,7 +132,7 @@ img {
   font-weight: 500;
   padding: 1.2rem;
   margin-left: 5rem;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 @media only screen and (min-width: 1024px){
@@ -184,7 +184,7 @@ input {
   border: none;
   background: url("./images/search.svg") no-repeat  left 10px center;
   border-radius: 3.125rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12), 0 0 1px rgba(0,0,0,0.05) inset;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.05) inset;
   z-index: 1;
 }
 
@@ -239,7 +239,8 @@ input {
 }
 
 .dietLabel {
-  font-size: 0.8rem;font-weight: bold;
+  font-size: 0.8rem;
+  font-weight: bold;
   background-color: #5991913b;
   width: 40%;
   padding: 0.2rem;
@@ -314,7 +315,9 @@ input {
   cursor: pointer;
 }
 
-.h, .c, .t{
+.h,
+.c,
+.t {
   display: flex;
   align-items: center;
 }
@@ -324,7 +327,9 @@ input {
   color: #fff;
 }
 
-.health-item, .tags-item, .cautions-item {
+.health-item,
+.tags-item,
+.cautions-item {
   background-color: #d3d3d34d;
   border-radius: 3.125rem;
   font-size: 0.9rem;
@@ -361,7 +366,9 @@ input {
   color: #fff;
 }
 
-.tg, .he, .ca {
+.tg,
+.he,
+.ca {
   display: flex;
   list-style: none;
   align-items: center;
@@ -383,7 +390,7 @@ input {
   color: #fff;
 }
 
-.ingredients{
+.ingredients {
   list-style: none;
   display: flex;
   align-items: center;
@@ -395,11 +402,13 @@ input {
   text-align: center;
   font-weight: 100;
 }
+
 .x {
   font-size: 1.5rem;
 }
 
-.a, .b {
+.a,
+.b {
   border-right: 1px solid #000;
 }
 
@@ -441,8 +450,7 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
-  background: url("./images/lukas-blazek-f-TWhXOrLiU-unsplash-removebg-preview.png") no-repeat;
+  background: #fff url("./images/lukas-blazek-f-TWhXOrLiU-unsplash-removebg-preview.png") no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -461,6 +469,7 @@ input {
   color: #f20e0e;
   text-decoration: none;
 }
+
 .heading:hover {
   color: #000;
   text-decoration: none;
@@ -472,7 +481,10 @@ input {
   margin: 0;
 }
 
-.facebook ,.google, .email, .twitter{
+.facebook,
+.google,
+.email,
+.twitter {
   min-width: 16rem;
   outline: none;
   border: none;
@@ -481,18 +493,19 @@ input {
   font-weight: 900;
   font-size: 0.9rem;
   opacity: 0.95;
-} 
-.facebook:hover, .twitter:hover {
-  opacity: 1;
 }
 
 .facebook {
   color: #fff;
-  background-color: #3b5998 !important;
-  background: url("./images/facebook-3.svg") no-repeat  left 10px center;
+  background:  #3b5998 url("./images/facebook-3.svg") no-repeat  left 10px center;
 }
 
-.picture{
+.facebook:hover,
+.twitter:hover {
+  opacity: 1;
+}
+
+.picture {
   width: 4rem;
   height: 4rem;
   border-radius: 50px;
@@ -501,7 +514,7 @@ input {
 .google {
   background-color: #fff;
   color: #000;
-  box-shadow: 0 0.125em 0.25em rgba(0,0,0,0.12), 0 0 2px 0 rgba(0,0,0,0.27) inset;
+  box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.27) inset;
   background: url("./images/google-icon.svg") no-repeat left 10px center;
 }
 
