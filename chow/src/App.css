@@ -500,6 +500,11 @@ input {
   background:  #3b5998 url("./images/facebook-3.svg") no-repeat  left 10px center;
 }
 
+.twitter {
+  color: #fff;
+  background: #1da1F2 url("./images/twitter1.svg") no-repeat left 1rem center;
+}
+
 .facebook:hover,
 .twitter:hover {
   opacity: 1;
@@ -522,16 +527,9 @@ input {
   width: 1.6rem;
 }
 
-.twitter {
-  background-color: #1DA1F2;
-  color: #fff;
-  background: #1DA1F2 url("./images/twitter1.svg") no-repeat left 1rem center;
-}
-
 .email {
-  background-color: #f26f07 !important;
   color: #fff;
-  background: url("./images/mail.svg") no-repeat left 1rem center;
+  background: #f26f07 url("./images/mail.svg") no-repeat left 1rem center;
 }
 
 .username {
@@ -599,15 +597,18 @@ input {
   margin: 0 auto;
 }
 
-.tc p, .privacy p {
+.tc p,
+.privacy p {
   text-align: justify;
 }
 
-.tc ul, .privacy ul {
+.tc ul,
+.privacy ul {
   text-align: justify;
 }
 
-.tc h3, .privacy h3 {
+.tc h3,
+.privacy h3 {
   color: #3b5998;
 }
 
@@ -635,20 +636,23 @@ input {
   font-size: 2rem;
 }
 
-.planner, .order, .myRecipes {
+.planner,
+.order,
+.myRecipes {
   height: 10rem;
   width: 15rem;
   color: #3b5998;
   border-radius: 1rem;
   background: linear-gradient(145deg, #fff, #e6e6e6);
-  box-shadow:  13px 13px 26px #a3a3a3, 
-             -13px -13px 26px #fff;
+  box-shadow:  13px 13px 26px #a3a3a3,
+      -13px -13px 26px #fff;
 }
 
 .meal {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 50vh;
 }
 
 .mealBtn {
@@ -677,13 +681,10 @@ input {
   border: none;
   background: url("./images/search.svg") no-repeat  left 10px center;
   border-radius: 3.125rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12), 0 0 1px rgba(0,0,0,0.05) inset;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.05) inset;
   z-index: 1;
   margin: 0 auto;
   background-color: #fff;
-}
-.meal {
-  min-height: 50vh;
 }
 
 /** Order */
