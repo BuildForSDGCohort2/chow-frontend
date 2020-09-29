@@ -80,7 +80,7 @@ h3 {
   font-weight: 700;
 }
 
-.mealPlanner, .orderFood {
+.mealPlanner, .orderFood, .signOut {
   border-radius: 3.125rem;
   color: #f20e0e;
   background-color: #fff;
@@ -88,7 +88,7 @@ h3 {
   font-weight: 500;
 }
 
-.mealPlanner:hover, .orderFood:hover {
+.mealPlanner:hover, .orderFood:hover, .signOut:hover {
   background-color: #000;
   text-decoration: none;
   color: #fff;
@@ -303,7 +303,6 @@ input {
   display: flex;
   align-items: center;
 }
-
 
 .health:hover {
   background-color: #3b5998;
@@ -588,6 +587,7 @@ input {
 .dashboard {
   min-height: 100vh;
 }
+
 .dash {
   background: url("./images/taylor-kiser-EvoIiaIVRzU-unsplash\(1\).jpg") no-repeat left;
   min-height: 50vh;
@@ -598,6 +598,11 @@ input {
   align-items: center;
   justify-content: center;
 }
+
+.welcome {
+  font-size: 2rem;
+}
+
 .planner, .order, .myRecipes {
   height: 10rem;
   width: 15rem;

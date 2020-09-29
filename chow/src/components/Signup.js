@@ -25,7 +25,7 @@ const SignUp = () => {
         setPicture(response.picture.data.url);
         if (response.accessToken) {
             setLogin(true);
-            history.push("/dashboar")
+            history.push("/dashboard")
         } else {
             setLogin(false);
         }

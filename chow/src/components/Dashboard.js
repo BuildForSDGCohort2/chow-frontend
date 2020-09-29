@@ -16,6 +16,7 @@ componentDidMount() {
   this.setState({name: data1.profileObj.givenName});
 }
 
+
   render() {
     return (
       <div className="container-fluid text-center dashboard">
@@ -36,7 +37,7 @@ componentDidMount() {
           </div>
           <div className="row meal">
               <div className="col-sm-12 text-center">
-                <p>Welcome {this.state.name}</p>
+                <p className="welcome">Welcome {this.state.name}</p>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-12 planner m-4 p-3">
                 <h3 className="py-2">Meal Planner</h3>
