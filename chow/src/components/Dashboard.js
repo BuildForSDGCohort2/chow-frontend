@@ -10,10 +10,10 @@ class Dashboard extends Component {
   }
 
 componentDidMount() {
-  const data = JSON.parse(sessionStorage.getItem("userData"));
+  const data = JSON.parse(sessionStorage.getItem("userData")) || JSON.parse(localStorage.getItem("userData"));
   const data1 = data;
-  console.log(data1.profileObj.givenName);
-  this.setState({name: data1.profileObj.givenName});
+  console.log(data1.name || data1.profileObj.givenName);
+  this.setState({name: data1.name || data1.profileObj.givenName});
 }
 
 
@@ -37,7 +37,7 @@ componentDidMount() {
           </div>
           <div className="row meal">
               <div className="col-sm-12 text-center">
-                <p className="welcome">Welcome {this.state.name}</p>
+                <p className="welcome">Welcome <span className="userName">{this.state.name}</span></p>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-12 planner m-4 p-3">
                 <h3 className="py-2">Meal Planner</h3>

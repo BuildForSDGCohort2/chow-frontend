@@ -599,6 +599,10 @@ input {
   justify-content: center;
 }
 
+.userName {
+  color: #3b5998;
+}
+
 .welcome {
   font-size: 2rem;
 }

@@ -4,11 +4,16 @@ import { Link, useHistory } from "react-router-dom";
 
 const Header = () => {
   const history = useHistory();
+  
   const isLoggedIn = () => {
-    return sessionStorage.getItem("userData") !== null;
+    let userData = sessionStorage.getItem("userData") || localStorage.getItem("userData");
+    let loggedInUser = JSON.parse(userData);
+    // console.log(loggedInUser.profileObj.imageUrl);
+    return loggedInUser !== null;
   }
   const signOut = () => {
     sessionStorage.removeItem("userData");
+    localStorage.removeItem("userData");
     return history.push("/");
   }
     return(
@@ -22,9 +27,6 @@ const Header = () => {
               <Nav className="ml-auto text-center">
                 { isLoggedIn() ? (
                   <Nav>
-                    <Nav.Link>
-                      <img src={} />
-                    </Nav.Link>
                     <Nav.Link>
                       <Link
                         to="/"

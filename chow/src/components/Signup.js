@@ -25,6 +25,7 @@ const SignUp = () => {
         setPicture(response.picture.data.url);
         if (response.accessToken) {
             setLogin(true);
+            localStorage.setItem("userData", JSON.stringify(response));
             history.push("/dashboard")
         } else {
             setLogin(false);
@@ -98,7 +99,7 @@ const SignUp = () => {
                         onSuccess={onSuccess}
                         onFailure={onFailure}
                         cookiePolicy={ "single_host_origin" }
-                        isSignedIn={true}
+                        isSignedIn={false}
                         redirectUri="https://localhost:3000/dashbaord"
                         render={
                             renderProps => (
