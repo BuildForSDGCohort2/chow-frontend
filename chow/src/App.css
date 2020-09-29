@@ -255,6 +255,10 @@ input {
 }
 
 /** Recipe */
+.recipeName {
+  color: #000;
+}
+
 .url {
   color: #000;
   font-size: 14px;

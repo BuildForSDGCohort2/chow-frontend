@@ -84,7 +84,7 @@ class Recipe extends React.Component {
                             <img className="active-img" src={myRecipe.image} alt={myRecipe.label} />
                         </div>
                         <div className="col-md-6 pt-2">
-                             <h2>{myRecipe.label}</h2>
+                             <h2 className="recipeName">{myRecipe.label}</h2>
                             <div>Servings: {myRecipe.yield}</div>
                             <div className="ingredients">
                               <div className="m-1 a list">
