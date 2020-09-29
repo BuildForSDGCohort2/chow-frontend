@@ -26,11 +26,11 @@ const EmailSignUp = (props) => {
         // console.log(res);
         // console.log(res.data);
         if(res.data.status === true ){
-          swal("Success!", res.data.message, "success")
+          swal("Success!", res.data.message, "success");
           window.location = "/dashboard";
           // console.log(res.data.message)
         } else {
-          swal("Error!", res.data.message, "error")
+          swal("Error!", res.data.message, "error");
           // console.log("Error");
         }
       })
@@ -38,7 +38,7 @@ const EmailSignUp = (props) => {
         //alert(error);
         console.log(error);
       });
-    }
+    };
 
     return(
         <div className="row text-center">

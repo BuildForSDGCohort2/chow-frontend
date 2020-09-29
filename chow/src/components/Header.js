@@ -15,7 +15,7 @@ const Header = () => {
     sessionStorage.removeItem("userData");
     localStorage.removeItem("userData");
     return history.push("/");
-  }
+  };
     return(
         <div className="row">
             <Navbar bg="dark" expand="lg">

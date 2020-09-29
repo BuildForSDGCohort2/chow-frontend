@@ -30,7 +30,7 @@ const SignUp = () => {
         } else {
             setLogin(false);
         }
-    }
+    };
     const componentClicked = () => {
         // console.log( "Clicked!" );
     };
@@ -44,7 +44,7 @@ const SignUp = () => {
         if (response.accessToken) {
             setLoginGoogle(true);
             sessionStorage.setItem("userData", JSON.stringify(response));
-            history.push("/dashboard")
+            history.push("/dashboard");
         } else {
             setLoginGoogle(false);
         }
@@ -76,7 +76,7 @@ const SignUp = () => {
                       onClick={componentClicked}
                       callback={responseFacebook}
                       render={
-                           renderProps => (
+                           (renderProps) => (
                                <button onClick={renderProps.onClick} className="facebook m-2" title="Connect with Facebook">Connect with Facebook</button>
                            )
                       }

@@ -195,7 +195,7 @@ class Recipe extends React.Component {
                                         <p><b className="nut">{elem.label}</b></p>
                                         <span>{elem.quantity} {elem.unit}</span>
                                     </div>
-                                )
+                                );
                             })}
                         </div>  
                         <Footer />
