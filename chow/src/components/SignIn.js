@@ -10,8 +10,8 @@ const SignIn = () => {
     });
 
     const onSubmit = (data) => {
-        console.log("Form Submitted", JSON.stringify(data));
-    }
+        // console.log("Form Submitted", JSON.stringify(data));
+    };
 
     return (
         <div className="row text-center">

@@ -184,7 +184,7 @@ class Recipe extends React.Component {
                                         <p><b className="nut">{elem.label}</b></p>
                                         <span>{elem.quantity} {elem.unit}</span>
                                     </div>
-                                )
+                                );
                             })}
                         </div> 
                         <div className="col-sm-6 col-md-4 text-justify m-3">

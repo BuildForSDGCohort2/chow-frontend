@@ -12,7 +12,7 @@ class Dashboard extends Component {
 componentDidMount() {
   const data = JSON.parse(sessionStorage.getItem("userData")) || JSON.parse(localStorage.getItem("userData"));
   const data1 = data;
-  console.log(data1.name || data1.profileObj.givenName);
+  // console.log(data1.name || data1.profileObj.givenName);
   this.setState({name: data1.name || data1.profileObj.givenName});
 }
 
@@ -59,6 +59,6 @@ componentDidMount() {
       </div>
   );
   }
-};
+}
 
 export default Dashboard;

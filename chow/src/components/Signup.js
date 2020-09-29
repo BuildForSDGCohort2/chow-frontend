@@ -20,7 +20,7 @@ const SignUp = () => {
 
     /**Facebook */
     const responseFacebook = (response) => {
-        console.log(response);
+        // console.log(response);
         setData(response);
         setPicture(response.picture.data.url);
         if (response.accessToken) {
@@ -32,13 +32,13 @@ const SignUp = () => {
         }
     }
     const componentClicked = () => {
-        console.log( "Clicked!" );
+        // console.log( "Clicked!" );
     };
 
     /**Google */
     const onSuccess = (response) => {
-        console.log(response);
-        console.log("[Login Success] currentuser", response.profileObj);
+        // console.log(response);
+        // console.log("[Login Success] currentuser", response.profileObj);
         setProfileObj(response.profileObj);
         setImageUrl(response.profileObj.imageUrl);
         if (response.accessToken) {
@@ -50,12 +50,12 @@ const SignUp = () => {
         }
     };
     const onFailure = (response) => {
-        console.log("[Login failed] response:", response);
+        // console.log("[Login failed] response:", response);
     };
 
     /**Twitter */
     const authHandler = (err, data) => {
-        console.log(err, data);
+        // console.log(err, data);
     };
 
     return(

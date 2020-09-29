@@ -18,20 +18,20 @@ const EmailSignUp = (props) => {
         'Content-Type' : 'application/json',
         'x-auth-token' : 'jwtToken'
       }
-      console.log("Form submitted", data);
+      // console.log("Form submitted", data);
       await axios
         //.post("http://localhost:4000/api/v1/user/signup", data, headers)
       .post("https://chow-kuic.herokuapp.com/api/v1/user/signup", data, headers)
       .then((res) => {
-        console.log(res);
-        console.log(res.data);
+        // console.log(res);
+        // console.log(res.data);
         if(res.data.status === true ){
           swal("Success!", res.data.message, "success")
           window.location = "/dashboard"
-          console.log(res.data.message)
+          // console.log(res.data.message)
         } else {
           swal("Error!", res.data.message, "error")
-          console.log("Error");
+          // console.log("Error");
         }
       })
       .catch((error) => {

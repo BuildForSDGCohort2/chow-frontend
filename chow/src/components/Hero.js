@@ -7,7 +7,7 @@ const Hero = () => {
         <h2>Get Great Recipes,<br/>anywhere,anytime ...</h2>
       </div>
     </div>
-  )
+  );
 }
 
 export default Hero;
