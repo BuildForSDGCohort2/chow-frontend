@@ -35,8 +35,8 @@ const EmailSignUp = (props) => {
         }
       })
       .catch((error) => {
-        //alert(error);
-        console.log(error);
+        alert(error);
+        // console.log(error);
       });
     };
 
