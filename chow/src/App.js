@@ -46,7 +46,7 @@ class App extends Component {
     this.setState({
       hits,
       isLoading: false
-    })
+    });
   }
   
   componentDidUpdate() {

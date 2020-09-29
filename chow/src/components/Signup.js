@@ -26,7 +26,7 @@ const SignUp = () => {
         if (response.accessToken) {
             setLogin(true);
             localStorage.setItem("userData", JSON.stringify(response));
-            history.push("/dashboard")
+            history.push("/dashboard");
         } else {
             setLogin(false);
         }
@@ -102,7 +102,7 @@ const SignUp = () => {
                         isSignedIn={false}
                         redirectUri="https://localhost:3000/dashbaord"
                         render={
-                            renderProps => (
+                            (renderProps) => (
                                 <button  onClick={renderProps.onClick} className="google m-2">Connect with Google</button>
                             )
                         }

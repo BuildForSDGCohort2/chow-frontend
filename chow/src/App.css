@@ -135,13 +135,13 @@ img {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
   .hero h2 {
     width: 50%;
   }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
   .hero h2 {
     width: 100%;
     margin: 0 auto;
@@ -497,12 +497,12 @@ input {
 
 .facebook {
   color: #fff;
-  background:  #3b5998 url("./images/facebook-3.svg") no-repeat  left 10px center;
+  background: #3b5998 url("./images/facebook-3.svg") no-repeat  left 10px center;
 }
 
 .twitter {
   color: #fff;
-  background: #1da1F2 url("./images/twitter1.svg") no-repeat left 1rem center;
+  background: #1da1f2 url("./images/twitter1.svg") no-repeat left 1rem center;
 }
 
 .facebook:hover,
@@ -517,10 +517,9 @@ input {
 }
 
 .google {
-  background-color: #fff;
   color: #000;
   box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.27) inset;
-  background: url("./images/google-icon.svg") no-repeat left 10px center;
+  background: #fff url("./images/google-icon.svg") no-repeat left 10px center;
 }
 
 .googleImg {
@@ -644,8 +643,9 @@ input {
   color: #3b5998;
   border-radius: 1rem;
   background: linear-gradient(145deg, #fff, #e6e6e6);
-  box-shadow:  13px 13px 26px #a3a3a3,
-      -13px -13px 26px #fff;
+  box-shadow:
+    13px 13px 26px #a3a3a3,
+    -13px -13px 26px #fff;
 }
 
 .meal {

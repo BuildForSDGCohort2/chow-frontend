@@ -10,7 +10,7 @@ const Header = () => {
     let loggedInUser = JSON.parse(userData);
     // console.log(loggedInUser.profileObj.imageUrl);
     return loggedInUser !== null;
-  }
+  };
   const signOut = () => {
     sessionStorage.removeItem("userData");
     localStorage.removeItem("userData");

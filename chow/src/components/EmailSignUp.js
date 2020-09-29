@@ -17,7 +17,7 @@ const EmailSignUp = (props) => {
       const headers = {
         'Content-Type' : 'application/json',
         'x-auth-token' : 'jwtToken'
-      }
+      };
       // console.log("Form submitted", data);
       await axios
         //.post("http://localhost:4000/api/v1/user/signup", data, headers)
@@ -27,7 +27,7 @@ const EmailSignUp = (props) => {
         // console.log(res.data);
         if(res.data.status === true ){
           swal("Success!", res.data.message, "success")
-          window.location = "/dashboard"
+          window.location = "/dashboard";
           // console.log(res.data.message)
         } else {
           swal("Error!", res.data.message, "error")
