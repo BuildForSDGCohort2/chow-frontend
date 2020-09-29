@@ -11,6 +11,7 @@ import Dashboard from "./Dashboard";
 import Order from "./Order";
 import MyRecipes from "./MyRecipes";
 import MealPlanner from "./MealPlanner";
+import MealIdeas from "./MealIdeas";
 
 
 const isLoggedIn = () => {
@@ -44,7 +45,8 @@ class Router extends Component {
             <Route path="/privacy" component={ Privacy } />
             
             <SecureRoute path="/myrecipes" component={ MyRecipes } />
-            <SecureRoute path="/mealplanner" component={ MealPlanner } />
+            <SecureRoute path="/meal-planning" component={ MealPlanner } />
+            <SecureRoute path="/ideas" component={ MealIdeas } />
             <SecureRoute path="/order" component={ Order } />
             <SecureRoute path="/dashboard" component={ Dashboard } />
         </Switch>

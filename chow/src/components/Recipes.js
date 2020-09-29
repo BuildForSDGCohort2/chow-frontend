@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ReactToolTip from "react-tooltip"
 
 
 
@@ -18,8 +19,13 @@ const Recipes = (props) => {
                  state: {hit: hit.recipe.label} 
                  }}
                  className="home" >
-                   <button className="view">View Recipe</button>
-               </Link> 
+                   <button className="view" data-tip="View this recipe">View recipe</button>
+               </Link>
+               <ReactToolTip
+                 place="right"
+                 effect="solid"
+                 type="dark"
+               />
               <p>Source: <a href={hit.recipe.url}>{hit.recipe.source}</a></p>
               <div>
               </div>
