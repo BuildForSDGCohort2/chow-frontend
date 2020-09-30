@@ -37,6 +37,7 @@ const MealIdeas = () => {
                      id="ideas"
                      activeKey={key}
                      onSelect={(k) => setKey(k)}
+                     transition={false}
                    >
                      <Tab eventKey="recipes" title="Recipes" className="mx-3">
                        <h5>Recipes Choices</h5>
