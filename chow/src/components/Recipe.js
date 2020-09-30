@@ -8,6 +8,7 @@ import {
     PinterestShareButton,
     PinterestIcon
   } from "react-share";
+import ReactToolTip from "react-tooltip";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -97,7 +98,14 @@ class Recipe extends React.Component {
                                   <span><b className="x">{calServ}</b> Cal per Serv</span>
                               </div>
                             </div>
-                                <Link to="/" className="home view">Go Home</Link>
+                                <Link to="/" className="home view" data-tip="Go Home">Go Home</Link>
+                                <ReactToolTip
+                                  type="dark"
+                                  place="top"
+                                  effect="solid"
+                                  backgroundColor="#000"
+                                  borderColor="#fff"
+                                />
                             <div>
                                 <p><b>Ingredients:</b></p>
                                 <hr/>
@@ -107,46 +115,45 @@ class Recipe extends React.Component {
                                   {ingredient.text}
                               </div>)}
                             </div>
-                            <p className="text-capitalize my-3"><a className="url" href={myRecipe.url} target="_blank" rel="noopener noreferrer">Read Directions</a></p>
+                            <p className="text-capitalize my-3"><a className="url" href={myRecipe.url} target="_blank" rel="noopener noreferrer" data-tip="Get the directions">Read Directions</a></p>
                             <div className="socials">
                               <FacebookShareButton
                                 url={window.location.href}
                                 quote={myRecipe.label}
                                 hashtag={myRecipe.label}
-                                className="mx-3"
-                                title="Share on Facebook"
+                                className="mx-5"
+                                data-tip="Share on Facebook"
                               >
                                 <FacebookIcon 
                                     size={32}
                                     round
                                 />
-                                <p>Share on facebook</p>
+                                
                               </FacebookShareButton>
                               <TwitterShareButton
                                 url={window.location.href}
                                 title={myRecipe.label}
                                 via="chow"
                                 hashtags={["food",`${myRecipe.label}`]}
-                                className="mx-3"
+                                className="mx-5"
+                                data-tip="Share on Twitter"
                               >
                                 <TwitterIcon 
                                   size={32}
                                   round
                                 />
-                                <p>Share on twitter</p>
                               </TwitterShareButton>
                               <PinterestShareButton
                                 url={window.location.href}
                                 media={myRecipe.image}
                                 description={myRecipe.label}
-                                className="mx-3"
-                                title="Share on Pinterest"
+                                className="mx-5"
+                                data-tip="Share on Pinterest"
                               >
                                 <PinterestIcon 
                                   size={32}
                                   round
                                 />
-                                <p>Pin this recipe</p>
                               </PinterestShareButton>
                             </div>
                             <hr/>

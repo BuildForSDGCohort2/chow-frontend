@@ -9,9 +9,11 @@ const MyRecipes = () => {
           <Header />
           <div className="row">
             <div className="col-sm-12 myOrder text-center mt-5">
-                <h3>My Recipes Page</h3>
+              <div className="my m-5 p-3">
+              <h3>My Recipes Page</h3>
                 <p>Sorry dear,we are still working on this page.</p>
-                <Link to="/dashboard">Go back</Link>
+                <Link to="/dashboard" className="go">Go back</Link>
+              </div>
             </div>
           </div>
           <Footer />
