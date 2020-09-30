@@ -788,6 +788,26 @@ a {
   background-size: cover;
 }
 
+.content_4 {
+  background: url("./images/katherine-chase-SzBZVEryGY4-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+
+.content_3 {
+  background: url("./images/pixzolo-photography-aeESmmFKH0M-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+
+.content_2 {
+  background: url("./images/andy-wang-Pf-bZQpCaMI-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+
+.content_1 {
+  background: url("./images/alison-marras-GyV6SL_fKsI-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+
 /** MealPlanner */
 .meal-plan h2 {
   color: #000;

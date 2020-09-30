@@ -16,8 +16,8 @@ const MealIdeas = () => {
             <div className="col-sm-6 myOrder"></div>
             <div className="col-sm-6 meal-plan text-justify mt-5">
                 <h2 className="text-center">Create Your Plan</h2>
-                <p>Ready to choose your meals! Use the + icon to add recipes to your plan.For exciting new meals personalized to your taste preferences,check Your Recommendations.
-                  Or check your saved recipes.
+                <p>Ready to choose your meals! Use the + icon to add recipes to your plan.For exciting new meals personalized to your taste preferences,<br/>Check our recommendations.
+                  or your saved recipes.
                 </p>
                 <div className="my-3">
                   <Link
@@ -39,18 +39,18 @@ const MealIdeas = () => {
                      onSelect={(k) => setKey(k)}
                    >
                      <Tab eventKey="recipes" title="Recipes" className="mx-3">
-                       <h4>Recipe Content</h4>
+                       <h4>Recipes Choices</h4>
                        <div className="row">
-                         <div className="col-sm-12 col-lg-4 content content1 m-2">
+                         <div className="col-sm-12 col-lg-4 content content_1 m-2">
                            <p>Chicken</p>
                          </div>
-                         <div className="col-sm-12 col-lg-4 content content2 m-2">
+                         <div className="col-sm-12 col-lg-4 content content_2 m-2">
                            <p>Fish</p>
                          </div>
-                         <div className="col-sm-12 col-lg-4 content content3 m-2">
+                         <div className="col-sm-12 col-lg-4 content content_3 m-2">
                            <p>Pasta</p>
                          </div>
-                         <div className="col-sm-12 col-lg-4 content content4 m-2">
+                         <div className="col-sm-12 col-lg-4 content content_4 m-2">
                            <p>Lamb</p>
                          </div>
                        </div>
