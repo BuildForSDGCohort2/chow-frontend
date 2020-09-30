@@ -39,16 +39,16 @@ const MealIdeas = () => {
                      onSelect={(k) => setKey(k)}
                    >
                      <Tab eventKey="recipes" title="Recipes" className="mx-3">
-                       <h4>Recipes Choices</h4>
+                       <h5>Recipes Choices</h5>
                        <div className="row">
                          <div className="col-sm-12 col-lg-4 content content_1 m-2">
                            <p>Chicken</p>
                          </div>
-                         <div className="col-sm-12 col-lg-4 content content_2 m-2">
-                           <p>Fish</p>
-                         </div>
                          <div className="col-sm-12 col-lg-4 content content_3 m-2">
                            <p>Pasta</p>
+                         </div>
+                         <div className="col-sm-12 col-lg-4 content content_2 m-2">
+                           <p>Fish</p>
                          </div>
                          <div className="col-sm-12 col-lg-4 content content_4 m-2">
                            <p>Lamb</p>
@@ -56,7 +56,7 @@ const MealIdeas = () => {
                        </div>
                      </Tab>
                      <Tab eventKey="recommendations" title="Recommendations" className="mx-3">
-                       <h4>Easy Starter Menu</h4>
+                       <h5>Easy Starter Menu</h5>
                        <div className="row">
                          <div className="col-sm-12 col-lg-4 content content1 m-2">
                            <p>BreakFast</p>

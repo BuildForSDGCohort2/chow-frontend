@@ -29,6 +29,13 @@ const Header = () => {
                   <Nav>
                     <Nav.Link>
                       <Link
+                        className="signOut mx-2 px-3 py-1"
+                        to="/dashboard">
+                          My Dashboard
+                      </Link>
+                    </Nav.Link>
+                    <Nav.Link>
+                      <Link
                         to="/"
                         className="signOut mx-2 px-3 py-1"
                         onClick={() => signOut()}

@@ -54,6 +54,10 @@ h3 {
   margin: 0;
 }
 
+h5 {
+  color: #3b5998;
+}
+
 /** Header */
 .navbar.navbar-expand-lg.navbar-light.bg-dark {
   width: 100%;
@@ -772,7 +776,9 @@ a {
 .content1 {
   background: url("./images/ben-kolde-FFqNATH27EM-unsplash.jpg") no-repeat;
   background-size: cover;
+  transition: all 1s;
 }
+
 .content2 {
   background: url("./images/monika-grabkowska-pCxJvSeSB5A-unsplash.jpg") no-repeat center;
   background-size: cover;
@@ -786,26 +792,31 @@ a {
 .content4 {
   background: url("./images/jo-sonn-zeFy-oCUhV8-unsplash.jpg") no-repeat center;
   background-size: cover;
+  transition: all 1s;
 }
 
 .content_4 {
   background: url("./images/katherine-chase-SzBZVEryGY4-unsplash.jpg") no-repeat;
   background-size: cover;
+  transition: all 1s;
 }
 
 .content_3 {
   background: url("./images/pixzolo-photography-aeESmmFKH0M-unsplash.jpg") no-repeat;
   background-size: cover;
+  transition: all 1s;
 }
 
 .content_2 {
-  background: url("./images/andy-wang-Pf-bZQpCaMI-unsplash.jpg") no-repeat;
+  background: url("./images/andy-wang-Pf-bZQpCaMI-unsplash.jpg") no-repeat right;
   background-size: cover;
+  transition: all 1s;
 }
 
 .content_1 {
   background: url("./images/alison-marras-GyV6SL_fKsI-unsplash.jpg") no-repeat;
   background-size: cover;
+  transition: all 1s;
 }
 
 /** MealPlanner */
