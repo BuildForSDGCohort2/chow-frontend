@@ -39,21 +39,35 @@ const MealIdeas = () => {
                      onSelect={(k) => setKey(k)}
                    >
                      <Tab eventKey="recipes" title="Recipes" className="mx-3">
-                       <p>Recipe Content</p>
+                       <h4>Recipe Content</h4>
+                       <div className="row">
+                         <div className="col-sm-12 col-lg-4 content content1 m-2">
+                           <p>Chicken</p>
+                         </div>
+                         <div className="col-sm-12 col-lg-4 content content2 m-2">
+                           <p>Fish</p>
+                         </div>
+                         <div className="col-sm-12 col-lg-4 content content3 m-2">
+                           <p>Pasta</p>
+                         </div>
+                         <div className="col-sm-12 col-lg-4 content content4 m-2">
+                           <p>Lamb</p>
+                         </div>
+                       </div>
                      </Tab>
                      <Tab eventKey="recommendations" title="Recommendations" className="mx-3">
                        <h4>Easy Starter Menu</h4>
                        <div className="row">
-                         <div className="col-sm-4 content content1 m-2">
+                         <div className="col-sm-12 col-lg-4 content content1 m-2">
                            <p>BreakFast</p>
                          </div>
-                         <div className="col-sm-4 content content2 m-2">
+                         <div className="col-sm-12 col-lg-4 content content2 m-2">
                            <p>Lunch</p>
                          </div>
-                         <div className="col-sm-4 content content3 m-2">
+                         <div className="col-sm-12 col-lg-4 content content3 m-2">
                            <p>Dinner</p>
                          </div>
-                         <div className="col-sm-4 content content4 m-2">
+                         <div className="col-sm-12 col-lg-4 content content4 m-2">
                            <p>Fruits</p>
                          </div>
                        </div>

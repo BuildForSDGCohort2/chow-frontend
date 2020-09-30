@@ -582,7 +582,7 @@ input {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
   height: 56px;
 }
@@ -701,6 +701,15 @@ input {
   background: url("./images/taylor-kiser-EvoIiaIVRzU-unsplash\(1\).jpg") no-repeat left;
   background-size: 100%;
   background-attachment: fixed;
+}
+
+@media only screen and (max-width: 400px) {
+  .myOrder {
+    display: none;
+  }
+  .my-plan {
+    min-height: 100vh;
+  }
 }
 
 .searchFood {
