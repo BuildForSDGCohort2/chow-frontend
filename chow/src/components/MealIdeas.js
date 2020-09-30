@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ReactToolTip from "react-tooltip";
+import { Tabs, Tab } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
 
 
 const MealIdeas = () => {
+  const [key, setKey] = useState("recipes", "recommendations")
+
     return (
         <div className="container-fluid">
           <Header />
@@ -27,6 +30,36 @@ const MealIdeas = () => {
                       type="dark"
                       effect="solid"
                     />
+                </div>
+                <div className="row">
+                 <div className="col-sm-12">
+                   <Tabs
+                     id="ideas"
+                     activeKey={key}
+                     onSelect={(k) => setKey(k)}
+                   >
+                     <Tab eventKey="recipes" title="Recipes" className="mx-3">
+                       <p>Recipe Content</p>
+                     </Tab>
+                     <Tab eventKey="recommendations" title="Recommendations" className="mx-3">
+                       <h4>Easy Starter Menu</h4>
+                       <div className="row">
+                         <div className="col-sm-4 content content1 m-2">
+                           <p>BreakFast</p>
+                         </div>
+                         <div className="col-sm-4 content content2 m-2">
+                           <p>Lunch</p>
+                         </div>
+                         <div className="col-sm-4 content content3 m-2">
+                           <p>Dinner</p>
+                         </div>
+                         <div className="col-sm-4 content content4 m-2">
+                           <p>Fruits</p>
+                         </div>
+                       </div>
+                     </Tab>
+                   </Tabs>
+                 </div>
                 </div>
             </div>
           </div>

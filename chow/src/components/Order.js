@@ -12,7 +12,7 @@ const Order = () => {
               <div className="my m-5 p-3">
                 <h3>Order Page</h3>
                 <p>Sorry dear,we are still working on this page.</p>
-                <Link to="/dashboard" className="go">Go back</Link>
+                <Link to="/dashboard" className="go">Go Back</Link>
               </div>
                 
             </div>

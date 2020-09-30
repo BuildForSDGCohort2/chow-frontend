@@ -727,6 +727,58 @@ input {
   color: #fff;
 }
 
+.r {
+  border-bottom: 3px solid #3b5998;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+}
+
+.nav-tabs {
+ border: none;
+}
+
+.active {
+  font-weight: 500;
+  color: #000;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  height: 10rem;
+  border-radius: 10px;
+}
+
+.content p {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 0.1rem;
+}
+
+.content1 {
+  background: url("./images/ben-kolde-FFqNATH27EM-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+.content2 {
+  background: url("./images/monika-grabkowska-pCxJvSeSB5A-unsplash.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.content3 {
+  background: url("./images/casey-lee-awj7sRviVXo-unsplash.jpg") no-repeat bottom;
+  background-size: cover;
+}
+
+.content4 {
+  background: url("./images/jo-sonn-zeFy-oCUhV8-unsplash.jpg") no-repeat center;
+  background-size: cover;
+}
+
 /** MealPlanner */
 .meal-plan h2 {
   color: #000;
