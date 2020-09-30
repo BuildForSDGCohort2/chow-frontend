@@ -46,7 +46,7 @@ const Header = () => {
                 ) : (
                 <Nav>
                   <Nav.Link>
-                     <Link to="/" className="homePg mx-5 active">Home</Link>
+                     <Link to="/" className="homePg mx-5 activeHome">Home</Link>
                   </Nav.Link>
                   <Nav.Link>
                     <Link to="/signup" className="mealPlanner mx-2 px-3 py-1">Meal Planner</Link>
