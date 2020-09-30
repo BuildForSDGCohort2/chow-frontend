@@ -776,47 +776,53 @@ a {
 .content1 {
   background: url("./images/ben-kolde-FFqNATH27EM-unsplash.jpg") no-repeat;
   background-size: cover;
-  transition: all 1s;
+  transition: all 1s ease-in-out;
 }
 
 .content2 {
   background: url("./images/monika-grabkowska-pCxJvSeSB5A-unsplash.jpg") no-repeat center;
   background-size: cover;
+  transition: all 1s ease-in-out;
 }
 
 .content3 {
   background: url("./images/casey-lee-awj7sRviVXo-unsplash.jpg") no-repeat bottom;
   background-size: cover;
+  transition: all 1s ease-in-out;
 }
 
 .content4 {
   background: url("./images/jo-sonn-zeFy-oCUhV8-unsplash.jpg") no-repeat center;
   background-size: cover;
-  transition: all 1s;
+  transition: all 1s ease-in-out;
 }
 
 .content_4 {
   background: url("./images/katherine-chase-SzBZVEryGY4-unsplash.jpg") no-repeat;
   background-size: cover;
-  transition: all 1s;
+  transition: all 1s ease-in-out;
 }
 
 .content_3 {
   background: url("./images/pixzolo-photography-aeESmmFKH0M-unsplash.jpg") no-repeat;
   background-size: cover;
-  transition: all 1s;
+  transition: all 1s ease-in-out;
 }
 
 .content_2 {
   background: url("./images/andy-wang-Pf-bZQpCaMI-unsplash.jpg") no-repeat right;
   background-size: cover;
-  transition: all 1s;
+  transition: all 1s ease-in-out;
 }
 
 .content_1 {
   background: url("./images/alison-marras-GyV6SL_fKsI-unsplash.jpg") no-repeat;
   background-size: cover;
-  transition: all 1s;
+  transition: all 1s ease-in-out;
+}
+
+.content:hover {
+  transform: scale(1.1);
 }
 
 /** MealPlanner */
