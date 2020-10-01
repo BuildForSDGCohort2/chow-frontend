@@ -99,6 +99,7 @@ class Recipe extends React.Component {
                               </div>
                             </div>
                                 <Link to="/" className="home view" data-tip="Go Home">Go Home</Link>
+                                <Link to="/dashboard" className="home view mx-2" data-tip="Add this recipe to My Recipes" >Add to My Recipes</Link>
                                 <ReactToolTip
                                   type="dark"
                                   place="top"
