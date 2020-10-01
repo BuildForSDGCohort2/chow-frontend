@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import EdamamBadge from "../images/badge.png";
 
 
 const Footer = () => {
@@ -18,6 +19,11 @@ const Footer = () => {
                         &copy;2020 <span className="chow">choW</span>
                     </li>
                 </ul>
+                <div className="col-sm-12">
+                    <a href="https://www.edamam.com" data-tip="Powered by Edamam" target="_blank" rel="noopener noreferrer">
+                        <img alt="Powered by Edamam" src={ EdamamBadge } className="edamam" />
+                    </a>
+                </div>
                 
             </div>
         </div>

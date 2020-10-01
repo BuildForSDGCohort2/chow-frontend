@@ -619,6 +619,11 @@ input {
   color: #3b5998;
 }
 
+.edamam {
+  width: 200px;
+  height: 40px;
+}
+
 /** Dashboard */
 .dashboard {
   min-height: 100vh;
