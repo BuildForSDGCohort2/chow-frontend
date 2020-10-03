@@ -8,7 +8,7 @@ const MyRecipes = () => {
         <div className="container-fluid">
           <Header />
           <div className="row">
-            <div className="col-sm-12 myOrder text-center mt-5">
+            <div className="col-sm-12 myOrder text-center">
               <div className="my m-5 p-3">
               <h3>My Recipes Page</h3>
                 <p>Sorry dear,we are still working on this page.</p>
