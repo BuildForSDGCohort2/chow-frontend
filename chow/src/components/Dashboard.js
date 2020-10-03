@@ -23,7 +23,7 @@ componentDidMount() {
           <Header />
           <div className="row">
               <div className="col-sm-12 mb-5 text-center dash">
-                <form>
+                {/*<form>
                   <input
                     name="recipeName"
                     type="text"
@@ -32,7 +32,7 @@ componentDidMount() {
                     required
                   />
                   <button className="btn btn-primary mealBtn">Search Recipes</button>
-                </form>
+                </form>*/}
               </div>
           </div>
           <div className="row meal">

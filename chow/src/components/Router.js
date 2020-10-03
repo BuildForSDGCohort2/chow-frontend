@@ -43,7 +43,7 @@ class Router extends Component {
             <Route path="/email-signup" component={ EmailSignUp }/>
             <Route path="/signin" component={ SignIn } />
             <Route path="/privacy" component={ Privacy } />
-            
+
             <SecureRoute path="/myrecipes" component={ MyRecipes } />
             <SecureRoute path="/meal-planning" component={ MealPlanner } />
             <SecureRoute path="/ideas" component={ MealIdeas } />
