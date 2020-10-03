@@ -58,6 +58,14 @@ h5 {
   color: #3b5998;
 }
 
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
 /** Header */
 .navbar.navbar-expand-lg.navbar-light.bg-dark {
   width: 100%;
@@ -659,6 +667,8 @@ input {
   box-shadow:
     13px 13px 26px #a3a3a3,
     -13px -13px 26px #fff;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
 }
 
 .meal {
@@ -826,7 +836,10 @@ a {
   transition: all 1s ease-in-out;
 }
 
-.content:hover {
+.content:hover,
+.order:hover,
+.myRecipes:hover,
+.planner:hover {
   transform: scale(1.1);
 }
 

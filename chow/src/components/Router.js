@@ -1,17 +1,20 @@
-import React, { Component } from "react";
+import React, { Component, Suspense } from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
-import App from "../App";
-import Recipe from "./Recipe";
-import Terms from "./Terms";
-import SignUp from "./Signup";
-import EmailSignUp from "./EmailSignUp";
-import SignIn from "./SignIn";
-import Privacy from "./Privacy";
-import Dashboard from "./Dashboard";
-import Order from "./Order";
-import MyRecipes from "./MyRecipes";
-import MealPlanner from "./MealPlanner";
-import MealIdeas from "./MealIdeas";
+import ReactLoading from "react-loading";
+
+const App = React.lazy(() => import("../App"));
+const Recipe = React.lazy(() => import("./Recipe"));
+const Terms = React.lazy(() => import("./Terms"));
+const SignUp = React.lazy(() => import("./Signup"));
+const SignIn = React.lazy(() => import("./SignIn"));
+const EmailSignUp = React.lazy(() => import("./EmailSignUp"));
+const Privacy = React.lazy(() => import("./Privacy"));
+const Dashboard = React.lazy(() => import("./Dashboard"));
+const Order = React.lazy(() => import("./Order"));
+const MyRecipes = React.lazy(() => import("./MyRecipes"));
+const MealPlanner = React.lazy(() => import("./MealPlanner"));
+const MealIdeas = React.lazy(() => import("./MealIdeas"));
+
 
 
 const isLoggedIn = () => {
@@ -34,7 +37,10 @@ const SecureRoute = ({ component: Component, ...rest }) => {
 class Router extends Component {
     render() {
         return (
-            <BrowserRouter>
+  <Suspense fallback={<div className="loader m-5">
+    <ReactLoading type={"spokes"} color={"#f20e0e"}  className="spinner" height={ 25 } width={ 25 } />
+  </div>}>
+    <BrowserRouter>
         <Switch>
             <Route path="/" component={ App } exact/>
             <Route path="/recipe/:uri" component={ Recipe }/>
@@ -51,6 +57,7 @@ class Router extends Component {
             <SecureRoute path="/dashboard" component={ Dashboard } />
         </Switch>
     </BrowserRouter>
+    </Suspense>
         )
     }
 };
