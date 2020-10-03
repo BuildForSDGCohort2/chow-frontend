@@ -834,3 +834,18 @@ a {
 .meal-plan h2 {
   color: #000;
 }
+
+.items {
+  outline: none;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  padding: 0.01rem 1.5rem;
+  border-radius: 3.125rem;
+  font-weight: 300;
+}
+
+.items:hover {
+  background-color: #f26f07;
+  color: #000;
+}
