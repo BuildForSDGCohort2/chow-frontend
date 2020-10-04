@@ -39,6 +39,7 @@ class Router extends Component {
         return (
   <Suspense fallback={<div className="loader m-5">
     <ReactLoading type={"spokes"} color={"#f20e0e"}  className="spinner" height={ 25 } width={ 25 } />
+    <h3>Loading</h3>
   </div>}>
     <BrowserRouter>
         <Switch>

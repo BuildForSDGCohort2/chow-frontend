@@ -266,6 +266,11 @@ input {
   align-items: center;
 }
 
+.active-img {
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
 /** Recipe */
 .recipeName {
   color: #000;
@@ -839,7 +844,8 @@ a {
 .content:hover,
 .order:hover,
 .myRecipes:hover,
-.planner:hover {
+.planner:hover,
+.active-img:hover {
   transform: scale(1.1);
 }
 
