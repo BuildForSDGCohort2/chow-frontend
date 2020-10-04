@@ -129,7 +129,7 @@ h5 {
   justify-content: center;
   width: 100%;
   min-height: 50vh;
-  background: url("./images/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg") no-repeat left;
+  background: url("./images/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash\(1\).jpg") no-repeat left;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -471,7 +471,7 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #fff url("./images/lukas-blazek-f-TWhXOrLiU-unsplash-removebg-preview.png") no-repeat;
+  background: #fff url("./images/lukas-blazek-f-TWhXOrLiU-unsplash-removebg-preview\(1\).png") no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -643,7 +643,7 @@ input {
 }
 
 .dash {
-  background: url("./images/taylor-kiser-EvoIiaIVRzU-unsplash\(1\).jpg") no-repeat left;
+  background: url("./images/taylor-kiser-EvoIiaIVRzU-unsplash\(1\)\(1\).jpg") no-repeat left;
   min-height: 50vh;
   background-size: cover;
   background-attachment: fixed;
@@ -700,7 +700,7 @@ input {
 }
 
 .myRecipes {
-  background: url("./images/lukas-blazek-f-TWhXOrLiU-unsplash-removebg-preview.png") no-repeat right 0.2rem;
+  background: url("./images/lukas-blazek-f-TWhXOrLiU-unsplash-removebg-preview\(1\).png") no-repeat right 0.2rem;
   background-size: 100%;
 }
 
@@ -722,7 +722,7 @@ input {
 
 .myOrder {
   min-height: 100vh;
-  background: url("./images/taylor-kiser-EvoIiaIVRzU-unsplash\(1\).jpg") no-repeat left;
+  background: url("./images/taylor-kiser-EvoIiaIVRzU-unsplash\(1\)\(1\).jpg") no-repeat left;
   background-size: 100%;
   background-attachment: fixed;
 }
@@ -794,49 +794,49 @@ a {
 }
 
 .content1 {
-  background: url("./images/ben-kolde-FFqNATH27EM-unsplash.jpg") no-repeat;
+  background: url("./images/ben-kolde-FFqNATH27EM-unsplash\(1\).jpg") no-repeat;
   background-size: cover;
   transition: all 1s ease-in-out;
 }
 
 .content2 {
-  background: url("./images/monika-grabkowska-pCxJvSeSB5A-unsplash.jpg") no-repeat center;
+  background: url("./images/monika-grabkowska-pCxJvSeSB5A-unsplash\(1\).jpg") no-repeat center;
   background-size: cover;
   transition: all 1s ease-in-out;
 }
 
 .content3 {
-  background: url("./images/casey-lee-awj7sRviVXo-unsplash.jpg") no-repeat bottom;
+  background: url("./images/casey-lee-awj7sRviVXo-unsplash\(1\).jpg") no-repeat bottom;
   background-size: cover;
   transition: all 1s ease-in-out;
 }
 
 .content4 {
-  background: url("./images/jo-sonn-zeFy-oCUhV8-unsplash.jpg") no-repeat center;
+  background: url("./images/jo-sonn-zeFy-oCUhV8-unsplash\(1\).jpg") no-repeat center;
   background-size: cover;
   transition: all 1s ease-in-out;
 }
 
 .content_4 {
-  background: url("./images/katherine-chase-SzBZVEryGY4-unsplash.jpg") no-repeat;
+  background: url("./images/katherine-chase-SzBZVEryGY4-unsplash\(1\).jpg") no-repeat;
   background-size: cover;
   transition: all 1s ease-in-out;
 }
 
 .content_3 {
-  background: url("./images/pixzolo-photography-aeESmmFKH0M-unsplash.jpg") no-repeat;
+  background: url("./images/pixzolo-photography-aeESmmFKH0M-unsplash\(1\).jpg") no-repeat;
   background-size: cover;
   transition: all 1s ease-in-out;
 }
 
 .content_2 {
-  background: url("./images/andy-wang-Pf-bZQpCaMI-unsplash.jpg") no-repeat right;
+  background: url("./images/andy-wang-Pf-bZQpCaMI-unsplash\(1\).jpg") no-repeat right;
   background-size: cover;
   transition: all 1s ease-in-out;
 }
 
 .content_1 {
-  background: url("./images/alison-marras-GyV6SL_fKsI-unsplash.jpg") no-repeat;
+  background: url("./images/alison-marras-GyV6SL_fKsI-unsplash\(3\).jpg") no-repeat;
   background-size: cover;
   transition: all 1s ease-in-out;
 }
