@@ -2,7 +2,6 @@ import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import swal from "sweetalert";
 import Footer from "./Footer";
 import Heading from "./Heading";
 
@@ -26,11 +25,9 @@ const EmailSignUp = (props) => {
         // console.log(res);
         // console.log(res.data);
         if(res.data.status === true ){
-          swal("Success!", res.data.message, "success");
           window.location = "/dashboard";
           // console.log(res.data.message)
         } else {
-          swal("Error!", res.data.message, "error");
           // console.log("Error");
         }
       })

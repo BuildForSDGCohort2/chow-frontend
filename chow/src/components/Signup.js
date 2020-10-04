@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
-import { GoogleLogin } from "react-google-login/";
-import TwitterLogin from "react-twitter-login";
+import { GoogleLogin } from "react-google-login";
 import Footer from "./Footer";
 import Heading from "./Heading";
 
@@ -53,14 +52,15 @@ const SignUp = () => {
         // console.log("[Login failed] response:", response);
     };
 
-    /**Twitter */
+    /**Twitter
     const authHandler = (err, data) => {
         // console.log(err, data);
-    };
+    };*/
 
     return(
-        <div className="row text-center">
-            <div className="col-sm-12 signUp">
+      <div className="container-fluid">
+        <div className="row text-center p-5 signUp">
+            <div className="col-sm-12">
             <Heading />
                 <ul className="connect">
                     <li>
@@ -117,7 +117,7 @@ const SignUp = () => {
                         </div>
                       }
                     </li>
-                    <li>
+                    {/*<li>
                         <TwitterLogin 
                           authCallback={authHandler}
                           buttonTheme="dark"
@@ -133,17 +133,18 @@ const SignUp = () => {
                       <button className="email m-2" title="Connect with Email">
                           <span>Connect with Email</span>
                       </button>
-                    </Link>
+                        </Link>*/}
                 </ul>
                 <Link to="/" className="my-5">
-                    <p>Go Back</p>
+                    <b>Go Back</b>
                 </Link>
                 <div className="col-sm-12">
                   <small className="text center">By connecting, you agree to our Terms of Use and Privacy Notice</small>
                 </div>
             </div>
-            <Footer />
         </div>
+        <Footer />
+     </div>   
     );
 };
 
