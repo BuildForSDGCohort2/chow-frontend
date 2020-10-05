@@ -59,8 +59,8 @@ const SignUp = () => {
 
     return(
       <div className="container-fluid">
-        <div className="row text-center p-5 signUp">
-            <div className="col-sm-12">
+        <div className="row text-center signUp">
+            <div className="col-sm-12 sign py-5">
             <Heading />
                 <ul className="connect">
                     <li>
@@ -135,10 +135,10 @@ const SignUp = () => {
                       </button>
                         </Link>*/}
                 </ul>
-                <Link to="/" className="my-5">
-                    <b>Go Back</b>
+                <Link to="/" className="my-5 back view home">
+                    Go Back
                 </Link>
-                <div className="col-sm-12">
+                <div className="col-sm-12 back">
                   <small className="text center">By connecting, you agree to our Terms of Use and Privacy Notice</small>
                 </div>
             </div>

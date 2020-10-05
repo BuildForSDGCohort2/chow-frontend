@@ -151,6 +151,9 @@ img {
   .hero h2 {
     width: 50%;
   }
+  .sign {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -466,19 +469,25 @@ input {
 }
 
 /** SignUp */
+.sign {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width:90%;
+}
+
 .signUp {
   min-height: 90vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #fff url("./images/lukas-blazek-f-TWhXOrLiU-unsplash-removebg-preview\(1\).png") no-repeat;
+  width: 100%;
+  background: url("./images/monika-grabkowska-pCxJvSeSB5A-unsplash\(1\).jpg") no-repeat bottom right;
   background-attachment: fixed;
   background-size: cover;
 }
 
 @media only screen and (max-width: 400px) {
   .signUp {
-    background: none;
+    background-size: cover;
   }
   form {
     margin: 0 auto;
@@ -487,8 +496,12 @@ input {
 }
 
 .heading {
-  color: #f20e0e;
+  color: #fff;
   text-decoration: none;
+}
+
+.back {
+  color: #fff;
 }
 
 .heading:hover {
