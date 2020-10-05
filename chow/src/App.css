@@ -737,6 +737,19 @@ input {
   color: #000;
 }
 
+.from {
+  color: #3b5998;
+}
+
+.prdt {
+  transition: all 1s ease-in-out;
+  margin: 0.6rem;
+}
+
+.prdt:hover {
+  transform: scale(1.1);
+}
+
 .myOrder {
   min-height: 100vh;
   background: url("./images/taylor-kiser-EvoIiaIVRzU-unsplash\(1\)\(1\).jpg") no-repeat left;
@@ -751,10 +764,6 @@ input {
   .my-plan {
     min-height: 100vh;
   }
-}
-
-.searchFood {
-  background-color: #000;
 }
 
 .my {
