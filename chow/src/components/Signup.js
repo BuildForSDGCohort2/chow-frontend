@@ -63,7 +63,7 @@ const SignUp = () => {
             <div className="col-sm-12 sign py-5">
             <Heading />
                 <ul className="connect">
-                    <li>
+                    <li className="social-signin">
                         {!login &&
                     <FacebookLogin 
                       appId="240858893885753"
@@ -91,7 +91,7 @@ const SignUp = () => {
                       </div>
                     }
                     </li>
-                    <li>
+                    <li className="social-signin">
                         {!loginGoogle &&
                       <GoogleLogin 
                         clientId="619240812460-jbjbp3rditc3e3kp54fgqb3l2nrnd2u3.apps.googleusercontent.com"

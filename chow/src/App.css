@@ -469,6 +469,7 @@ input {
 }
 
 /** SignUp */
+
 .sign {
   background-color: rgba(0, 0, 0, 0.7);
   max-width:90%;
@@ -498,6 +499,7 @@ input {
 .heading {
   color: #fff;
   text-decoration: none;
+  transition: all 1s ease-in-out;
 }
 
 .back {
@@ -505,7 +507,7 @@ input {
 }
 
 .heading:hover {
-  color: #000;
+  color: #f20e0e;
   text-decoration: none;
 }
 
@@ -527,6 +529,7 @@ input {
   font-weight: 900;
   font-size: 0.9rem;
   opacity: 0.95;
+  transition: all 1s ease-in-out;
 }
 
 .facebook {
@@ -540,8 +543,9 @@ input {
 }
 
 .facebook:hover,
-.twitter:hover {
+.google:hover {
   opacity: 1;
+  transform: scale(1.2);
 }
 
 .picture {
