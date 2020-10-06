@@ -5,6 +5,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Drinks from "./Drinks";
 import Pizza from "./Pizza";
+import SmallChops from "./SmallChops";
 
 
 const Order = () => {
@@ -46,6 +47,9 @@ const Order = () => {
                     </Tab>
                     <Tab eventKey="small chops" title="Small Chops" className="mx-3">
                       <h5 className="text-justify">Small Chops Menu</h5>
+                      <div className="row">
+                        <SmallChops />
+                      </div>
                     </Tab>
                     <Tab eventKey="pizza" title="Pizza" className="mx-3">
                       <h5 className="text-justify">Pizza Menu</h5>
