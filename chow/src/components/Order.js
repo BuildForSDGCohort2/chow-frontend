@@ -6,6 +6,10 @@ import Footer from "./Footer";
 import Drinks from "./Drinks";
 import Pizza from "./Pizza";
 import SmallChops from "./SmallChops";
+import Smoothies from "./Smoothies";
+import Salads from "./Salads";
+import Food from "./Food";
+import Snacks from "./Snacks";
 
 
 const Order = () => {
@@ -35,15 +39,27 @@ const Order = () => {
                   >
                     <Tab eventKey="food" title="Food" className="mx-3">
                       <h5 className="text-justify">Food Menu</h5>
+                      <div className="row">
+                        <Food />
+                      </div>
                     </Tab>
                     <Tab eventKey="snacks" title="Snacks" className="mx-3">
                       <h5 className="text-justify">Snack Menu</h5>
+                      <div className="row">
+                        <Snacks />
+                      </div>
                     </Tab>
                     <Tab eventKey="salads" title="Salads" className="mx-3">
                       <h5 className="text-justify">Salad Menu</h5>
+                      <div className="row">
+                        <Salads />
+                      </div>
                     </Tab>
                     <Tab eventKey="smoothie" title="Smoothies" className="mx-3">
                       <h5 className="text-justify">Smoothie Menu</h5>
+                      <div className="row">
+                        <Smoothies />
+                      </div>
                     </Tab>
                     <Tab eventKey="small chops" title="Small Chops" className="mx-3">
                       <h5 className="text-justify">Small Chops Menu</h5>
