@@ -7,6 +7,12 @@ import Footer from "./Footer";
 import cokePet from "../images/drinks/cokepet.jpg";
 import pepsiPet from "../images/drinks/pepsi.png";
 import fantaPet from "../images/drinks/fantaPet.png";
+import spritePet from "../images/drinks/spritepet.jpg";
+import sevenUpPet from "../images/drinks/7uppet.jpeg";
+import teemPet from "../images/drinks/teemsoda.jpg";
+import cokeCan from "../images/drinks/cokecan.jpg";
+import pepsiCan from "../images/drinks/pepsican.jpg";
+import sevenupCan from "../images/drinks/7upcan.jpg";
 
 const Order = () => {
   const [key, setKey] = useState("food", "snacks", "salads", "smoothie", "drinks", "small chops", "pizza");
@@ -91,7 +97,7 @@ const Order = () => {
                               className="prdt"
                             />
                              <Card.Body>
-                              <Card.Title>Pepsi</Card.Title>
+                              <Card.Title>Fanta</Card.Title>
                             </Card.Body>
                             <Card.Footer>
                               <span className="from">N 150</span>
@@ -102,7 +108,51 @@ const Order = () => {
                           <Card>
                             <CardImg 
                               variant="top"
-                              src={cokePet}
+                              src={spritePet}
+                              alt=""
+                              className="prdt"
+                            />
+                            <Card.Body>
+                              <Card.Title>Sprite</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                              <span className="from">N 150</span>
+                            </Card.Footer>
+                          </Card>
+                          <Card>
+                            <CardImg 
+                              variant="top"
+                              src={teemPet}
+                              alt=""
+                              className="prdt"
+                            />
+                             <Card.Body>
+                              <Card.Title>Teem Soda</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                              <span className="from">N 150</span>
+                            </Card.Footer>
+                          </Card>
+                          <Card>
+                            <CardImg 
+                              variant="top"
+                              src={sevenUpPet}
+                              alt=""
+                              className="prdt"
+                            />
+                             <Card.Body>
+                              <Card.Title>7 Up</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                              <span className="from">N 150</span>
+                            </Card.Footer>
+                          </Card>
+                        </CardGroup>
+                        <CardGroup>
+                          <Card>
+                            <CardImg 
+                              variant="top"
+                              src={cokeCan}
                               alt=""
                               className="prdt"
                             />
@@ -116,7 +166,7 @@ const Order = () => {
                           <Card>
                             <CardImg 
                               variant="top"
-                              src={pepsiPet}
+                              src={pepsiCan}
                               alt=""
                               className="prdt"
                             />
@@ -130,56 +180,12 @@ const Order = () => {
                           <Card>
                             <CardImg 
                               variant="top"
-                              src={fantaPet}
+                              src={sevenupCan}
                               alt=""
                               className="prdt"
                             />
                              <Card.Body>
-                              <Card.Title>Pepsi</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                        </CardGroup>
-                        <CardGroup>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={cokePet}
-                              alt=""
-                              className="prdt"
-                            />
-                            <Card.Body>
-                              <Card.Title>Coca-Cola</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={pepsiPet}
-                              alt=""
-                              className="prdt"
-                            />
-                             <Card.Body>
-                              <Card.Title>Pepsi</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={fantaPet}
-                              alt=""
-                              className="prdt"
-                            />
-                             <Card.Body>
-                              <Card.Title>Pepsi</Card.Title>
+                              <Card.Title>7 Up</Card.Title>
                             </Card.Body>
                             <Card.Footer>
                               <span className="from">N 150</span>
