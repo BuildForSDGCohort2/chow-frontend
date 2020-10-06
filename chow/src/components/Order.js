@@ -9,10 +9,18 @@ import pepsiPet from "../images/drinks/pepsi.png";
 import fantaPet from "../images/drinks/fantaPet.png";
 import spritePet from "../images/drinks/spritepet.jpg";
 import sevenUpPet from "../images/drinks/7uppet.jpeg";
-import teemPet from "../images/drinks/teemsoda.jpg";
+import teemPet from "../images/drinks/teemsodapet.webp";
 import cokeCan from "../images/drinks/cokecan.jpg";
 import pepsiCan from "../images/drinks/pepsican.jpg";
 import sevenupCan from "../images/drinks/7upcan.jpg";
+import teemCan from "../images/drinks/teemcan.jpg";
+import teemCan2 from "../images/drinks/teemtonic.jpg";
+import fantaCan from "../images/drinks/fantacan.jpg";
+import spriteCan from "../images/drinks/spritecan.jpg"
+import aquafinaWater from "../images/drinks/aquafinawater.jpg";
+import evaWater from "../images/drinks/evawater.jpg";
+import teemlemon from "../images/drinks/teembitterpet.jpeg";
+import cokeZero from "../images/drinks/cokepetzero.jpg";
 
 const Order = () => {
   const [key, setKey] = useState("food", "snacks", "salads", "smoothie", "drinks", "small chops", "pizza");
@@ -196,12 +204,12 @@ const Order = () => {
                           <Card>
                             <CardImg 
                               variant="top"
-                              src={cokePet}
+                              src={teemCan}
                               alt=""
                               className="prdt"
                             />
                             <Card.Body>
-                              <Card.Title>Coca-Cola</Card.Title>
+                              <Card.Title>Teem Bitter Lemon</Card.Title>
                             </Card.Body>
                             <Card.Footer>
                               <span className="from">N 150</span>
@@ -210,12 +218,12 @@ const Order = () => {
                           <Card>
                             <CardImg 
                               variant="top"
-                              src={pepsiPet}
+                              src={aquafinaWater}
                               alt=""
                               className="prdt"
                             />
                              <Card.Body>
-                              <Card.Title>Pepsi</Card.Title>
+                              <Card.Title>Aquafina Water</Card.Title>
                             </Card.Body>
                             <Card.Footer>
                               <span className="from">N 150</span>
@@ -224,12 +232,100 @@ const Order = () => {
                           <Card>
                             <CardImg 
                               variant="top"
-                              src={fantaPet}
+                              src={evaWater}
                               alt=""
                               className="prdt"
                             />
                              <Card.Body>
-                              <Card.Title>Pepsi</Card.Title>
+                              <Card.Title>Eva Water</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                              <span className="from">N 150</span>
+                            </Card.Footer>
+                          </Card>
+                        </CardGroup>
+                        <CardGroup>
+                          <Card>
+                            <CardImg 
+                              variant="top"
+                              src={spriteCan}
+                              alt=""
+                              className="prdt"
+                            />
+                            <Card.Body>
+                              <Card.Title>Sprite Can</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                              <span className="from">N 150</span>
+                            </Card.Footer>
+                          </Card>
+                          <Card>
+                            <CardImg 
+                              variant="top"
+                              src={cokeZero}
+                              alt=""
+                              className="prdt"
+                            />
+                             <Card.Body>
+                              <Card.Title>Coke Zero</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                              <span className="from">N 150</span>
+                            </Card.Footer>
+                          </Card>
+                          <Card>
+                            <CardImg 
+                              variant="top"
+                              src={teemlemon}
+                              alt=""
+                              className="prdt"
+                            />
+                             <Card.Body>
+                              <Card.Title>Teem Bitter Lemon</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                              <span className="from">N 150</span>
+                            </Card.Footer>
+                          </Card>
+                        </CardGroup>
+                        <CardGroup>
+                          <Card>
+                            <CardImg 
+                              variant="top"
+                              src={teemCan}
+                              alt=""
+                              className="prdt"
+                            />
+                            <Card.Body>
+                              <Card.Title>Teem Bitter Lemon</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                              <span className="from">N 150</span>
+                            </Card.Footer>
+                          </Card>
+                          <Card>
+                            <CardImg 
+                              variant="top"
+                              src={fantaCan}
+                              alt=""
+                              className="prdt"
+                            />
+                             <Card.Body>
+                              <Card.Title>Fanta Can</Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                              <span className="from">N 150</span>
+                            </Card.Footer>
+                          </Card>
+                          <Card>
+                            <CardImg 
+                              variant="top"
+                              src={teemCan2}
+                              alt=""
+                              className="prdt"
+                            />
+                             <Card.Body>
+                              <Card.Title>Teem Tonic</Card.Title>
                             </Card.Body>
                             <Card.Footer>
                               <span className="from">N 150</span>
