@@ -4,6 +4,7 @@ import { Tabs, Tab } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
 import Drinks from "./Drinks";
+import Pizza from "./Pizza";
 
 
 const Order = () => {
@@ -48,11 +49,14 @@ const Order = () => {
                     </Tab>
                     <Tab eventKey="pizza" title="Pizza" className="mx-3">
                       <h5 className="text-justify">Pizza Menu</h5>
+                      <div className="row">
+                        <Pizza />
+                      </div>
                     </Tab>
                     <Tab eventKey="drinks" title="Drinks" className="mx-3">
                       <h5 className="text-justify">Drink Menu</h5>
                       <div className="row">
-                       <Drinks />
+                        <Drinks />
                       </div>
                     </Tab>
                   </Tabs>

@@ -746,12 +746,13 @@ input {
 }
 
 .add {
+  font-size: 0.8rem;
   text-decoration: none;
   background-color: #3b5998;
   color: #fff;
   border-radius: 50px;
   padding: 0.1rem 1rem;
-  transition: all 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .add:hover {
