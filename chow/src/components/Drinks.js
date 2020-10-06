@@ -22,270 +22,270 @@ import cokeZero from "../images/drinks/cokepetzero.jpg";
 const Drinks = () => {
     return (
         <div className="row">
-             <CardGroup>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={cokePet}
-                              alt=""
-                              className="prdt"
-                            />
-                            <Card.Body>
-                              <Card.Title>Coca-Cola</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={pepsiPet}
-                              alt=""
-                              className="prdt"
-                            />
-                             <Card.Body>
-                              <Card.Title>Pepsi</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={fantaPet}
-                              alt=""
-                              className="prdt"
-                            />
-                             <Card.Body>
-                              <Card.Title>Fanta</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                        </CardGroup>
-                        <CardGroup>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={spritePet}
-                              alt=""
-                              className="prdt"
-                            />
-                            <Card.Body>
-                              <Card.Title>Sprite</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={teemPet}
-                              alt=""
-                              className="prdt"
-                            />
-                             <Card.Body>
-                              <Card.Title>Teem Soda</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={sevenUpPet}
-                              alt=""
-                              className="prdt"
-                            />
-                             <Card.Body>
-                              <Card.Title>7 Up</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                        </CardGroup>
-                        <CardGroup>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={cokeCan}
-                              alt=""
-                              className="prdt"
-                            />
-                            <Card.Body>
-                              <Card.Title>Coca-Cola</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={pepsiCan}
-                              alt=""
-                              className="prdt"
-                            />
-                             <Card.Body>
-                              <Card.Title>Pepsi</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={sevenupCan}
-                              alt=""
-                              className="prdt"
-                            />
-                             <Card.Body>
-                              <Card.Title>7 Up</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                        </CardGroup>
-                        <CardGroup>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={teemCan}
-                              alt=""
-                              className="prdt"
-                            />
-                            <Card.Body>
-                              <Card.Title>Teem Bitter Lemon</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={aquafinaWater}
-                              alt=""
-                              className="prdt"
-                            />
-                             <Card.Body>
-                              <Card.Title>Aquafina Water</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={evaWater}
-                              alt=""
-                              className="prdt"
-                            />
-                             <Card.Body>
-                              <Card.Title>Eva Water</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                        </CardGroup>
-                        <CardGroup>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={spriteCan}
-                              alt=""
-                              className="prdt"
-                            />
-                            <Card.Body>
-                              <Card.Title>Sprite Can</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={cokeZero}
-                              alt=""
-                              className="prdt"
-                            />
-                             <Card.Body>
-                              <Card.Title>Coke Zero</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={teemlemon}
-                              alt=""
-                              className="prdt"
-                            />
-                             <Card.Body>
-                              <Card.Title>Teem Bitter Lemon</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                        </CardGroup>
-                        <CardGroup>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={teemCan}
-                              alt=""
-                              className="prdt"
-                            />
-                            <Card.Body>
-                              <Card.Title>Teem Bitter Lemon</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={fantaCan}
-                              alt=""
-                              className="prdt"
-                            />
-                             <Card.Body>
-                              <Card.Title>Fanta Can</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                          <Card>
-                            <CardImg 
-                              variant="top"
-                              src={teemCan2}
-                              alt=""
-                              className="prdt"
-                            />
-                             <Card.Body>
-                              <Card.Title>Teem Tonic</Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                              <span className="from">N 150</span>
-                            </Card.Footer>
-                          </Card>
-                        </CardGroup>
+          <CardGroup>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={cokePet}
+                alt=""
+                className="prdt"
+              />
+              <Card.Body>
+                <Card.Title>Coca-Cola</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={pepsiPet}
+                alt=""
+                className="prdt"
+              />
+               <Card.Body>
+                <Card.Title>Pepsi</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={fantaPet}
+                alt=""
+                className="prdt"
+              />
+               <Card.Body>
+                <Card.Title>Fanta</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+          </CardGroup>
+          <CardGroup>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={spritePet}
+                alt=""
+                className="prdt"
+              />
+              <Card.Body>
+                <Card.Title>Sprite</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={teemPet}
+                alt=""
+                className="prdt"
+              />
+               <Card.Body>
+                <Card.Title>Teem Soda</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={sevenUpPet}
+                alt=""
+                className="prdt"
+              />
+               <Card.Body>
+                <Card.Title>7 Up</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+          </CardGroup>
+          <CardGroup>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={cokeCan}
+                alt=""
+                className="prdt"
+              />
+              <Card.Body>
+                <Card.Title>Coca-Cola</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={pepsiCan}
+                alt=""
+                className="prdt"
+              />
+               <Card.Body>
+                <Card.Title>Pepsi</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={sevenupCan}
+                alt=""
+                className="prdt"
+              />
+               <Card.Body>
+                <Card.Title>7 Up</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+          </CardGroup>
+          <CardGroup>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={teemCan}
+                alt=""
+                className="prdt"
+              />
+              <Card.Body>
+                <Card.Title>Teem Bitter Lemon</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={aquafinaWater}
+                alt=""
+                className="prdt"
+              />
+               <Card.Body>
+                <Card.Title>Aquafina Water</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={evaWater}
+                alt=""
+                className="prdt"
+              />
+               <Card.Body>
+                <Card.Title>Eva Water</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+          </CardGroup>
+          <CardGroup>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={spriteCan}
+                alt=""
+                className="prdt"
+              />
+              <Card.Body>
+                <Card.Title>Sprite Can</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={cokeZero}
+                alt=""
+                className="prdt"
+              />
+               <Card.Body>
+                <Card.Title>Coke Zero</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={teemlemon}
+                alt=""
+                className="prdt"
+              />
+               <Card.Body>
+                <Card.Title>Teem Bitter Lemon</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+          </CardGroup>
+          <CardGroup>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={teemCan}
+                alt=""
+                className="prdt"
+              />
+              <Card.Body>
+                <Card.Title>Teem Bitter Lemon</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={fantaCan}
+                alt=""
+                className="prdt"
+              />
+               <Card.Body>
+                <Card.Title>Fanta Can</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+            <Card>
+              <CardImg 
+                variant="top"
+                src={teemCan2}
+                alt=""
+                className="prdt"
+              />
+               <Card.Body>
+                <Card.Title>Teem Tonic</Card.Title>
+              </Card.Body>
+              <Card.Footer>
+                <span className="from">N 150</span>
+              </Card.Footer>
+            </Card>
+          </CardGroup>
         </div>
     );
 };
