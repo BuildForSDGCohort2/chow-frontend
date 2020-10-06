@@ -737,8 +737,27 @@ input {
   color: #000;
 }
 
+.card-footer {
+  border: none;
+}
+
+.add {
+  text-decoration: none;
+  background-color: #3b5998;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.1rem 1rem;
+}
+
+.add:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+}
+
 .from {
   color: #3b5998;
+  text-decoration: line-through;
 }
 
 .prdt {

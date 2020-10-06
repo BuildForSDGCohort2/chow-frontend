@@ -1,6 +1,7 @@
 import React from "react";
 import { CardGroup, CardImg, Card } from "react-bootstrap";
 
+
 import cokePet from "../images/drinks/cokepet.jpg";
 import pepsiPet from "../images/drinks/pepsi.png";
 import fantaPet from "../images/drinks/fantaPet.png";
@@ -18,6 +19,7 @@ import aquafinaWater from "../images/drinks/aquafinawater.jpg";
 import evaWater from "../images/drinks/evawater.jpg";
 import teemlemon from "../images/drinks/teembitterpet.jpeg";
 import cokeZero from "../images/drinks/cokepetzero.jpg";
+import AddToCart from "./AddToCart";
 
 const Drinks = () => {
     return (
@@ -31,10 +33,13 @@ const Drinks = () => {
                 className="prdt"
               />
               <Card.Body>
-                <Card.Title>Coca-Cola</Card.Title>
+                <Card.Title>
+                    Coca-Cola Pet-35cl
+                </Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
             <Card>
@@ -45,10 +50,13 @@ const Drinks = () => {
                 className="prdt"
               />
                <Card.Body>
-                <Card.Title>Pepsi</Card.Title>
+                <Card.Title>
+                    Pepsi Pet-35cl
+                </Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
             <Card>
@@ -59,10 +67,13 @@ const Drinks = () => {
                 className="prdt"
               />
                <Card.Body>
-                <Card.Title>Fanta</Card.Title>
+                <Card.Title>
+                    Fanta Pet-35cl
+                </Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
           </CardGroup>
@@ -75,10 +86,13 @@ const Drinks = () => {
                 className="prdt"
               />
               <Card.Body>
-                <Card.Title>Sprite</Card.Title>
+                <Card.Title>
+                    Sprite Pet-35cl
+                </Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
             <Card>
@@ -89,10 +103,13 @@ const Drinks = () => {
                 className="prdt"
               />
                <Card.Body>
-                <Card.Title>Teem Soda</Card.Title>
+                <Card.Title>
+                    Teem Soda Pet-35cl
+                </Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
             <Card>
@@ -103,10 +120,13 @@ const Drinks = () => {
                 className="prdt"
               />
                <Card.Body>
-                <Card.Title>7 Up</Card.Title>
+                <Card.Title>
+                    7 Up Pet-35cl
+                </Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
           </CardGroup>
@@ -119,10 +139,13 @@ const Drinks = () => {
                 className="prdt"
               />
               <Card.Body>
-                <Card.Title>Coca-Cola</Card.Title>
+                <Card.Title>
+                    Coca-Cola Can-33cl
+                </Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
             <Card>
@@ -133,10 +156,13 @@ const Drinks = () => {
                 className="prdt"
               />
                <Card.Body>
-                <Card.Title>Pepsi</Card.Title>
+                <Card.Title>
+                    Pepsi Can-33cl
+                </Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
             <Card>
@@ -147,10 +173,13 @@ const Drinks = () => {
                 className="prdt"
               />
                <Card.Body>
-                <Card.Title>7 Up</Card.Title>
+                <Card.Title>
+                    7 Up Can-33cl
+                </Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
           </CardGroup>
@@ -163,10 +192,13 @@ const Drinks = () => {
                 className="prdt"
               />
               <Card.Body>
-                <Card.Title>Teem Bitter Lemon</Card.Title>
+                <Card.Title>
+                    Teem Bitter Lemon Can-33cl
+                </Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
             <Card>
@@ -180,7 +212,8 @@ const Drinks = () => {
                 <Card.Title>Aquafina Water</Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
             <Card>
@@ -194,7 +227,8 @@ const Drinks = () => {
                 <Card.Title>Eva Water</Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
           </CardGroup>
@@ -207,10 +241,13 @@ const Drinks = () => {
                 className="prdt"
               />
               <Card.Body>
-                <Card.Title>Sprite Can</Card.Title>
+                <Card.Title>
+                    Sprite Can Can-33cl
+                </Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
             <Card>
@@ -221,10 +258,11 @@ const Drinks = () => {
                 className="prdt"
               />
                <Card.Body>
-                <Card.Title>Coke Zero</Card.Title>
+                <Card.Title>Coke Zero Pet-33cl</Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
             <Card>
@@ -238,7 +276,8 @@ const Drinks = () => {
                 <Card.Title>Teem Bitter Lemon</Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
           </CardGroup>
@@ -251,10 +290,13 @@ const Drinks = () => {
                 className="prdt"
               />
               <Card.Body>
-                <Card.Title>Teem Bitter Lemon</Card.Title>
+                <Card.Title>
+                    Teem Bitter Lemon Can-33cl
+                </Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
             <Card>
@@ -265,10 +307,13 @@ const Drinks = () => {
                 className="prdt"
               />
                <Card.Body>
-                <Card.Title>Fanta Can</Card.Title>
+                <Card.Title>
+                    Fanta Can Can-33cl
+                </Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
             <Card>
@@ -279,10 +324,13 @@ const Drinks = () => {
                 className="prdt"
               />
                <Card.Body>
-                <Card.Title>Teem Tonic</Card.Title>
+                <Card.Title>
+                    Teem Tonic Can-33cl
+                </Card.Title>
               </Card.Body>
               <Card.Footer>
-                <span className="from">N 150</span>
+                <span className="from mx-1">₦</span>150
+                <AddToCart />
               </Card.Footer>
             </Card>
           </CardGroup>
