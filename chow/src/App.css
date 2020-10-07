@@ -769,6 +769,7 @@ input {
 .prdt {
   transition: all 1s ease-in-out;
   margin: 0.6rem;
+  margin: 1rem;
 }
 
 .prdt:hover {

@@ -2,12 +2,13 @@ import React from "react";
 import { CardGroup, CardImg, Card } from "react-bootstrap";
 import AddToCart from "./AddToCart";
 
-import SamosaImg from "../images/smallChops/samosa.jpg";
+import SamosaImg from "../images/smallChops/samosa.webp";
 import SpringRollImg from "../images/smallChops/springRolls.jpg";
-import PuffPuffImg from "../images/smallChops/puffpuff.jpeg";
-import gizzardImg from "../images/smallChops/gizzards.jpg";
+import PuffPuffImg from "../images/smallChops/puffpuff.jpg";
+import gizzardImg from "../images/smallChops/gizzard.jpg";
 import CornDogs from "../images/smallChops/cornDogs.jpg";
 import Chicken from "../images/smallChops/chicken.jpeg";
+
 
 const SmallChops = () => {
     return (
