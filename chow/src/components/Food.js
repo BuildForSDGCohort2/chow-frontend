@@ -1,6 +1,7 @@
 import React from "react";
 import { CardGroup, CardImg, Card } from "react-bootstrap";
 import AddToCart from "./AddToCart";
+import Counter from "./Counter";
 
 import JollofImg from "../images/food/Jollof-Rice-15.jpg";
 import FriedRiceImg from "../images/food/fried-rice-8-1200.jpg";
@@ -31,6 +32,7 @@ const Food = () => {
                      <Card.Footer>
                          <span>from</span>
                         <span className="from mx-1">₦</span>500
+                        <Counter />
                         <AddToCart/>
                      </Card.Footer>
                  </Card>
@@ -46,6 +48,7 @@ const Food = () => {
                      <Card.Footer>
                         <span>from</span>
                         <span className="from mx-1">₦</span>500
+                        <Counter />
                         <AddToCart/>
                      </Card.Footer>
                  </Card>
@@ -60,6 +63,7 @@ const Food = () => {
                      <Card.Footer>
                         <span>from</span>
                         <span className="from mx-1">₦</span>500
+                        <Counter />
                         <AddToCart/>
                      </Card.Footer>
                  </Card>
@@ -77,6 +81,7 @@ const Food = () => {
                      <Card.Footer>
                         <span>from</span>
                         <span className="from mx-1">₦</span>500
+                        <Counter />
                         <AddToCart/>
                      </Card.Footer>
                  </Card>
@@ -92,6 +97,7 @@ const Food = () => {
                      <Card.Footer>
                         <span>from</span>
                         <span className="from mx-1">₦</span>500
+                        <Counter />
                         <AddToCart/>
                      </Card.Footer>
                  </Card>
@@ -107,6 +113,7 @@ const Food = () => {
                      <Card.Footer>
                         <span>from</span>
                         <span className="from mx-1">₦</span>500
+                        <Counter />
                         <AddToCart/>
                      </Card.Footer>
                  </Card>
@@ -123,6 +130,7 @@ const Food = () => {
                      <Card.Footer>
                         <span>from</span>
                         <span className="from mx-1">₦</span>500
+                        <Counter />
                         <AddToCart/>
                      </Card.Footer>
                  </Card>
@@ -138,6 +146,7 @@ const Food = () => {
                      <Card.Footer>
                         <span>from</span>
                         <span className="from mx-1">₦</span>500
+                        <Counter />
                         <AddToCart/>
                      </Card.Footer>
                  </Card>
@@ -153,6 +162,7 @@ const Food = () => {
                      <Card.Footer>
                         <span>from</span>
                         <span className="from mx-1">₦</span>500
+                        <Counter />
                         <AddToCart/>
                      </Card.Footer>
                  </Card>
@@ -170,6 +180,7 @@ const Food = () => {
                      <Card.Footer>
                         <span>from</span>
                         <span className="from mx-1">₦</span>500
+                        <Counter />
                         <AddToCart/>
                      </Card.Footer>
                  </Card>
@@ -185,6 +196,7 @@ const Food = () => {
                      <Card.Footer>
                         <span>from</span>
                         <span className="from mx-1">₦</span>500
+                        <Counter />
                         <AddToCart/>
                      </Card.Footer>
                  </Card>
@@ -200,6 +212,7 @@ const Food = () => {
                      <Card.Footer>
                         <span>from</span>
                         <span className="from mx-1">₦</span>500
+                        <Counter />
                         <AddToCart/>
                      </Card.Footer>
                  </Card>

@@ -1,6 +1,6 @@
 import React from "react";
 import { CardGroup, CardImg, Card } from "react-bootstrap";
-
+import Counter from "./Counter";
 
 import cokePet from "../images/drinks/cokepet.jpg";
 import pepsiPet from "../images/drinks/pepsi.png";
@@ -40,6 +40,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -58,6 +59,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -76,6 +78,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -96,6 +99,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -114,6 +118,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -132,6 +137,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -152,6 +158,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -170,6 +177,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -188,6 +196,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -208,6 +217,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -224,6 +234,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -240,6 +251,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -260,6 +272,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -276,6 +289,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -292,6 +306,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -312,6 +327,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -330,6 +346,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>
@@ -348,6 +365,7 @@ const Drinks = () => {
               <Card.Footer>
                 <span>from</span>
                 <span className="from mx-1">₦</span>150
+                <Counter />
                 <AddToCart />
               </Card.Footer>
             </Card>

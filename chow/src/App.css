@@ -738,6 +738,37 @@ input {
   color: #000;
 }
 
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.count {
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #5991913b;
+  outline: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.count:hover {
+  border: 1px solid #3b5998;
+}
+
+.countNum {
+  border: 1px solid #5991913b;
+}
+
+.plus {
+  background: url("./images/plus.svg") no-repeat center;
+}
+
+.minus {
+  background: url("./images/minus.svg") no-repeat center;
+}
+
 .card, .card-group {
   border: none;
 }

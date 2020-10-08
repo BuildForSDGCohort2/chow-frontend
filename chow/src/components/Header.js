@@ -37,7 +37,7 @@ const Header = () => {
                     <Nav.Link>
                       <Link
                         className="signOut mx-2 px-3 py-1"
-                        to="">
+                        to="#">
                           My Cart
                       </Link>
                     </Nav.Link>

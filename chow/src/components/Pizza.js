@@ -1,7 +1,7 @@
 import React from "react";
 import { CardGroup, CardImg, Card } from "react-bootstrap";
 import AddToCart from "./AddToCart";
-
+import Counter from "./Counter";
 
 import pizzaOne from "../images/pizzas/hotChilliMeat-removebg-preview.png";
 import pizzaTwo from "../images/pizzas/supersupreme-removebg-preview.png";
@@ -28,6 +28,7 @@ const Pizza = () => {
                     <Card.Footer>
                       <span>from</span>
                       <span className="from mx-1">₦</span>1500
+                      <Counter />
                       <AddToCart />
                     </Card.Footer>
                 </Card>
@@ -45,6 +46,7 @@ const Pizza = () => {
                     <Card.Footer>
                       <span>from</span>
                       <span className="from mx-1">₦</span>2500
+                      <Counter />
                       <AddToCart />
                     </Card.Footer>
                 </Card>
@@ -62,6 +64,7 @@ const Pizza = () => {
                     <Card.Footer>
                       <span>from</span>
                       <span className="from mx-1">₦</span>2000
+                      <Counter />
                       <AddToCart />
                     </Card.Footer>
                 </Card>
@@ -81,6 +84,7 @@ const Pizza = () => {
                     <Card.Footer>
                       <span>from</span>
                       <span className="from mx-1">₦</span>2500
+                      <Counter />
                       <AddToCart />
                     </Card.Footer>
                 </Card>
@@ -98,6 +102,7 @@ const Pizza = () => {
                     <Card.Footer>
                       <span>from</span>
                       <span className="from mx-1">₦</span>2000
+                      <Counter />
                       <AddToCart />
                     </Card.Footer>
                 </Card>
@@ -115,6 +120,7 @@ const Pizza = () => {
                     <Card.Footer>
                       <span>from</span>
                       <span className="from mx-1">₦</span>1800
+                      <Counter />
                       <AddToCart />
                     </Card.Footer>
                 </Card>
