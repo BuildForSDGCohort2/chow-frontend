@@ -19,13 +19,7 @@ const Order = () => {
         <div className="container-fluid">
           <Header />
           <div className="row">
-            <div className="col-sm-12 col-lg-3 myOrder text-center">
-              <div className="my m-5 p-3">
-                <h3>Order Page</h3>
-                <p>Sorry dear,we are still working on this page.</p>
-                <Link to="/dashboard" className="go">Go Back</Link>
-              </div>  
-            </div>
+            
             <div className="col-sm-12 col-lg-9 text-center">
               <h3 className="mb-2">Hungry?</h3>
               <p>We got your Back</p>
@@ -82,6 +76,13 @@ const Order = () => {
                   </Tabs>
                 </div>
               </div>
+            </div>
+            <div className="col-sm-12 col-lg-3 myOrder text-center">
+              <div className="my m-5 p-3">
+                <h3>Order Page</h3>
+                <p>Sorry dear,we are still working on this page.</p>
+                <Link to="/dashboard" className="go">Go Back</Link>
+              </div>  
             </div>
           </div>
           <Footer />

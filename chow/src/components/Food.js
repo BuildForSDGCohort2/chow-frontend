@@ -55,7 +55,7 @@ const Food = () => {
                        alt=""
                        className="prdt"/>
                      <Card.Body>
-                         <Card.Title>Cocu-nut Rice</Card.Title>
+                         <Card.Title>Coco-nut Rice</Card.Title>
                      </Card.Body>
                      <Card.Footer>
                         <span>from</span>

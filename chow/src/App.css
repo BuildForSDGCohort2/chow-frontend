@@ -778,8 +778,8 @@ input {
 
 .myOrder {
   min-height: 100vh;
-  background: url("./images/taylor-kiser-EvoIiaIVRzU-unsplash\(1\)\(1\).jpg") no-repeat left;
-  background-size: 100%;
+  background: url("./images/taylor-kiser-EvoIiaIVRzU-unsplash\(1\)\(1\).jpg") no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 
