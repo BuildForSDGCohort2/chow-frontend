@@ -26,6 +26,7 @@ const Pizza = () => {
                         </Card.Title>
                     </Card.Body>
                     <Card.Footer>
+                      <span>from</span>
                       <span className="from mx-1">₦</span>1500
                       <AddToCart />
                     </Card.Footer>
@@ -42,6 +43,7 @@ const Pizza = () => {
                         </Card.Title>
                     </Card.Body>
                     <Card.Footer>
+                      <span>from</span>
                       <span className="from mx-1">₦</span>2500
                       <AddToCart />
                     </Card.Footer>
@@ -58,6 +60,7 @@ const Pizza = () => {
                         </Card.Title>
                     </Card.Body>
                     <Card.Footer>
+                      <span>from</span>
                       <span className="from mx-1">₦</span>2000
                       <AddToCart />
                     </Card.Footer>
@@ -76,6 +79,7 @@ const Pizza = () => {
                         </Card.Title>
                     </Card.Body>
                     <Card.Footer>
+                      <span>from</span>
                       <span className="from mx-1">₦</span>2500
                       <AddToCart />
                     </Card.Footer>
@@ -92,6 +96,7 @@ const Pizza = () => {
                         </Card.Title>
                     </Card.Body>
                     <Card.Footer>
+                      <span>from</span>
                       <span className="from mx-1">₦</span>2000
                       <AddToCart />
                     </Card.Footer>
@@ -108,6 +113,7 @@ const Pizza = () => {
                         </Card.Title>
                     </Card.Body>
                     <Card.Footer>
+                      <span>from</span>
                       <span className="from mx-1">₦</span>1800
                       <AddToCart />
                     </Card.Footer>

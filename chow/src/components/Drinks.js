@@ -38,6 +38,7 @@ const Drinks = () => {
                 </Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -55,6 +56,7 @@ const Drinks = () => {
                 </Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -72,6 +74,7 @@ const Drinks = () => {
                 </Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -91,6 +94,7 @@ const Drinks = () => {
                 </Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -108,6 +112,7 @@ const Drinks = () => {
                 </Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -125,6 +130,7 @@ const Drinks = () => {
                 </Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -144,6 +150,7 @@ const Drinks = () => {
                 </Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -161,6 +168,7 @@ const Drinks = () => {
                 </Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -178,6 +186,7 @@ const Drinks = () => {
                 </Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -197,6 +206,7 @@ const Drinks = () => {
                 </Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -212,6 +222,7 @@ const Drinks = () => {
                 <Card.Title>Aquafina Water</Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -227,6 +238,7 @@ const Drinks = () => {
                 <Card.Title>Eva Water</Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -246,6 +258,7 @@ const Drinks = () => {
                 </Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -261,6 +274,7 @@ const Drinks = () => {
                 <Card.Title>Coke Zero Pet-33cl</Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -276,6 +290,7 @@ const Drinks = () => {
                 <Card.Title>Teem Bitter Lemon</Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -295,6 +310,7 @@ const Drinks = () => {
                 </Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -312,6 +328,7 @@ const Drinks = () => {
                 </Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>
@@ -329,6 +346,7 @@ const Drinks = () => {
                 </Card.Title>
               </Card.Body>
               <Card.Footer>
+                <span>from</span>
                 <span className="from mx-1">₦</span>150
                 <AddToCart />
               </Card.Footer>

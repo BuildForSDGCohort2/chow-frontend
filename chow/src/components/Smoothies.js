@@ -26,6 +26,7 @@ const Smoothies = () => {
                          </Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>500
                         <AddToCart/>
                      </Card.Footer>
@@ -41,6 +42,7 @@ const Smoothies = () => {
                          </Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>500
                         <AddToCart/>
                      </Card.Footer>
@@ -57,6 +59,7 @@ const Smoothies = () => {
                          </Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>500
                         <AddToCart/>
                      </Card.Footer>
@@ -74,6 +77,7 @@ const Smoothies = () => {
                          </Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>500
                         <AddToCart/>
                      </Card.Footer>
@@ -89,6 +93,7 @@ const Smoothies = () => {
                          </Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>500
                         <AddToCart/>
                      </Card.Footer>
@@ -105,6 +110,7 @@ const Smoothies = () => {
                          </Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>500
                         <AddToCart/>
                      </Card.Footer>

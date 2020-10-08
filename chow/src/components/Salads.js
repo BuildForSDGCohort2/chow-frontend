@@ -24,6 +24,7 @@ const Salads = () => {
                          <Card.Title>Caesar salad</Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>500
                         <AddToCart/>
                      </Card.Footer>
@@ -38,6 +39,7 @@ const Salads = () => {
                          <Card.Title>Chicken Caesar salad</Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>500
                         <AddToCart/>
                      </Card.Footer>
@@ -52,6 +54,7 @@ const Salads = () => {
                          <Card.Title>Greek salad</Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>500
                         <AddToCart/>
                      </Card.Footer>
@@ -68,6 +71,7 @@ const Salads = () => {
                          <Card.Title>Potato salad</Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>500
                         <AddToCart/>
                      </Card.Footer>
@@ -82,6 +86,7 @@ const Salads = () => {
                          <Card.Title>Pasta salad</Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>500
                         <AddToCart/>
                      </Card.Footer>
@@ -95,6 +100,7 @@ const Salads = () => {
                          <Card.Title>Lettuce-Avocado salad</Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>500
                         <AddToCart/>
                      </Card.Footer>

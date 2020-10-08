@@ -24,6 +24,7 @@ const Snacks = () => {
                          <Card.Title>Cinnamon Rolls</Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>500
                         <AddToCart/>
                      </Card.Footer>
@@ -38,6 +39,7 @@ const Snacks = () => {
                          <Card.Title>Pop Corn</Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>200
                         <AddToCart/>
                      </Card.Footer>
@@ -52,6 +54,7 @@ const Snacks = () => {
                          <Card.Title>Meat Pie</Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>300
                         <AddToCart/>
                      </Card.Footer>
@@ -68,34 +71,37 @@ const Snacks = () => {
                          <Card.Title>Donuts</Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>200
                         <AddToCart/>
                      </Card.Footer>
                  </Card>
                  <Card>
                      <CardImg
-                     src={ ChickenImg }
-                     alt=""
-                     className="prdt"
+                        src={ ChickenImg }
+                        alt=""
+                        className="prdt"
                      />
                      <Card.Body>
                          <Card.Title>Chicken pie</Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>300
                         <AddToCart/>
                      </Card.Footer>
                  </Card>
                  <Card>
                      <CardImg
-                     src={ CupCakesImg }
-                     alt=""
-                     className="prdt"
+                        src={ CupCakesImg }
+                        alt=""
+                        className="prdt"
                      />
                      <Card.Body>
                          <Card.Title>Cup Cakes</Card.Title>
                      </Card.Body>
                      <Card.Footer>
+                        <span>from</span>
                         <span className="from mx-1">₦</span>500
                         <AddToCart/>
                      </Card.Footer>
