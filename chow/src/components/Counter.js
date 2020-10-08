@@ -9,8 +9,12 @@ const Counter = () => {
         e.preventDefault();
     };
     const handleDecrement = (e) => {
-        setCount(prevCount => prevCount - 1);
         e.preventDefault();
+        if(count <= 1) {
+            return count === 1
+        } else {
+            setCount(prevCount => prevCount - 1);
+        };
     };
 
     return (
