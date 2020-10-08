@@ -757,6 +757,12 @@ input {
   border: 1px solid #3b5998;
 }
 
+.count:focus, .count:active {
+  border: 1px solid #3b5998;
+  outline: none;
+  outline-style: none;
+  -moz-outline-style: none;
+}
 .countNum {
   border: 1px solid #5991913b;
 }
