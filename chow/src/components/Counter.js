@@ -4,11 +4,13 @@ import React, { useState } from "react";
 const Counter = () => {
     const [count, setCount] = useState(1);
 
-    const handleIncrement = () => {
+    const handleIncrement = (e) => {
         setCount(prevCount => prevCount + 1);
+        e.preventDefault();
     };
-    const handleDecrement = () => {
+    const handleDecrement = (e) => {
         setCount(prevCount => prevCount - 1);
+        e.preventDefault();
     };
 
     return (
