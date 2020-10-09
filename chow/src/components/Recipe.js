@@ -13,10 +13,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 
-
-
-
-
 const API_KEY=process.env.REACT_APP_API_KEY;
 const API_ID=process.env.REACT_APP_API_ID;
 
@@ -29,7 +25,8 @@ class Recipe extends React.Component {
         totalDaily: {},
         healthLabels: [],
         cautions: [],
-        dietLabels: []
+        dietLabels: [],
+        addedRecipes: [],
     };
 
     componentDidMount = async () => {
@@ -58,7 +55,6 @@ class Recipe extends React.Component {
 
 
     render() {
-        //console.log(this.props);
         const myRecipe = this.state.activeRecipe;
         const cal = parseInt(myRecipe.calories).toString();
         const calServ = (Math.round(cal / (myRecipe.yield))).toString();
@@ -72,10 +68,18 @@ class Recipe extends React.Component {
         const healthLabels = this.state.healthLabels;
         const cautions = this.state.cautions;
         const dietLabels = this.state.dietLabels;
-        // console.log(nutrients);
-        // console.log(nutrientArr)
-        // console.log(dailys);
-        // console.log(cautions);
+        // console.log(myRecipe);
+        const addRecipe = () => {
+            const { addedRecipes } = this.state;
+            let newArr = [...addedRecipes];
+            const saved = JSON.stringify(myRecipe);
+            newArr.unshift(saved);
+            localStorage.setItem("saved", saved);
+            this.setState({
+                addedRecipes: newArr,
+            })
+            return console.log("Recipe added", newArr)
+        }
         return (
             <div className="container-fluid">
                 { this.state.activeRecipe !== 0 && 
@@ -99,7 +103,12 @@ class Recipe extends React.Component {
                               </div>
                             </div>
                                 <Link to="/" className="home view" data-tip="Go Home">Go Home</Link>
-                                <Link to="/dashboard" className="home view mx-2" data-tip="Add this recipe to My Recipes" >Add to My Recipes</Link>
+                                <Link
+                                  to="/#"
+                                  className="home view mx-2"
+                                  data-tip="Add this recipe to My Recipes"
+                                  onClick={addRecipe}
+                                >Add to My Recipes</Link>
                                 <ReactToolTip
                                   type="dark"
                                   place="top"
