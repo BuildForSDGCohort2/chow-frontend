@@ -12,7 +12,7 @@ const AddRecipeBtn = () => {
             setDataTip("Recipe was Added!")
         }, 1500);
     }
-
+    
     return (
         <button
           className="home view mx-2"
