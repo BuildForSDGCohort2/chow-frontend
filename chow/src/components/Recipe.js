@@ -26,7 +26,6 @@ class Recipe extends React.Component {
         healthLabels: [],
         cautions: [],
         dietLabels: [],
-        addedRecipes: [],
     };
 
     componentDidMount = async () => {
@@ -69,17 +68,7 @@ class Recipe extends React.Component {
         const cautions = this.state.cautions;
         const dietLabels = this.state.dietLabels;
         // console.log(myRecipe);
-        const addRecipe = () => {
-            const { addedRecipes } = this.state;
-            let newArr = [...addedRecipes];
-            const saved = JSON.stringify(myRecipe);
-            newArr.unshift(saved);
-            localStorage.setItem("saved", saved);
-            this.setState({
-                addedRecipes: newArr,
-            })
-            return console.log("Recipe added", newArr)
-        }
+       
         return (
             <div className="container-fluid">
                 { this.state.activeRecipe !== 0 && 
@@ -103,12 +92,11 @@ class Recipe extends React.Component {
                               </div>
                             </div>
                                 <Link to="/" className="home view" data-tip="Go Home">Go Home</Link>
-                                <Link
-                                  to="/#"
+                                <button
                                   className="home view mx-2"
                                   data-tip="Add this recipe to My Recipes"
-                                  onClick={addRecipe}
-                                >Add to My Recipes</Link>
+                                  
+                                  >Add to My Recipes</button>
                                 <ReactToolTip
                                   type="dark"
                                   place="top"
