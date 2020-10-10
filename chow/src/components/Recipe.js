@@ -11,6 +11,7 @@ import {
 import ReactToolTip from "react-tooltip";
 import Header from "./Header";
 import Footer from "./Footer";
+import AddRecipeBtn from "./AddRecipeBtn";
 
 
 const API_KEY=process.env.REACT_APP_API_KEY;
@@ -26,6 +27,15 @@ class Recipe extends React.Component {
         healthLabels: [],
         cautions: [],
         dietLabels: [],
+        recipeList: [],
+    };
+
+    onAddRecipe = (e) => {
+        e.preventDefault();
+        this.setState(state => {
+            const recipeList = state.recipeList.concat(state.activeRecipe);
+            return console.log(recipeList);
+        })
     };
 
     componentDidMount = async () => {
@@ -92,11 +102,7 @@ class Recipe extends React.Component {
                               </div>
                             </div>
                                 <Link to="/" className="home view" data-tip="Go Home">Go Home</Link>
-                                <button
-                                  className="home view mx-2"
-                                  data-tip="Add this recipe to My Recipes"
-                                  
-                                  >Add to My Recipes</button>
+                                <AddRecipeBtn />
                                 <ReactToolTip
                                   type="dark"
                                   place="top"
