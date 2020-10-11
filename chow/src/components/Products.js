@@ -34,6 +34,13 @@ import PuffPuffImg from "../images/smallChops/puffpuff.jpg";
 import gizzardImg from "../images/smallChops/gizzard.jpg";
 import CornDogs from "../images/smallChops/cornDogs.jpg";
 import Chicken from "../images/smallChops/chicken.jpeg";
+import pizzaOne from "../images/pizzas/hotChilliMeat-removebg-preview.png";
+import pizzaTwo from "../images/pizzas/supersupreme-removebg-preview.png";
+import pizzaThree from "../images/pizzas/bbqChicken-removebg-preview.png";
+import pizzaFour from "../images/pizzas/pepperoni-removebg-preview.png";
+import pizzaFive from "../images/pizzas/bbqMeat-removebg-preview.png";
+import pizzaSix from "../images/pizzas/chickenSuupreme-removebg-preview.png";
+
 
 
 
@@ -76,6 +83,13 @@ const products = [
     { id: 33, name: "Peppered Gizzard", price: 1500, image: gizzardImg },
     { id: 34, name: "Corn Dogs", price: 1500, image: CornDogs},
     { id: 35, name: "Chicken Cuts", price: 1500, image: Chicken },
+    { id: 36, name: "Hot Chilli", price: 1500, image: pizzaOne },
+    { id: 37, name: "Super Supreme", price: 2000, image: pizzaTwo },
+    { id: 38, name: "BBQ Chicken", price: 2000, image: pizzaThree },
+    { id: 39, name: "Hot Pepperoni", price: 2000, image:  pizzaFour},
+    { id: 40, name: "Hot Chicken Supreme", price: 2000, image: pizzaFive },
+    { id: 41, name: "Hot BBQ Beef", price: 2000, image: pizzaSix },
+    { id: 42, name: "Coca-Cola Pet-35cl", price: 150, image: },
     
 
 
