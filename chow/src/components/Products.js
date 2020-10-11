@@ -40,6 +40,24 @@ import pizzaThree from "../images/pizzas/bbqChicken-removebg-preview.png";
 import pizzaFour from "../images/pizzas/pepperoni-removebg-preview.png";
 import pizzaFive from "../images/pizzas/bbqMeat-removebg-preview.png";
 import pizzaSix from "../images/pizzas/chickenSuupreme-removebg-preview.png";
+import cokePet from "../images/drinks/cokepet.jpg";
+import pepsiPet from "../images/drinks/pepsi.png";
+import fantaPet from "../images/drinks/fantaPet.png";
+import spritePet from "../images/drinks/spritepet.jpg";
+import sevenUpPet from "../images/drinks/7uppet.jpeg";
+import teemPet from "../images/drinks/teemsodapet.webp";
+import cokeCan from "../images/drinks/cokecan.jpg";
+import pepsiCan from "../images/drinks/pepsican.jpg";
+import sevenupCan from "../images/drinks/7upcan.jpg";
+import teemCan from "../images/drinks/teemcan.jpg";
+import teemCan2 from "../images/drinks/teemtonic.jpg";
+import fantaCan from "../images/drinks/fantacan.jpg";
+import spriteCan from "../images/drinks/spritecan.jpg"
+import aquafinaWater from "../images/drinks/aquafinawater.jpg";
+import evaWater from "../images/drinks/evawater.jpg";
+import teemlemon from "../images/drinks/teembitterpet.jpeg";
+import cokeZero from "../images/drinks/cokepetzero.jpg";
+import AddToCart from "./AddToCart";
 
 
 
@@ -89,7 +107,23 @@ const products = [
     { id: 39, name: "Hot Pepperoni", price: 2000, image:  pizzaFour},
     { id: 40, name: "Hot Chicken Supreme", price: 2000, image: pizzaFive },
     { id: 41, name: "Hot BBQ Beef", price: 2000, image: pizzaSix },
-    { id: 42, name: "Coca-Cola Pet-35cl", price: 150, image: },
+    { id: 42, name: "Coca-Cola Pet-35cl", price: 150, image: cokePet },
+    { id: 43, name: "Pepsi Pet-35cl", price: 150, image: pepsiPet},
+    { id: 44, name: "Fanta Pet-35cl", price: 150, image: fantaPet },
+    { id: 45, name: "Sprite Pet-35cl", price: 150, image: spritePet },
+    { id: 46, name: "Teem Soda Pet-35cl", price: 150, image: teemPet },
+    { id: 47, name: "7 Up Pet-35cl", price: 150, image: sevenUpPet },
+    { id: 48, name: "Coca-Cola Can-33cl", price: 150, image: cokeCan },
+    { id: 49, name: "Pepsi Can-33cl", price: 150, image: pepsiCan },
+    { id: 50, name: "& Up Can-33cl", price: 150, image: sevenupCan },
+    { id: 51, name: "Teem Bitter lemon Can-33cl", price: 150, image: teemCan },
+    { id: 52, name: "Aquafina Water", price: 150, image: aquafinaWater },
+    { id: 53, name: "Eva Water", price: 150, image: evaWater },
+    { id: 54, name: "Sprite Can-33cl", price: 150, image: spriteCan },
+    { id: 55, name: "Coke Zero Pet-33cl", price: 150, image: cokeZero },
+    { id: 56, name: "Teem Bitter lemon Pet-35cl", price: 150, image: teemPet },
+    { id: 57, name: "Fanta Can-33cl", price: 150, image: fantaCan },
+    { id: 58, name: "Teem Tonic Can-33cl", price: 150, image: teemCan2 },
     
 
 
