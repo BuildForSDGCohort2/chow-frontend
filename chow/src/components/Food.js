@@ -3,6 +3,7 @@ import { CardGroup, CardImg, Card } from "react-bootstrap";
 import AddToCart from "./AddToCart";
 import Counter from "./Counter";
 
+
 import JollofImg from "../images/food/Jollof-Rice-15.jpg";
 import FriedRiceImg from "../images/food/fried-rice-8-1200.jpg";
 import TurkeyImg from "../images/food/turkey.jpg";
@@ -17,6 +18,7 @@ import FishImg from "../images/food/Pan-Fried-Fish-Grandma-Style44-735x735.jpg";
 import OfadaImg from "../images/food/ofada-rice-sauce-per-portion.jpg";
 
 const Food = () => {
+   
     return (
         <div className="row">
              <CardGroup>
