@@ -796,6 +796,10 @@ input {
   border: none;
 }
 
+.card-title {
+  text-transform: capitalize;
+}
+
 .card-footer {
   border: none;
 }
