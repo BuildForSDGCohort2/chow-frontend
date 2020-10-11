@@ -288,6 +288,11 @@ input {
   font-weight: bold;
 }
 
+.btnGrp {
+  display: flex;
+  align-items: center;
+}
+
 .recipeName {
   color: #000;
 }

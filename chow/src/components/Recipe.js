@@ -30,14 +30,6 @@ class Recipe extends React.Component {
         recipeList: [],
     };
 
-    onAddRecipe = (e) => {
-        e.preventDefault();
-        this.setState(state => {
-            const recipeList = state.recipeList.concat(state.activeRecipe);
-            return console.log(recipeList);
-        })
-    };
-
     componentDidMount = async () => {
       const title = this.props.location.state.hit;
       const req = await fetch(`https://api.edamam.com/search?q=${title}&app_id=${API_ID}&app_key=${API_KEY}`);
@@ -101,6 +93,7 @@ class Recipe extends React.Component {
                                   <span><b className="x">{calServ}</b> Cal per Serv</span>
                               </div>
                             </div>
+                            <div className="btnGrp">
                                 <Link to="/" className="home view" data-tip="Go Home">Go Home</Link>
                                 <AddRecipeBtn />
                                 <ReactToolTip
@@ -110,6 +103,7 @@ class Recipe extends React.Component {
                                   backgroundColor="#000"
                                   borderColor="#fff"
                                 />
+                            </div>
                             <div>
                                 <p><b>Ingredients:</b></p>
                                 <hr/>
