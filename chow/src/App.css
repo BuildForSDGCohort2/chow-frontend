@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 #root {
@@ -250,6 +251,12 @@ input {
 
 .view:hover {
   background-color: #f26f07;
+  color: #fff;
+}
+
+.view:focus {
+  outline: none;
+  background-color: #000;
   color: #fff;
 }
 
