@@ -808,6 +808,8 @@ input {
   border-radius: 50px;
   padding: 0.2rem 0.5rem;
   transition: all 0.3s ease-in-out;
+  outline: none;
+  border: none;
 }
 
 .add:hover {

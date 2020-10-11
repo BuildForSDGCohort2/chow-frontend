@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 
 const AddRecipeBtn = () => {
@@ -8,22 +8,28 @@ const AddRecipeBtn = () => {
     const [error, setError] = useState("");
    
 
+    
+    useEffect(() => {
+        const savedRecipes = JSON.parse(localStorage.getItem("active"));
+        return (
+            savedRecipes || [],
+            console.log(savedRecipes)
+        )
+    }, [])
+
     const addRecipe = (e) => {
         e.preventDefault();
         if(localStorage.getItem("userData") !== null || sessionStorage.getItem("userData") !==null) {
             setTimeout(() => {
                 setText("Recipe Added");
                 setDataTip("Recipe was Added!");
-                localStorage.setItem("value", "Recipe Added");
             }, 1500);
         } else {
             return (
                 setError("Please Sign in to add this Recipe")
             );
         }
-        
     };
-  
 
     return (
         <span>

@@ -1,11 +1,25 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+
 
 
 const AddToCart = () => {
+  const [cart, setCart] = useState("Add to Cart");
+
+  const addToCart = (e) => {
+    e.preventDefault();
+    setTimeout(() => {
+      setCart("Added to Cart")
+    }, 2000)
+};
+
     return (
       <div className="col-sm-12">
-        <Link className="add" to="" >Add to Cart</Link>
+        <button
+          className="add"
+          onClick={addToCart}
+          >
+          {cart}
+        </button>
       </div>
     );
 };

@@ -50,7 +50,7 @@ class Recipe extends React.Component {
     };
 
     componentDidUpdate() {
-        const active = JSON.stringify(this.state.active);
+        const active = JSON.stringify(this.state.activeRecipe);
         localStorage.setItem("active", active);
     }
 
