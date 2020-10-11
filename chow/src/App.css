@@ -275,6 +275,12 @@ input {
 }
 
 /** Recipe */
+.error {
+  color: #f20e0e;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
 .recipeName {
   color: #000;
 }
