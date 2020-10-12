@@ -154,6 +154,16 @@ h5 {
   font-family: 'Quicksand', sans-serif;
 }
 
+.close {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.close:hover {
+  color: #f20e0e;
+  font-size: 2rem;
+}
+
 /** Hero */
 .hero {
   display: flex;
