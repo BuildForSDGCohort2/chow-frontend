@@ -31,7 +31,7 @@ const Order = () => {
                   onSelect={(k) => setKey(k)}
                   transition={false}
                   >
-                    <Tab eventKey="food" title="Food" className="mx-3">
+                    <Tab eventKey="food" title="Food" className="mx-3 food">
                       <h5 className="text-justify">Food Menu</h5>
                       <div className="row">
                         <Food />
