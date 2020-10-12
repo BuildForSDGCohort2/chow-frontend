@@ -150,6 +150,9 @@ h5 {
   color: #fff;
 }
 
+.modal-open {
+  font-family: 'Quicksand', sans-serif;
+}
 
 /** Hero */
 .hero {
