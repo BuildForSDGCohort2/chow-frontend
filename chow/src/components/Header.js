@@ -1,10 +1,14 @@
-import React from 'react';
-import { Navbar, Nav } from "react-bootstrap";
+import React , { useState } from 'react';
+import { Navbar, Nav, Modal } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 
 const Header = () => {
+  const [show, setShow] = useState(false);
   const history = useHistory();
   
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const isLoggedIn = () => {
     let userData = sessionStorage.getItem("userData") || localStorage.getItem("userData");
     let loggedInUser = JSON.parse(userData);
@@ -37,9 +41,35 @@ const Header = () => {
                     <Nav.Link>
                       <Link
                         className="signOut mx-2 px-3 py-1"
-                        to="/#">
+                        onClick={handleShow}
+                        >
                           My Cart
                       </Link>
+                      <Modal show={show} onHide={handleClose} >
+                        <Modal.Header>
+                          <Modal.Title>Your Cart</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                          <img
+                            className="img-fluid"
+                            src="https://res.cloudinary.com/sivadass/image/upload/v1495427934/icons/empty-cart.png"
+                            alt="empty-cart"
+                          />
+                          Your cart is empty!
+                        </Modal.Body>
+                        <Modal.Footer>
+                          <button
+                            className="modalBtn mx-2 px-3 py-1"
+                            onClick={handleClose}
+                            >Close
+                          </button>
+                          <button
+                            className="modalBtn mx-2 px-3 py-1"
+                            disabled
+                            >Continue to Checkout
+                          </button>
+                        </Modal.Footer>
+                      </Modal>
                     </Nav.Link>
                     <Nav.Link>
                       <Link

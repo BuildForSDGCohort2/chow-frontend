@@ -122,6 +122,35 @@ h5 {
   color: #fff;
 }
 
+.modal-header,
+.modal-body {
+  justify-content: center;
+  border: none;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.modalBtn {
+  outline: none;
+  border: none;
+  color: #000;
+  border-radius: 3.125rem;
+}
+
+.modalBtn:hover {
+  background-color: #f20e0e;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.modalBtn:active {
+  background-color: #000;
+  color: #fff;
+}
+
+
 /** Hero */
 .hero {
   display: flex;
@@ -820,6 +849,11 @@ input {
   text-decoration: none;
   color: #fff;
   background-color: #000;
+}
+
+.add:focus {
+  background-color: #000;
+  color: #fff;
 }
 
 .from {
