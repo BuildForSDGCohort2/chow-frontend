@@ -12,6 +12,7 @@ import Food from "./Food";
 import Snacks from "./Snacks";
 
 
+
 const Order = () => {
   const [key, setKey] = useState("food", "snacks", "salads", "smoothie", "drinks", "small chops", "pizza");
   
@@ -82,6 +83,7 @@ const Order = () => {
                 <h3>Order Page</h3>
                 <p>Sorry dear,we are still working on this page.</p>
                 <Link to="/dashboard" className="go">Go Back</Link>
+              
               </div>  
             </div>
           </div>

@@ -24,7 +24,8 @@
     "react-share": "^4.2.1",
     "react-tooltip": "^4.2.10",
     "react-twitter-login": "^1.1.2",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "use-cart": "^1.1.0"
   },
   "scripts": {
     "start": "HTTPS=true react-scripts start",

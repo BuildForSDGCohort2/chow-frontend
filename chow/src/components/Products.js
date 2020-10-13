@@ -64,7 +64,7 @@ import cokeZero from "../images/drinks/cokepetzero.jpg";
 
 
 const products = [ 
-    { food: [
+  
         { id: 0,name: "Jollof Rice", price: 500, image: JollofImg },
         { id: 1, name: "Efo Riro", price: 500, image: EfoImg },
         { id: 2, name: "Coco-nut Rice", price: 500, image: CocunutImg },
@@ -77,48 +77,42 @@ const products = [
         { id: 9, name: "Turkey", price: 500, image: TurkeyImg },
         { id: 10, name: "Fries", price: 500, image: FriesImg },
         { id: 11, name: "Fried Plantain", price: 500, image: PlantainImg },
-    ] },
-    { snacks: [
+     
         { id: 12, name: "Cinnamon Rolls", price: 500, image: CinnamonImg },
         { id: 13, name: "Pop Corn", price: 200, image: PopCornImg },
         { id: 14, name: "Meat Pie", price: 300, image: MeatPieImg },
         { id: 15, name: "Donuts", price: 200, image: DonutsImg },
         { id: 16, name: "Chicken Pie", price: 300, image: ChickenPieImg },
         { id: 17, name: "Cup Cakes", price: 500, image: CupCakesImg },
-    ] },
-    { salads: [
+  
         { id: 18, name: "Caesar Salad", price: 500, image: CaesarImg },
         { id: 19, name: "Chicken Caesar Salad", price: 500, image: ChickenCaesarImg },
         { id: 20, name: "Breek Salad", price: 500, image: GreekImg },
         { id: 21, name: "Potato Salad", price: 500, image: PotatoImg },
         { id: 22, name: "Pasta Salad", price: 500, image: PastaImg },
         { id: 23, name: "Lettuce-Avocado Salad", price: 500, image: LettuceImg },
-    ] },
-    { smoothies: [
+     
         { id: 24, name: "Mango", price: 500, image: Mango },
         { id: 25, name: "Blueberry", price: 500, image: BlueBerry },
         { id: 26, name: "Orange", price: 500, image: Orange },
         { id: 27, name: "Green", price: 500, image: Banana },
         { id: 28, name: "Strawberry", price: 500, image: Strawberry },
         { id: 29, name: "Pomegranate", price: 500, image: Berry },
-    ] },
-    { smallChops: [
+   
         { id: 30, name: "Samosa", price: 1500, image: SamosaImg },
         { id: 31, name: "Spring Rolls", price: 1500, image: SpringRollImg },
         { id: 32, name: "Puff Puffs", price: 1500, image: PuffPuffImg},
         { id: 33, name: "Peppered Gizzard", price: 1500, image: gizzardImg },
         { id: 34, name: "Corn Dogs", price: 1500, image: CornDogs},
         { id: 35, name: "Chicken Cuts", price: 1500, image: Chicken },
-    ] },
-    { pizza: [
+   
         { id: 36, name: "Hot Chilli", price: 1500, image: pizzaOne },
         { id: 37, name: "Super Supreme", price: 2000, image: pizzaTwo },
         { id: 38, name: "BBQ Chicken", price: 2000, image: pizzaThree },
         { id: 39, name: "Hot Pepperoni", price: 2000, image:  pizzaFour},
         { id: 40, name: "Hot Chicken Supreme", price: 2000, image: pizzaFive },
         { id: 41, name: "Hot BBQ Beef", price: 2000, image: pizzaSix },
-    ] },
-    { drinks: [
+
         { id: 42, name: "Coca-Cola Pet-35cl", price: 150, image: cokePet },
         { id: 43, name: "Pepsi Pet-35cl", price: 150, image: pepsiPet},
         { id: 44, name: "Fanta Pet-35cl", price: 150, image: fantaPet },
@@ -136,7 +130,6 @@ const products = [
         { id: 56, name: "Teem Bitter lemon Pet-35cl", price: 150, image: teemPet },
         { id: 57, name: "Fanta Can-33cl", price: 150, image: fantaCan },
         { id: 58, name: "Teem Tonic Can-33cl", price: 150, image: teemCan2 },
-    ] }
 
 ];
 

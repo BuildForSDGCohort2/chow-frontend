@@ -18,7 +18,7 @@ import FishImg from "../images/food/Pan-Fried-Fish-Grandma-Style44-735x735.jpg";
 import OfadaImg from "../images/food/ofada-rice-sauce-per-portion.jpg";
 
 const Food = () => {
-   
+
     return (
         <div className="row">
              <CardGroup>
