@@ -8,7 +8,7 @@ const SnacksPrdt = () => {
     return (
         <div className="row">
            {Snacks.map((item, index) => (
-                  <div className="col-sm-12 col-md-3 col-lg-4 card" key={index}>
+                  <div className="col-sm-12 col-md-3 col-lg-4" key={index}>
                       <img
                         src={item.image}
                         alt={item.name}

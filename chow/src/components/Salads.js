@@ -1,120 +1,32 @@
 import React from "react";
-import { CardGroup, CardImg, Card } from "react-bootstrap";
+import { Salads } from "./Products";
 import AddToCart from "./AddToCart";
 import Counter from "./Counter";
 
-import CaesarImg from "../images/salads/caesar-salad-88749-1.jpeg";
-import ChickenCaesarImg from "../images/salads/chicken-caesar-salad-83105-1.jpeg";
-import GreekImg from "../images/salads/super-easy-greek-salad-81664-1.jpeg";
-import PotatoImg from "../images/salads/potato-salad-606-1.jpeg";
-import LettuceImg from "../images/salads/lettuce-avocado-and-mango-salad-59642-1.jpeg";
-import PastaImg from "../images/salads/pasta-salad-714-1.jpeg";
 
-
-const Salads = () => {
+const SaladsPrdt = () => {
     return (
         <div className="row">
-             <CardGroup>
-                 <Card>
-                     <CardImg
-                        src={ CaesarImg }
-                        alt=""
-                        className="prdt"
-                     />
-                     <Card.Body>
-                         <Card.Title>Caesar salad</Card.Title>
-                     </Card.Body>
-                     <Card.Footer>
+           {Salads.map((item, index) => (
+                  <div className="col-sm-12 col-md-3 col-lg-4" key={index}>
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="prdt img-fluid"
+                      />
+                      <div>
+                        <p>{item.name}</p>
+                      </div>
+                      <div>
                         <span>from</span>
-                        <span className="from mx-1">₦</span>500
-                        <Counter />
-                        <AddToCart/>
-                     </Card.Footer>
-                 </Card>
-                 <Card>
-                     <CardImg
-                      src={ ChickenCaesarImg }
-                      alt=""
-                      className="prdt"
-                     />
-                     <Card.Body>
-                         <Card.Title>Chicken Caesar salad</Card.Title>
-                     </Card.Body>
-                     <Card.Footer>
-                        <span>from</span>
-                        <span className="from mx-1">₦</span>500
-                        <Counter />
-                        <AddToCart/>
-                     </Card.Footer>
-                 </Card>
-                 <Card>
-                     <CardImg
-                     src={ GreekImg }
-                     alt=""
-                     className="prdt"
-                     />
-                     <Card.Body>
-                         <Card.Title>Greek salad</Card.Title>
-                     </Card.Body>
-                     <Card.Footer>
-                        <span>from</span>
-                        <span className="from mx-1">₦</span>500
-                        <Counter />
-                        <AddToCart/>
-                     </Card.Footer>
-                 </Card>
-             </CardGroup>
-             <CardGroup>
-                 <Card>
-                     <CardImg
-                     src={ PotatoImg }
-                     alt=""
-                     className="prdt"
-                     />
-                     <Card.Body>
-                         <Card.Title>Potato salad</Card.Title>
-                     </Card.Body>
-                     <Card.Footer>
-                        <span>from</span>
-                        <span className="from mx-1">₦</span>500
-                        <Counter />
-                        <AddToCart/>
-                     </Card.Footer>
-                 </Card>
-                 <Card>
-                     <CardImg
-                     src={ PastaImg }
-                     alt=""
-                     className="prdt"
-                     />
-                     <Card.Body>
-                         <Card.Title>Pasta salad</Card.Title>
-                     </Card.Body>
-                     <Card.Footer>
-                        <span>from</span>
-                        <span className="from mx-1">₦</span>500
-                        <Counter />
-                        <AddToCart/>
-                     </Card.Footer>
-                 </Card>
-                 <Card>
-                     <CardImg
-                     src={ LettuceImg }
-                     alt=""
-                     className="prdt"/>
-                     <Card.Body>
-                         <Card.Title>Lettuce-Avocado salad</Card.Title>
-                     </Card.Body>
-                     <Card.Footer>
-                        <span>from</span>
-                        <span className="from mx-1">₦</span>500
-                        <Counter />
-                        <AddToCart/>
-                     </Card.Footer>
-                 </Card>
-             </CardGroup>
+                        <span className="from mx-1">₦</span>{item.price} 
+                      </div>
+                      <Counter />
+                      <AddToCart />
+                  </div>
+              ))}
         </div>
-    );
+      );
 };
 
-export default Salads;
+export default SaladsPrdt;
