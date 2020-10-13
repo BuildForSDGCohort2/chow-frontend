@@ -872,6 +872,11 @@ input {
   transform: scale(1.1);
 }
 
+.prdtFooter {
+  align-items: center;
+  justify-content: center;
+}
+
 .myOrder {
   min-height: 100vh;
   background: url("./images/taylor-kiser-EvoIiaIVRzU-unsplash\(1\)\(1\).jpg") no-repeat;

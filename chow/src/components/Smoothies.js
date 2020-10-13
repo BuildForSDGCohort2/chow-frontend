@@ -17,12 +17,12 @@ const SmoothiesPrdt = () => {
                       <div>
                         <p>{item.name}</p>
                       </div>
-                      <div>
+                      <div className="prdtFooter">
                         <span>from</span>
-                        <span className="from mx-1">₦</span>{item.price} 
+                        <span className="from mx-1">₦</span>{item.price}
+                        <Counter />
+                        <AddToCart />
                       </div>
-                      <Counter />
-                      <AddToCart />
                   </div>
               ))}
         </div>
