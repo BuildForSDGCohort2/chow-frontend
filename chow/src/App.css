@@ -1021,3 +1021,15 @@ a {
   background-color: #f26f07;
   color: #000;
 }
+
+/**MyRecipe*/
+.details {
+  
+ 
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  padding: 0.6rem;
+}
