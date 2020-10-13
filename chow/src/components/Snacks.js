@@ -1,121 +1,32 @@
 import React from "react";
-import { CardGroup, CardImg, Card } from "react-bootstrap";
+import { Snacks } from "./Products";
 import AddToCart from "./AddToCart";
 import Counter from "./Counter";
 
-import CinnamonImg from "../images/snacks/cinnamon-rolls-fp.jpg";
-import PopCornImg from "../images/snacks/popCorn.jpg";
-import MeatPieImg from "../images/snacks/meatPie.jpeg";
-import DonutsImg from "../images/snacks/donuts.jpg";
-import ChickenImg from "../images/snacks/chickenPie.jpeg";
-import CupCakesImg from "../images/snacks/cupcakes.jpg";
 
-
-const Snacks = () => {
+const SnacksPrdt = () => {
     return (
         <div className="row">
-             <CardGroup>
-                 <Card>
-                     <CardImg
-                       src={ CinnamonImg }
-                       alt=""
-                       className="prdt"
-                     />
-                     <Card.Body>
-                         <Card.Title>Cinnamon Rolls</Card.Title>
-                     </Card.Body>
-                     <Card.Footer>
+           {Snacks.map((item, index) => (
+                  <div className="col-sm-12 col-md-3 col-lg-4 card" key={index}>
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="prdt img-fluid"
+                      />
+                      <div>
+                        <p>{item.name}</p>
+                      </div>
+                      <div>
                         <span>from</span>
-                        <span className="from mx-1">₦</span>500
-                        <Counter />
-                        <AddToCart/>
-                     </Card.Footer>
-                 </Card>
-                 <Card>
-                     <CardImg
-                     src={ PopCornImg }
-                     alt=""
-                     className="prdt"
-                     />
-                     <Card.Body>
-                         <Card.Title>Pop Corn</Card.Title>
-                     </Card.Body>
-                     <Card.Footer>
-                        <span>from</span>
-                        <span className="from mx-1">₦</span>200
-                        <Counter />
-                        <AddToCart/>
-                     </Card.Footer>
-                 </Card>
-                 <Card>
-                     <CardImg
-                     src={ MeatPieImg }
-                     alt=""
-                     className="prdt"
-                     />
-                     <Card.Body>
-                         <Card.Title>Meat Pie</Card.Title>
-                     </Card.Body>
-                     <Card.Footer>
-                        <span>from</span>
-                        <span className="from mx-1">₦</span>300
-                        <Counter />
-                        <AddToCart/>
-                     </Card.Footer>
-                 </Card>
-             </CardGroup>
-             <CardGroup>
-                 <Card>
-                     <CardImg
-                     src={ DonutsImg }
-                     alt=""
-                     className="prdt"
-                     />
-                     <Card.Body>
-                         <Card.Title>Donuts</Card.Title>
-                     </Card.Body>
-                     <Card.Footer>
-                        <span>from</span>
-                        <span className="from mx-1">₦</span>200
-                        <Counter />
-                        <AddToCart/>
-                     </Card.Footer>
-                 </Card>
-                 <Card>
-                     <CardImg
-                        src={ ChickenImg }
-                        alt=""
-                        className="prdt"
-                     />
-                     <Card.Body>
-                         <Card.Title>Chicken pie</Card.Title>
-                     </Card.Body>
-                     <Card.Footer>
-                        <span>from</span>
-                        <span className="from mx-1">₦</span>300
-                        <Counter />
-                        <AddToCart/>
-                     </Card.Footer>
-                 </Card>
-                 <Card>
-                     <CardImg
-                        src={ CupCakesImg }
-                        alt=""
-                        className="prdt"
-                     />
-                     <Card.Body>
-                         <Card.Title>Cup Cakes</Card.Title>
-                     </Card.Body>
-                     <Card.Footer>
-                        <span>from</span>
-                        <span className="from mx-1">₦</span>500
-                        <Counter />
-                        <AddToCart/>
-                     </Card.Footer>
-                 </Card>
-             </CardGroup>
+                        <span className="from mx-1">₦</span>{item.price} 
+                      </div>
+                      <Counter />
+                      <AddToCart />
+                  </div>
+              ))}
         </div>
-    );
+      );
 };
 
-export default Snacks;
+export default SnacksPrdt;

@@ -13,7 +13,7 @@ const AddToCart = () => {
 };
 
     return (
-      <div className="col-sm-12">
+      <div className="">
         <button
           className="add"
           onClick={addToCart}

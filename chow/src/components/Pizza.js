@@ -1,132 +1,32 @@
 import React from "react";
-import { CardGroup, CardImg, Card } from "react-bootstrap";
+import { Pizza } from "./Products";
 import AddToCart from "./AddToCart";
 import Counter from "./Counter";
 
-import pizzaOne from "../images/pizzas/hotChilliMeat-removebg-preview.png";
-import pizzaTwo from "../images/pizzas/supersupreme-removebg-preview.png";
-import pizzaThree from "../images/pizzas/bbqChicken-removebg-preview.png";
-import pizzaFour from "../images/pizzas/pepperoni-removebg-preview.png";
-import pizzaFive from "../images/pizzas/bbqMeat-removebg-preview.png";
-import pizzaSix from "../images/pizzas/chickenSuupreme-removebg-preview.png";
 
-const Pizza = () => {
+const PizzaPrdt = () => {
     return (
-        <div className="row">
-            <CardGroup>
-                <Card>
-                    <CardImg
-                      src={ pizzaOne }
-                      alt=""
-                      className="prdt"
+      <div className="row">
+         {Pizza.map((item, index) => (
+                <div className="col-sm-12 col-md-3 col-lg-4 card" key={index}>
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="prdt img-fluid"
                     />
-                    <Card.Body>
-                        <Card.Title>
-                            Hot Chilli
-                        </Card.Title>
-                    </Card.Body>
-                    <Card.Footer>
+                    <div>
+                      <p>{item.name}</p>
+                    </div>
+                    <div>
                       <span>from</span>
-                      <span className="from mx-1">₦</span>1500
-                      <Counter />
-                      <AddToCart />
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <CardImg
-                      src={ pizzaTwo }
-                      alt=""
-                      className="prdt"
-                    />
-                    <Card.Body>
-                        <Card.Title>
-                            Super Supreme
-                        </Card.Title>
-                    </Card.Body>
-                    <Card.Footer>
-                      <span>from</span>
-                      <span className="from mx-1">₦</span>2500
-                      <Counter />
-                      <AddToCart />
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <CardImg
-                      src={ pizzaThree }
-                      alt=""
-                      className="prdt"
-                    />
-                    <Card.Body>
-                        <Card.Title>
-                            BBQ Chicken
-                        </Card.Title>
-                    </Card.Body>
-                    <Card.Footer>
-                      <span>from</span>
-                      <span className="from mx-1">₦</span>2000
-                      <Counter />
-                      <AddToCart />
-                    </Card.Footer>
-                </Card>
-            </CardGroup>
-            <CardGroup>
-                <Card>
-                    <CardImg
-                      src={ pizzaFour }
-                      alt=""
-                      className="prdt"
-                    />
-                    <Card.Body>
-                        <Card.Title>
-                            Hot Pepperoni
-                        </Card.Title>
-                    </Card.Body>
-                    <Card.Footer>
-                      <span>from</span>
-                      <span className="from mx-1">₦</span>2500
-                      <Counter />
-                      <AddToCart />
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <CardImg
-                      src={ pizzaSix }
-                      alt=""
-                      className="prdt"
-                    />
-                    <Card.Body>
-                        <Card.Title>
-                            Hot Chicken Supreme
-                        </Card.Title>
-                    </Card.Body>
-                    <Card.Footer>
-                      <span>from</span>
-                      <span className="from mx-1">₦</span>2000
-                      <Counter />
-                      <AddToCart />
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <CardImg
-                      src={ pizzaFive }
-                      alt=""
-                      className="prdt"
-                    />
-                    <Card.Body>
-                        <Card.Title>
-                            Hot BBQ Meat
-                        </Card.Title>
-                    </Card.Body>
-                    <Card.Footer>
-                      <span>from</span>
-                      <span className="from mx-1">₦</span>1800
-                      <Counter />
-                      <AddToCart />
-                    </Card.Footer>
-                </Card>
-            </CardGroup>
-        </div>
-    )
+                      <span className="from mx-1">₦</span>{item.price} 
+                    </div>
+                    <Counter />
+                    <AddToCart />
+                </div>
+            ))}
+      </div>
+    );
 }
 
-export default Pizza;
+export default PizzaPrdt;
