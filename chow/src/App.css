@@ -1067,3 +1067,13 @@ a {
 hr {
   border: 0.1rem solid #3b59983b;
 }
+
+.itemBtn {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.itemBtn:focus {
+  outline: none;
+}
