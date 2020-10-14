@@ -47,6 +47,9 @@ const MyRecipes = () => {
                   <p><b>{activeRecipe.label}</b></p>
                   <span>Source: </span>
                   <a href={activeRecipe.url}>{activeRecipe.source}</a>
+                  <div>
+                    <Link to="/" className="  home view">View More</Link>
+                  </div>
                   <p>Servings: {activeRecipe.yield}</p>
                   <div className="my-1 row">
                     <span className="item1 px-5"></span>
@@ -57,7 +60,7 @@ const MyRecipes = () => {
                   <div className="details">
                     <span className="item"><b>{ingredients.length}</b> Ingredients</span>
                     <span className="item"><b className="y">{activeRecipe.totalTime ? activeRecipe.totalTime : "--"}</b> Mins</span>
-                    <span className="item"><b className="y">{calServ}</b> Cal / Serv</span>
+                    <span className="item"><b className="y">{calServ}</b> Cal/Serv</span>
                   </div>
                   <hr/>
                 </div>
