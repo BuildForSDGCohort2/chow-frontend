@@ -45,13 +45,21 @@ const MyRecipes = () => {
                 </div>
                 <div className="col-sm-12 col-lg-6 mt-5 text-justify px-5">
                   <p><b>{activeRecipe.label}</b></p>
+                  <span>Source: </span>
                   <a href={activeRecipe.url}>{activeRecipe.source}</a>
-                  <p>Servings :{activeRecipe.yield}</p>
-                  <div className="details">
-                    <span className="item"><b>{ingredients.length}</b>ingredients</span>
-                    <span className="item"><b>{activeRecipe.totalTime ? activeRecipe.totalTime : "--"}</b>mins</span>
-                    <span className="item"><b>{calServ}</b> Cal per Serv</span>
+                  <p>Servings: {activeRecipe.yield}</p>
+                  <div className="my-1 row">
+                    <span className="item1 px-5"></span>
+                    <span className="item2 px-5"></span>
+                    <span className="item3 px-5"></span>
                   </div>
+                  <hr/>
+                  <div className="details">
+                    <span className="item"><b>{ingredients.length}</b> Ingredients</span>
+                    <span className="item"><b className="y">{activeRecipe.totalTime ? activeRecipe.totalTime : "--"}</b> Mins</span>
+                    <span className="item"><b className="y">{calServ}</b> Cal / Serv</span>
+                  </div>
+                  <hr/>
                 </div>
               </div>
             </div>

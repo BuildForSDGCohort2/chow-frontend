@@ -1031,5 +1031,33 @@ a {
 }
 
 .item {
-  padding: 0.6rem;
+  padding: 0.75rem;
+}
+
+.item1 {
+  width: 2rem;
+  height: 2rem;
+  background: url("./images/ingredients.svg") no-repeat center;
+}
+
+.item2 {
+  width: 2rem;
+  height: 2rem;
+  background: url("./images/cooking-time.svg") no-repeat center;
+}
+
+.item3 {
+  width: 2rem;
+  height: 2rem;
+  background: url("./images/meal.svg") no-repeat center;
+}
+
+.itemx {
+  list-style: none;
+  display: flex;
+ 
+}
+
+hr {
+  border: 0.1rem solid #3b59983b;
 }
