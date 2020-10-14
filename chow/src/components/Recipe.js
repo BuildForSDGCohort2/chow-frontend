@@ -109,7 +109,6 @@ class Recipe extends React.Component {
                                 <hr/>
                               {ingredients.map((ingredient,index) => 
                               <div key={index}>
-                              
                                   {ingredient.text}
                               </div>)}
                             </div>

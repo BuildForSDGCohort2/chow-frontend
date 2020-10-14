@@ -18,20 +18,15 @@ const MyRecipes = () => {
    }
   }, [])
 
-  const getActiveRecipe = (e) => {
-    e.preventDefault();
-  }
   const cal = parseInt(activeRecipe.calories).toString();
   const calServ = (Math.round(cal / (activeRecipe.yield))).toString();
+ 
   
     return (
         <div className="container-fluid">
           <Header />
           <div className="row">
             <div className="col-sm-12 col-lg-3 myOrder text-center">
-              <div className="my m-5 p-3">
-                <Link onClick={getActiveRecipe} className="go">view Recipe</Link>
-              </div>
             </div>
             <div className="col-sm-12 col-lg-9 text-center">
               <h3>Recent Saved Recipe</h3>
@@ -51,12 +46,12 @@ const MyRecipes = () => {
                     <Link to="/" className="  home view">View More</Link>
                   </div>
                   <p>Servings: {activeRecipe.yield}</p>
-                  <div className="my-1 row">
+                  <hr/>
+                  <div className="my-2 row">
                     <span className="item1 px-5"></span>
                     <span className="item2 px-5"></span>
                     <span className="item3 px-5"></span>
                   </div>
-                  <hr/>
                   <div className="details">
                     <span className="item"><b>{ingredients.length}</b> Ingredients</span>
                     <span className="item"><b className="y">{activeRecipe.totalTime ? activeRecipe.totalTime : "--"}</b> Mins</span>
@@ -65,6 +60,16 @@ const MyRecipes = () => {
                   <hr/>
                   <div>
                     <h6>Ingredients</h6>
+                    <hr/>
+                    {ingredients.map((item, index) => (
+                      <div key={index}>
+                        <p>{item.text}</p>
+                      </div>
+                    ))}
+                  </div>
+                  <hr/>
+                  <div>
+                    <a className="url px-4 py-1" href={activeRecipe.url}>Directions</a>
                   </div>
                 </div>
               </div>
