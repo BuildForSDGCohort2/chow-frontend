@@ -67,6 +67,11 @@ h5 {
   width: 100%;
   margin: 0 auto;
 }
+
+a {
+  cursor: pointer;
+}
+
 /** Header */
 .navbar.navbar-expand-lg.navbar-light.bg-dark {
   width: 100%;
@@ -292,7 +297,7 @@ input {
 }
 
 .view:hover {
-  background-color: #f26f07;
+  background-color: #000;
   color: #fff;
 }
 
@@ -355,6 +360,7 @@ input {
 }
 
 .home {
+  cursor: pointer;
   color: #000;
   background-color: #bbc5c53b;
 }
