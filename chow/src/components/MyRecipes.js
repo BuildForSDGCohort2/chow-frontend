@@ -63,6 +63,9 @@ const MyRecipes = () => {
                     <span className="item"><b className="y">{calServ}</b> Cal/Serv</span>
                   </div>
                   <hr/>
+                  <div>
+                    <h6>Ingredients</h6>
+                  </div>
                 </div>
               </div>
             </div>
