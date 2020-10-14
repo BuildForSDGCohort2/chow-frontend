@@ -55,7 +55,7 @@ const MyRecipes = () => {
                     <p className="tags">Diet</p>
                     {diet.map((elem, index) => (
                       <ul key={index} className="tg">
-                        <li className="tags-item m-1 py-1 px-3">{elem}</li>
+                        <li className="tags-item m-1 py-1 px-3"><b>{elem}</b></li>
                       </ul>
                     ))}
                   </div>
@@ -63,7 +63,7 @@ const MyRecipes = () => {
                     <p className="health">Health</p>
                     {health.map((elem, index) => (
                       <ul key={index} className="he">
-                        <li className="health-item m-1 py-1 px-3">{elem}</li>
+                        <li className="health-item m-1 py-1 px-3"><b>{elem}</b></li>
                       </ul>
                     ))}
                   </div>
@@ -71,7 +71,7 @@ const MyRecipes = () => {
                     <p className="cautions">Caution</p>
                     {caution.map((elem, index) => (
                      <ul key={index} className="ca">
-                       <li className="cautions-item m-1 py-1 px-3">{elem}</li>
+                       <li className="cautions-item m-1 py-1 px-3"><b>{elem}</b></li>
                      </ul>
                    ))}
                   </div>
@@ -80,8 +80,8 @@ const MyRecipes = () => {
                   <p><b>{activeRecipe.label}</b></p>
                   <span>Source: </span>
                   <a href={activeRecipe.url}>{activeRecipe.source}</a>
-                  <div>
-                    <Link to="/" className="home view">More Recipes</Link>
+                  <div className="my-2">
+                    <Link to="/" className="home view"><b>More Recipes</b></Link>
                   </div>
                   <p>Servings: {activeRecipe.yield}</p>
                   <hr/>
@@ -114,7 +114,7 @@ const MyRecipes = () => {
                         />
                         <span className="px-1">{item.text}</span>
                         </p>
-                        <img src={item.image} alt="" className="img-fluid itemImg m-1" />
+                        <img src={item.image ? item.image : "No Image Available"} alt="" className="img-fluid itemImg m-1" />
                       </div>
                     ))}
                   </div>
@@ -139,7 +139,7 @@ const MyRecipes = () => {
                           </button>
                         </Modal.Footer>
                   </Modal>
-                  <button className="home view">Shop Ingredients</button>
+                  <button className="home view"><b>Shop Ingredients</b></button>
                   <hr/>
                   <div>
                     <a className="url px-4 py-1" href={activeRecipe.url}>Directions</a>
