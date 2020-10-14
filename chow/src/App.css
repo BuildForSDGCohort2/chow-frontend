@@ -1069,7 +1069,7 @@ hr {
 }
 
 .itemBtn {
-  background: none;
+  background-color: transparent;
   outline: none;
   border: none;
 }
