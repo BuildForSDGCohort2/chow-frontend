@@ -9,6 +9,9 @@ const MyRecipes = () => {
 
   const [activeRecipe, setActiveRecipe] = useState([]);
   const [ingredients, setIngredients] = useState([]);
+  const [health, setHealth] = useState([]);
+  const [diet, setDiet] = useState([]);
+  const [caution, setCaution] = useState([]);
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -20,12 +23,16 @@ const MyRecipes = () => {
    if (savedRecipes) {
      setActiveRecipe(savedRecipes);
      setIngredients(savedRecipes.ingredients);
-     console.log(savedRecipes.ingredients);
+     setHealth(savedRecipes.healthLabels);
+     setDiet(savedRecipes.dietLabels);
+     setCaution(savedRecipes.cautions)
+     console.log(savedRecipes);
    }
   }, [])
 
   const cal = parseInt(activeRecipe.calories).toString();
   const calServ = (Math.round(cal / (activeRecipe.yield))).toString();
+  
   
   
     return (
@@ -43,6 +50,31 @@ const MyRecipes = () => {
                     src={activeRecipe.image}
                     alt={activeRecipe.label}
                   />
+                  <p className="text-justify">Tags:</p>
+                  <div className="row m-1 t">
+                    <p className="tags">Diet</p>
+                    {diet.map((elem, index) => (
+                      <ul key={index} className="tg">
+                        <li className="tags-item m-1 py-1 px-3">{elem}</li>
+                      </ul>
+                    ))}
+                  </div>
+                  <div className="row m-1 h">
+                    <p className="health">Health</p>
+                    {health.map((elem, index) => (
+                      <ul key={index} className="he">
+                        <li className="health-item m-1 py-1 px-3">{elem}</li>
+                      </ul>
+                    ))}
+                  </div>
+                  <div className="row m-1 c">
+                    <p className="cautions">Caution</p>
+                    {caution.map((elem, index) => (
+                     <ul key={index} className="ca">
+                       <li className="cautions-item m-1 py-1 px-3">{elem}</li>
+                     </ul>
+                   ))}
+                  </div>
                 </div>
                 <div className="col-sm-12 col-lg-6 mt-5 text-justify px-5">
                   <p><b>{activeRecipe.label}</b></p>
@@ -82,14 +114,14 @@ const MyRecipes = () => {
                         />
                         <span className="px-1">{item.text}</span>
                         </p>
-                        <img src={item.image} alt="" className="img-fluid itemImg" />
+                        <img src={item.image} alt="" className="img-fluid itemImg m-1" />
                       </div>
                     ))}
                   </div>
                   
                   <Modal show={show} onHide={handleClose} >
                         <Modal.Header closeButton>
-                          <Modal.Title>{}</Modal.Title>
+                          <Modal.Title>Buy Ingredients</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
                           
