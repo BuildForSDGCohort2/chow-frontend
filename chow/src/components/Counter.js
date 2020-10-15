@@ -12,7 +12,7 @@ const Counter = () => {
     const handleDecrement = (e) => {
         e.preventDefault();
         if(count <= 1) {
-            return count === 1
+            return count === 1;
         } else {
             setCount(prevCount => prevCount - 1);
         }

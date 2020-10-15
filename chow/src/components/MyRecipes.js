@@ -25,10 +25,10 @@ const MyRecipes = () => {
      setIngredients(savedRecipes.ingredients);
      setHealth(savedRecipes.healthLabels);
      setDiet(savedRecipes.dietLabels);
-     setCaution(savedRecipes.cautions)
-     console.log(savedRecipes);
+     setCaution(savedRecipes.cautions);
+     // console.log(savedRecipes);
    }
-  }, [])
+  }, []);
 
   const cal = parseInt(activeRecipe.calories).toString();
   const calServ = (Math.round(cal / (activeRecipe.yield))).toString();

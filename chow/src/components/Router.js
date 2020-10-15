@@ -18,7 +18,7 @@ import Dashboard from "./Dashboard";
 
 const isLoggedIn = () => {
     return localStorage.getItem("userData") !== null || sessionStorage.getItem("userData") !== null;
-}
+};
 
 const SecureRoute = ({ component: Component, ...rest }) => {
    return <Route
@@ -30,7 +30,7 @@ const SecureRoute = ({ component: Component, ...rest }) => {
             <Redirect to="/signup" />
         )
     }
-  />
+  />;
 };
 
 class Router extends Component {
@@ -58,7 +58,7 @@ class Router extends Component {
         </Switch>
     </BrowserRouter>
     </Suspense>
-        )
+        );
     }
 }
 

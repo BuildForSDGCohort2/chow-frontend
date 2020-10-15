@@ -7,7 +7,7 @@ import Footer from "./Footer";
 
 
 const MealIdeas = () => {
-  const [key, setKey] = useState("recipes", "recommendations")
+  const [key, setKey] = useState("recipes", "recommendations");
 
     return (
         <div className="container-fluid">

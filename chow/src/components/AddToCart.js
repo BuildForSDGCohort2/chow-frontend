@@ -8,8 +8,8 @@ const AddToCart = () => {
   const addToCart = (e) => {
     e.preventDefault();
     setTimeout(() => {
-      setCart("Added to Cart")
-    }, 2000)
+      setCart("Added to Cart");
+    }, 2000);
 };
 
     return (

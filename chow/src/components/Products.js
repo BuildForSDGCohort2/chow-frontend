@@ -52,7 +52,7 @@ import sevenupCan from "../images/drinks/7upcan.jpg";
 import teemCan from "../images/drinks/teemcan.jpg";
 import teemCan2 from "../images/drinks/teemtonic.jpg";
 import fantaCan from "../images/drinks/fantacan.jpg";
-import spriteCan from "../images/drinks/spritecan.jpg"
+import spriteCan from "../images/drinks/spritecan.jpg";
 import aquafinaWater from "../images/drinks/aquafinawater.jpg";
 import evaWater from "../images/drinks/evawater.jpg";
 import cokeZero from "../images/drinks/cokepetzero.jpg";

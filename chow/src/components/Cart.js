@@ -4,7 +4,7 @@ import { useCart } from "use-cart";
 import products from "./Products";
 
 const getItemData = (id) => {
-    return products.find(d => d.id === id);
+    return products.find(d => (d.id) === id);
 };
 
 const CartLineItem = ({ item }) => {
