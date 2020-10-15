@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ReactToolTip from "react-tooltip";
 
 
 
@@ -8,8 +9,13 @@ const Recipes = (props) => {
         <div className="row">
               { (props.recipes || []).map((hit, index) => {
           return (
-            <div key={index} className="col-md-4">
-              <img className="active-img" src={hit.recipe.image} alt={hit.recipe.label}/>
+            <div key={index} className="col-md-4 col-lg-3 col-sm-12">
+              <img
+                className="active-img"
+                src={hit.recipe.image}
+                alt={hit.recipe.label}
+                data-tip={hit.recipe.label}
+                />
               <h3>
                 {hit.recipe.label.length < 20 ? `${hit.recipe.label}` : `${hit.recipe.label.substring(0, 25)} . . .`}
               </h3>
@@ -23,6 +29,13 @@ const Recipes = (props) => {
               <p>Source: <a href={hit.recipe.url}>{hit.recipe.source}</a></p>
               <div>
               </div>
+              <ReactToolTip
+                type="dark"
+                place="top"
+                effect="solid"
+                backgroundColor="#000"
+                borderColor="#fff"
+              />
             </div>
           );
         }) }
