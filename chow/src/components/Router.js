@@ -60,6 +60,6 @@ class Router extends Component {
     </Suspense>
         )
     }
-};
+}
 
 export default Router;

@@ -12,8 +12,7 @@ const AddRecipeBtn = () => {
     useEffect(() => {
         const savedRecipes = JSON.parse(localStorage.getItem("active"));
         return (
-            savedRecipes || [],
-            console.log(savedRecipes)
+            savedRecipes || []
         )
     }, [])
 

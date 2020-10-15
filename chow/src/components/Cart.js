@@ -31,7 +31,7 @@ const Cart = () => {
                     <CartLineItem key={item.id} item={item} />
                     <hr/>
                     <button onClick={clearCart}>Empty</button>
-                    <button onClick={() => console.log(items)}>Checkout</button>
+                    {/*<button onClick={() => console.log(items)}>Checkout</button>*/}
                 </div>
             ))}
         </div>

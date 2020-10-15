@@ -15,7 +15,7 @@ const Counter = () => {
             return count === 1
         } else {
             setCount(prevCount => prevCount - 1);
-        };
+        }
     };
 
     return (
