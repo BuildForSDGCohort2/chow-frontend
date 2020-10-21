@@ -726,7 +726,7 @@ input {
 
 .dash {
   background: url("./images/taylor-kiser-EvoIiaIVRzU-unsplash\(1\)\(1\).jpg") no-repeat left;
-  min-height: 50vh;
+  min-height: 30vh;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -746,6 +746,7 @@ input {
 .planner,
 .order,
 .myRecipes {
+  font-weight: bold;
   height: 10rem;
   width: 15rem;
   color: #3b5998;
@@ -771,7 +772,7 @@ input {
 }
 
 .mealBtn:hover {
-  background-color: #3b5998;
+  background-color: #f20e0e;
 }
 
 .order {
