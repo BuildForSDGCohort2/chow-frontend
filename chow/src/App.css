@@ -766,7 +766,7 @@ input {
 
 .mealBtn {
   background-color: #000;
-  opacity: 0.9;
+  font-weight: bold;
 }
 
 .mealBtn:hover {

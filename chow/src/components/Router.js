@@ -1,6 +1,6 @@
-import React, { Component, Suspense } from "react";
+import React, { Component } from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
-import ReactLoading from "react-loading";
+
 
 import App from "../App";
 import Recipe from "./Recipe";
@@ -36,10 +36,6 @@ const SecureRoute = ({ component: Component, ...rest }) => {
 class Router extends Component {
     render() {
         return (
-  <Suspense fallback={<div className="loader m-5">
-    <ReactLoading type={"spokes"} color={"#f20e0e"}  className="spinner" height={ 25 } width={ 25 } />
-    <h3>chowing....</h3>
-  </div>}>
     <BrowserRouter>
         <Switch>
             <Route path="/" component={ App } exact/>
@@ -57,7 +53,6 @@ class Router extends Component {
             <SecureRoute path="/dashboard" component={ Dashboard } />
         </Switch>
     </BrowserRouter>
-    </Suspense>
         );
     }
 }
