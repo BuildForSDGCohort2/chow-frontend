@@ -6,7 +6,7 @@ const Search = (props) => {
         <div className="search m-3">
             <form className="form" onSubmit={props.getRecipe} >
                 <input 
-                    type="text"
+                    type="search"
                     name="recipeName"
                     id="search"
                     placeholder="E.g Chicken"
