@@ -22,7 +22,7 @@ const Header = () => {
   };
     return(
         <div className="row">
-            <Navbar bg="dark" expand="lg" fixed="top">
+            <Navbar bg="dark" expand="lg">
               <Navbar.Brand>
                 <Link to="/" className="navbar-brand">choW</Link>
               </Navbar.Brand>

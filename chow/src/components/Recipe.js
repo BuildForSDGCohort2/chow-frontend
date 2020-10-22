@@ -76,7 +76,7 @@ class Recipe extends React.Component {
                 { this.state.activeRecipe !== 0 && 
                     <div className="row">
                         <Header />
-                        <div className="active-recipe col-md-6 p-3">
+                        <div className="active-recipe col-md-6 p-3 mt-5">
                             <img className="active-img" src={myRecipe.image} alt={myRecipe.label} />
                         </div>
                         <div className="col-md-6 pt-2">
