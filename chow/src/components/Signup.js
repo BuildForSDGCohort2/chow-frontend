@@ -128,12 +128,12 @@ const SignUp = () => {
                               <button  className="twitter m-2">Connect with Twitter</button>
                           }
                         />
-                    </li>
+                        </li>
                     <Link to="/email-signup">
                       <button className="email m-2" title="Connect with Email">
                           <span>Connect with Email</span>
                       </button>
-                        </Link>*/}
+                    </Link>*/}
                 </ul>
                 <Link to="/" className="my-5 back view home">
                     Go Back

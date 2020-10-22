@@ -1,47 +1,44 @@
 import React from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Footer from "./Footer";
 import Heading from "./Heading";
 
 const EmailSignUp = (props) => {
-  
+
+    const history = useHistory();
     const { register, handleSubmit, errors, getValues, formState : { isDirty, isSubmitting }} = useForm({
       mode: "onChange",
       });
     
     const onSubmit = async(data, e) => {
       e.preventDefault();
-      const headers = {
-        'Content-Type' : 'application/json',
-        'x-auth-token' : 'jwtToken'
-      };
       // console.log("Form submitted", data);
       await axios
         //.post("http://localhost:4000/api/v1/user/signup", data, headers)
-      .post("https://chow-kuic.herokuapp.com/api/v1/user/signup", data, headers)
+      .post("https://chow-kuic.herokuapp.com/api/v1/user/signup", data)
       .then((res) => {
         // console.log(res);
         // console.log(res.data);
         if(res.data.status === true ){
-          window.location = "/dashboard";
+          history.push("/signin");
           // console.log(res.data.message)
         } else {
           // console.log("Error");
         }
       })
       .catch((error) => {
-        alert(error);
-        // console.log(error);
+        //alert(error);
+        console.log(error);
       });
     };
 
     return(
         <div className="row text-center">
-            <div className="col-sm-12 signUp">
+            <div className="col-sm-12 signup">
                 <Heading />
-                <form onSubmit={handleSubmit(onSubmit)}>
+                <form onSubmit={handleSubmit(onSubmit)} className="form">
                     <div>
                        <label htmlFor="username"></label>
                        <input

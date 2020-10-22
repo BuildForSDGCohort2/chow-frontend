@@ -1,16 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Heading from "./Heading";
 import Footer from "./Footer";
 
 const SignIn = () => {
+    const history = useHistory();
     const { register, handleSubmit, errors, formState: { isDirty, isSubmitting } } = useForm({
         mode: "onBlur"
     });
 
     const onSubmit = (data) => {
         // console.log("Form Submitted", JSON.stringify(data));
+        history.push("/dashboard");
     };
 
     return (
