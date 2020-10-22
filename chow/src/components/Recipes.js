@@ -15,7 +15,7 @@ const Recipes = (props) => {
                 src={hit.recipe.image}
                 alt={hit.recipe.label}
                 />
-              <h5>
+              <h5 className="mt-4">
                 {hit.recipe.label.length < 20 ? `${hit.recipe.label}` : `${hit.recipe.label.substring(0, 25)} . . .`}
               </h5>
                <Link to={{ 

@@ -371,7 +371,6 @@ input {
 }
 
 .active-img {
-  transition: all 1s ease-in-out;
   cursor: pointer;
   border-radius: 0.626rem;
   border: none;
@@ -997,8 +996,7 @@ input {
 .content:hover,
 .order:hover,
 .myRecipes:hover,
-.planner:hover,
-.active-img:hover {
+.planner:hover {
   transform: scale(1.1);
 }
 
