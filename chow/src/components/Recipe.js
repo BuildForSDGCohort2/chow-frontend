@@ -79,7 +79,7 @@ class Recipe extends React.Component {
                         <div className="active-recipe col-md-6 p-3">
                             <img className="active-img" src={myRecipe.image} alt={myRecipe.label} />
                         </div>
-                        <div className="col-md-6 pt-2">
+                        <div className="col-md-6 pt-2 mt-5">
                              <h2 className="recipeName">{myRecipe.label}</h2>
                             <div>Servings: {myRecipe.yield}</div>
                             <div className="ingredients">
@@ -109,7 +109,7 @@ class Recipe extends React.Component {
                                 <hr/>
                               {ingredients.map((ingredient,index) => 
                               <div key={index}>
-                                  {ingredient.text}
+                                  <b>{ingredient.text}</b>
                               </div>)}
                             </div>
                             <p className="text-capitalize my-3"><a className="url" href={myRecipe.url} target="_blank" rel="noopener noreferrer" data-tip="Get the directions">Read Directions</a></p>
