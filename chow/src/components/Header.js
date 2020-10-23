@@ -1,9 +1,10 @@
-import React , { useState } from 'react';
+import React , { useState, useEffect } from 'react';
 import { Navbar, Nav, Modal } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 
 const Header = () => {
   const [show, setShow] = useState(false);
+  const [image, setImage] = useState(" ");
   const history = useHistory();
   
   const handleClose = () => setShow(false);
@@ -15,6 +16,11 @@ const Header = () => {
     // console.log(loggedInUser.profileObj.imageUrl);
     return loggedInUser !== null;
   };
+
+  useEffect(() => {
+    setImage(isLoggedIn())
+  }, [])
+
   const signOut = () => {
     sessionStorage.removeItem("userData");
     localStorage.removeItem("userData");
@@ -37,6 +43,14 @@ const Header = () => {
                         to="/home"
                       >
                         Home
+                      </Link>
+                    </Nav.Link>
+                    <Nav.Link>
+                      <Link
+                        className="homePg mx-2 activeHome"
+                        to="#"
+                      >
+                        {image}
                       </Link>
                     </Nav.Link>
                     <Nav.Link>
