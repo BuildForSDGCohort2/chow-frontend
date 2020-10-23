@@ -77,7 +77,7 @@ const SignUp = () => {
                       callback={responseFacebook}
                       render={
                            (renderProps) => (
-                               <button onClick={renderProps.onClick} className="facebook m-2" title="Connect with Facebook">Connect with Facebook</button>
+                               <button onClick={renderProps.onClick} className="facebook m-2" title="Login with Facebook">Login with Facebook</button>
                            )
                       }
                     />}
@@ -103,7 +103,7 @@ const SignUp = () => {
                         redirectUri="https://localhost:3000/dashbaord"
                         render={
                             (renderProps) => (
-                                <button  onClick={renderProps.onClick} className="google m-2">Connect with Google</button>
+                                <button  onClick={renderProps.onClick} className="google m-2" title="Login with Google">Login with Google</button>
                             )
                         }
                       />}
