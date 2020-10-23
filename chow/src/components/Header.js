@@ -34,7 +34,7 @@ const Header = () => {
                     <Nav.Link>
                       <Link
                         className="homePg mx-2 activeHome"
-                        to="/"
+                        to="/home"
                       >
                         Home
                       </Link>

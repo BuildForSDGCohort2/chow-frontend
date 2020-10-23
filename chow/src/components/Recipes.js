@@ -10,11 +10,17 @@ const Recipes = (props) => {
               { (props.recipes || []).map((hit, index) => {
           return (
             <div key={index} className="col-md-4 col-lg-3 col-sm-12">
-              <img
-                className="active-img"
-                src={hit.recipe.image}
-                alt={hit.recipe.label}
+              <Link to={{ 
+                 pathname: `/recipe/${hit.recipe.label}`,
+                 state: {hit: hit.recipe.label} 
+                 }}>
+                <img
+                  className="active-img"
+                  src={hit.recipe.image}
+                  alt={hit.recipe.label}
                 />
+              </Link>
+              
               <h5 className="mt-4">
                 {hit.recipe.label.length < 20 ? `${hit.recipe.label}` : `${hit.recipe.label.substring(0, 25)} . . .`}
               </h5>

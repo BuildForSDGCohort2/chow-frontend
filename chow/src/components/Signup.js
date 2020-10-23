@@ -135,7 +135,7 @@ const SignUp = () => {
                       </button>
                     </Link>*/}
                 </ul>
-                <Link to="/" className="my-5 back view home">
+                <Link to="/home" className="my-5 back view home">
                     Go Back
                 </Link>
                 <div className="col-sm-12 back">

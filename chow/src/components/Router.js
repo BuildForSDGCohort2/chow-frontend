@@ -39,6 +39,7 @@ class Router extends Component {
     <BrowserRouter>
         <Switch>
             <Route path="/" component={ App } exact/>
+            <Route path="/home" component={ App }/>
             <Route path="/recipe/:uri" component={ Recipe }/>
             <Route path="/terms" component={ Terms } />
             <Route path="/signup" component={ SignUp }/>
