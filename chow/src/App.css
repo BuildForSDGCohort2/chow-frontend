@@ -535,6 +535,9 @@ input {
 .sign {
   background-color: rgba(0, 0, 0, 0.7);
   max-width: 90%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
 }
 
 .signUp {
