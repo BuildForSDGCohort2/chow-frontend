@@ -414,6 +414,7 @@ input {
 .health:hover {
   background-color: #3b5998;
   color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .health-item,
@@ -456,6 +457,7 @@ input {
 .cautions:hover {
   background-color: #f20e0e;
   color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .tg,
@@ -480,6 +482,7 @@ input {
 .tags:hover {
   background-color: #3a9691;
   color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .ingredients {
