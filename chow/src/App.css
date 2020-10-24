@@ -300,6 +300,7 @@ input {
 .view:hover {
   background-color: #000;
   color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .view:focus {
@@ -347,6 +348,7 @@ input {
   background-color: #f26f077a;
   padding: 0.5rem 0.9rem;
   border-radius: 3.125rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .url:hover {
@@ -427,16 +429,19 @@ input {
 .health-item:hover {
   background-color: #3b5998;
   color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .tags-item:hover {
   background-color: #3a9691;
   color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .cautions-item:hover {
   background-color: #f20e0e;
   color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .cautions {

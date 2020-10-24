@@ -7,13 +7,18 @@ class Dashboard extends Component {
 
   state = {
     name: "",
+    image: "",
   }
 
 componentDidMount() {
   const data = JSON.parse(sessionStorage.getItem("userData")) || JSON.parse(localStorage.getItem("userData"));
   const data1 = data;
+  // console.log(data.profileObj.imageUrl);
   // console.log(data1.name || data1.profileObj.givenName);
-  this.setState({name: data1.name || data1.profileObj.givenName});
+  this.setState({
+    name: data1.name || data1.profileObj.givenName,
+    // image: data1.profileObj.imageUrl,
+  });
 }
 
 
