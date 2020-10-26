@@ -20,6 +20,7 @@ const API_ID=process.env.REACT_APP_API_ID || "47862355";
 
 class Recipe extends React.Component {
     state = {
+        savedRecipe: [],
         activeRecipe: [],
         ingredients: [],
         totalNutrients: {},
@@ -52,6 +53,8 @@ class Recipe extends React.Component {
     componentDidUpdate() {
         const active = JSON.stringify(this.state.activeRecipe);
         localStorage.setItem("active", active);
+        const savedRecipe = JSON.stringify(this.state.savedRecipe);
+        localStorage.setItem("savedRecipe", [...savedRecipe, active]);
     }
 
 

@@ -3,12 +3,17 @@ import React, { useState } from "react";
 
 
 const AddToCart = () => {
-  const [cart, setCart] = useState("Add to Cart");
+  const [text, setText] = useState("Add to Cart");
+  const [cart, setCart] = useState([]);
+  
+ 
 
-  const addToCart = (e) => {
+  const addToCart = (e,product) => {
     e.preventDefault();
     setTimeout(() => {
-      setCart("Added to Cart");
+      setText("Added to Cart");
+      setCart([...cart, product]);
+      console.log("Added to cart");
     }, 2000);
 };
 
@@ -18,7 +23,7 @@ const AddToCart = () => {
           className="add"
           onClick={addToCart}
           >
-          {cart}
+          {text}
         </button>
       </div>
     );

@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Snacks } from "./Products";
-import AddToCart from "./AddToCart";
-import Counter from "./Counter";
 
 
 const SnacksPrdt = () => {
+  const [cart, setCart] = useState([]);
+  const add = (product) => {
+    setCart([...cart, product]);
+  }
     return (
         <div className="row">
+           <div className="col-sm-12">
+            <span>{cart.length} added</span>
+        </div>
            {Snacks.map((item, index) => (
                   <div className="col-sm-12 col-md-3 col-lg-4" key={index}>
                       <img
@@ -20,9 +25,8 @@ const SnacksPrdt = () => {
                       <div className="prdtFooter">
                         <span>from</span>
                         <span className="from mx-1">₦</span>{item.price}
-                        <Counter />
-                        <AddToCart />
                       </div>
+                      <button onClick={() => add()}>Add to Cart</button>
                   </div>
               ))}
         </div>

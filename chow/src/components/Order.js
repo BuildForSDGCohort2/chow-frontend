@@ -15,6 +15,14 @@ import FoodPrdt from "./Food";
 
 const Order = () => {
   const [key, setKey] = useState("food", "snacks", "salads", "smoothie", "drinks", "small chops", "pizza");
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (e,product) => {
+    e.preventDefault();
+    setTimeout(() => {
+      setCart([...cart, {...product}]);
+    }, 2000);
+};
   
     return (
         <div className="container-fluid">
@@ -23,6 +31,7 @@ const Order = () => {
             <div className="col-sm-12 col-lg-9 text-center">
               <h3 className="mb-2">Hungry?</h3>
               <p>We got your Back</p>
+              <span>{cart.length}</span>
               <div className="row">
                 <div className="col-sm-12">
                   <Tabs
@@ -34,7 +43,7 @@ const Order = () => {
                     <Tab eventKey="food" title="Food" className="mx-3 food">
                       <h5 className="text-justify">Food Menu</h5>
                       <div className="row">
-                        <FoodPrdt />
+                        <FoodPrdt addToCart={addToCart}/>
                       </div>
                     </Tab>
                     <Tab eventKey="snacks" title="Snacks" className="mx-3">
