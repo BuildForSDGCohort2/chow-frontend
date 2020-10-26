@@ -26,7 +26,7 @@ const FoodPrdt = () => {
                       <span>from</span>
                       <span className="from mx-1">₦</span>{item.price} 
                     </div>
-                    <button onClick={() => add()}>Add To Cart</button>
+                    <button onClick={() => add()} className="add">Add To Cart</button>
                 </div>
             ))}
         </div>
