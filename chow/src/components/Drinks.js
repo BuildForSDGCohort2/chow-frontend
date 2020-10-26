@@ -11,6 +11,7 @@ const DrinksPrdt = () => {
   const [page, setPage] = useState("products");
 
   const add = (product) => {
+    console.log("added")
     setCart([...cart, {...product}]);
   };
   const removeFromCart = (productToRemove) => {
