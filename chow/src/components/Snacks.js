@@ -4,6 +4,7 @@ import { Snacks } from "./Products";
 
 const SnacksPrdt = () => {
   const [cart, setCart] = useState([]);
+  const [text] = useState("Add to Cart");
   const add = (product) => {
     setCart([...cart, product]);
   }
@@ -26,7 +27,7 @@ const SnacksPrdt = () => {
                         <span>from</span>
                         <span className="from mx-1">₦</span>{item.price}
                       </div>
-                      <button onClick={() => add()} className="add">Add to Cart</button>
+                      <button onClick={() => add()} className="add">{text}</button>
                   </div>
               ))}
         </div>

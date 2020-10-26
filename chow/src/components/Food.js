@@ -4,9 +4,12 @@ import { Food } from "./Products";
 
 const FoodPrdt = () => {
   const [cart, setCart] = useState([]);
+  const [text] = useState("Add to Cart");
+
   const add = (product) => {
-    setCart([...cart, product]);
-  }
+      setCart([...cart, {...product}]);
+  };
+  
     return (
         <div className="row">
           <div className="col-sm-12">
@@ -26,7 +29,7 @@ const FoodPrdt = () => {
                       <span>from</span>
                       <span className="from mx-1">₦</span>{item.price} 
                     </div>
-                    <button onClick={() => add()} className="add">Add To Cart</button>
+                    <button onClick={() => add()} className="add">{text}</button>
                 </div>
             ))}
         </div>
