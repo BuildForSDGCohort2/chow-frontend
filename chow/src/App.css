@@ -1084,3 +1084,22 @@ hr {
   border-radius: 50%;
   width: 50%;
 }
+
+/*404**/
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("./images/richard-bell-NXHwphKj1Yc-unsplash\(1\).jpg") no-repeat bottom left ;
+  background-size: cover;
+}
+
+.not {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 50%;
+  width: 50%;
+  padding: 8rem;
+  color: #fff;
+}

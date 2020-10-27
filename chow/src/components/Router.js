@@ -14,6 +14,7 @@ import MealPlanner from "./MealPlanner";
 import MealIdeas from "./MealIdeas";
 import Order from "./Order";
 import Dashboard from "./Dashboard";
+import NotFound from "./404";
 
 
 const isLoggedIn = () => {
@@ -38,14 +39,15 @@ class Router extends Component {
         return (
     <BrowserRouter>
         <Switch>
-            <Route path="/" component={ App } exact/>
-            <Route path="/home" component={ App } exact/>
+            <Route exact path="/" component={ App } />
+            <Route path="/home" component={ App } />
             <Route path="/recipe/:uri" component={ Recipe }/>
             <Route path="/terms" component={ Terms } />
             <Route path="/signup" component={ SignUp }/>
             <Route path="/email-signup" component={ EmailSignUp }/>
             <Route path="/signin" component={ SignIn } />
             <Route path="/privacy" component={ Privacy } />
+            <Route path="*" component={ NotFound } />
 
             <SecureRoute path="/myrecipes" component={ MyRecipes } />
             <SecureRoute path="/meal-planning" component={ MealPlanner } />
