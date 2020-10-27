@@ -47,13 +47,14 @@ class Router extends Component {
             <Route path="/email-signup" component={ EmailSignUp }/>
             <Route path="/signin" component={ SignIn } />
             <Route path="/privacy" component={ Privacy } />
-            <Route path="*" component={ NotFound } />
+            
 
             <SecureRoute path="/myrecipes" component={ MyRecipes } />
             <SecureRoute path="/meal-planning" component={ MealPlanner } />
             <SecureRoute path="/ideas" component={ MealIdeas } />
             <SecureRoute path="/order" component={ Order } />
             <SecureRoute path="/dashboard" component={ Dashboard } />
+            <Route path="" component={ NotFound } />
         </Switch>
     </BrowserRouter>
         );

@@ -97,7 +97,7 @@ class Recipe extends React.Component {
                               </div>
                             </div>
                             <div className="btnGrp">
-                                <Link to="/" className="home view" data-tip="Go Home">Go Home</Link>
+                                <Link to="/home" className="home view" data-tip="Go Home">Go Home</Link>
                                 <AddRecipeBtn />
                                 <ReactToolTip
                                   type="dark"
@@ -112,7 +112,7 @@ class Recipe extends React.Component {
                                 <hr/>
                               {ingredients.map((ingredient,index) => 
                               <div key={index}>
-                                  <b>{ingredient.text}</b>
+                                  <b className="mx-3 ingre">{ingredient.text}</b>
                               </div>)}
                             </div>
                             <p className="text-capitalize my-3"><a className="url" href={myRecipe.url} target="_blank" rel="noopener noreferrer" data-tip="Get the directions">Read Directions</a></p>

@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import Footer from "./Footer";
+
 
 const NotFound = () => {
     return (
@@ -9,7 +9,7 @@ const NotFound = () => {
             <div className="row text-center notFound">
                 <div className="col-sm-12 not">
                     <h2>404 - Page Not Found</h2>
-                    <b className="py-5">It seems the page your are looking for doesn't exist.</b>
+                    <b className="py-5">It seems the page you are looking for doesn't exist.</b>
                 </div>
             </div>
         </div>
