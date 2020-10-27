@@ -6,22 +6,21 @@ const AddRecipeBtn = () => {
     const [text, setText] = useState( "Add to my Recipes" );
     const [dataTip, setDataTip] = useState("Add this recipe to my Recipes");
     const [error, setError] = useState("");
-    const [savedRecipe, setSavedRecipe] = useState([]);
+    
 
     
     useEffect(() => {
         const savedRecipes = JSON.parse(localStorage.getItem("active"));
         return (
-            savedRecipes || [...savedRecipe, savedRecipes]
+            savedRecipes || []
         )
-    }, [savedRecipe])
+    }, [])
 
     const addRecipe = (e, recipe) => {
         e.preventDefault();
         if(localStorage.getItem("userData") !== null || sessionStorage.getItem("userData") !==null) {
             setTimeout(() => {
                 console.log("Recipe Saved")
-                setSavedRecipe([...savedRecipe, {recipe}]);
                 setText("Recipe Added");
                 setDataTip("Recipe was Added!");
                 
