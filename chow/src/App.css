@@ -802,6 +802,10 @@ input {
   background-size: 100%;
 }
 
+.myRecip {
+  background: url("./images/matthias-heil-lDOEwat_MPs-unsplash.jpg") no-repeat top;
+  background-size: cover;
+}
 .userSearch {
   width: 30rem;
   border: none;

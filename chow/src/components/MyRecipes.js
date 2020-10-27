@@ -39,7 +39,7 @@ const MyRecipes = () => {
         <div className="container-fluid">
           <Header />
           <div className="row">
-            <div className="col-sm-12 col-lg-3 myOrder text-center">
+            <div className="col-sm-12 col-lg-3 myRecip text-center">
             </div>
             <div className="col-sm-12 col-lg-9 text-center">
               <h3>Saved Recipe</h3>
