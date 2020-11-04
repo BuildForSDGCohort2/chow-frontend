@@ -261,6 +261,10 @@ input {
   stroke-width: 1px;
 }
 
+.loading {
+  align-items: center;
+  justify-content: center;
+}
 /* Recipes **/
 .recipes {
   border: 1px solid #000;

@@ -62,8 +62,9 @@ class App extends Component {
          <Hero /> 
          <Search getRecipe={this.getRecipe}/>
         {this.state.isLoading ? (
-          <div>
-            <ReactLoading type={"spokes"} color={"#f20e0e"}  className="spinner" height={ 25 } width={ 25 } />
+          <div className="text-center loading">
+            <p>Loading...</p>
+            <ReactLoading type={"spin"} color={"#f20e0e"}  className="spinner" height={ 25 } width={ 25 } />
           </div>
         ) : (
           <Recipes recipes={this.state.hits} />
