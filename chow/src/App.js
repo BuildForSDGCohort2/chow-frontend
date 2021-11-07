@@ -37,7 +37,7 @@ class App extends Component {
       hits: data.hits,
       isLoading: false
     });
-    // console.log(this.state.hits); 
+    console.log(this.state.hits); 
   };
 
   componentDidMount() {
